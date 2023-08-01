@@ -1,0 +1,5710 @@
+{
+  "object": "list",
+  "results": [
+    {
+      "object": "page",
+      "id": "6483f3ed-51c3-4762-adfa-cc11357a0d29",
+      "created_time": "2023-07-30T18:15:00.000Z",
+      "last_edited_time": "2023-07-31T19:24:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d9050ede-7fc9-4e14-a617-4dbb4b90ac7a/codepen.io_collection_xKJNYR_grid_typegrid.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=fd2e1eaa11d4c49289fea7d8d853781f5c153234143d649295a9f8caf73c6231&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.014Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "022ac620-8e51-41d1-9d5d-840c3281167d",
+            "name": "Done",
+            "color": "pink"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "2d41b7f2-30ba-4093-a0c5-56eabb259a44",
+              "name": "Codepen",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "d4ddcbab-e30c-4fe1-94a5-9a3a704f378c",
+              "name": "SVG",
+              "color": "orange"
+            },
+            {
+              "id": "ba5bd231-d473-4448-afcd-59e713318bb8",
+              "name": "GSAP",
+              "color": "green"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            },
+            {
+              "id": "d02abff9-c944-4c69-8cf6-1ba774db0f56",
+              "name": "Pug",
+              "color": "yellow"
+            },
+            {
+              "id": "cc4a0294-3bbf-4580-883f-52482c3a12da",
+              "name": "Stylus",
+              "color": "green"
+            },
+            {
+              "id": "a2b8f0be-82ab-4acf-b3e0-93aeae87eeda",
+              "name": "SASS",
+              "color": "pink"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://codepen.io/collection/xKJNYR"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Codepen Showcase",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Codepen Showcase",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Codepen-Showcase-6483f3ed51c34762adfacc11357a0d29",
+      "public_url": "https://cavera.notion.site/Codepen-Showcase-6483f3ed51c34762adfacc11357a0d29"
+    },
+    {
+      "object": "page",
+      "id": "b70be28b-fb0a-4672-9863-5bfea7546cdf",
+      "created_time": "2023-07-30T15:14:00.000Z",
+      "last_edited_time": "2023-07-31T19:23:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5edf9043-bc66-481b-b6b3-eb38fc7e168e/posts2023_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=5622d711a805bcff358437e9ab2b34ef744191a3b5e8fc7a56e1939747a6b072&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.011Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "022ac620-8e51-41d1-9d5d-840c3281167d",
+            "name": "Done",
+            "color": "pink"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "80f898bd-d6bd-43c7-9da3-b5007f655567",
+              "name": "CMP",
+              "color": "green"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            },
+            {
+              "id": "fcb1c85d-f042-40a4-9a1f-07a24c7f0abd",
+              "name": "Audition",
+              "color": "green"
+            },
+            {
+              "id": "fc321227-ef82-4843-902b-d6d961a51863",
+              "name": "AI generation tools",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://www.linkedin.com/company/crearmedia-per%C3%BA/posts/?feedView=all"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Social media posts CrearMedia Perú 2023",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Social media posts CrearMedia Perú 2023",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Social-media-posts-CrearMedia-Per-2023-b70be28bfb0a467298635bfea7546cdf",
+      "public_url": "https://cavera.notion.site/Social-media-posts-CrearMedia-Per-2023-b70be28bfb0a467298635bfea7546cdf"
+    },
+    {
+      "object": "page",
+      "id": "d26cacc1-737d-48ff-8074-6df6e9c2ea66",
+      "created_time": "2023-07-30T15:02:00.000Z",
+      "last_edited_time": "2023-07-31T19:21:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/207d8b41-2a07-4092-854c-88b3b6e9ae0b/posts2022_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=9ec98e05b4e7dcd0043bc128e2b4b93ab85af51f7566cf78fe886036fb748d04&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.007Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "022ac620-8e51-41d1-9d5d-840c3281167d",
+            "name": "Done",
+            "color": "pink"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "80f898bd-d6bd-43c7-9da3-b5007f655567",
+              "name": "CMP",
+              "color": "green"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://www.linkedin.com/company/crearmedia-per%C3%BA/posts/?feedView=all"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Social media posts CrearMedia Perú 2022",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Social media posts CrearMedia Perú 2022",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Social-media-posts-CrearMedia-Per-2022-d26cacc1737d48ff80746df6e9c2ea66",
+      "public_url": "https://cavera.notion.site/Social-media-posts-CrearMedia-Per-2022-d26cacc1737d48ff80746df6e9c2ea66"
+    },
+    {
+      "object": "page",
+      "id": "9fd33f3a-8c05-493d-b3e2-9e3638926452",
+      "created_time": "2023-07-30T14:56:00.000Z",
+      "last_edited_time": "2023-07-31T17:02:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/43aed18e-7877-4078-aa99-d116bc12fa7f/planes_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=eb0b0651d63d949255985bdb240337093565698549a21659be7b6469e3c9ebf8&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.008Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.caveradev.planes"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Planes Watch Face",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Planes Watch Face",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Planes-Watch-Face-9fd33f3a8c05493db3e29e3638926452",
+      "public_url": "https://cavera.notion.site/Planes-Watch-Face-9fd33f3a8c05493db3e29e3638926452"
+    },
+    {
+      "object": "page",
+      "id": "2a11bca2-073d-4a64-a63a-042ce3c46961",
+      "created_time": "2023-07-30T14:53:00.000Z",
+      "last_edited_time": "2023-07-31T17:01:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/27d0aa87-81f4-490e-a623-3cd0108049ba/timezone_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=daf94f63e5acc51fe519c5376c1dbe1f74e6ed7a62b7ad67cd1592110fc603d7&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.010Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.timezone"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Timezone Watch Face",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Timezone Watch Face",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Timezone-Watch-Face-2a11bca2073d4a64a63a042ce3c46961",
+      "public_url": "https://cavera.notion.site/Timezone-Watch-Face-2a11bca2073d4a64a63a042ce3c46961"
+    },
+    {
+      "object": "page",
+      "id": "bb3aca8c-3ade-45e3-94af-48fa23435ad0",
+      "created_time": "2023-07-30T14:49:00.000Z",
+      "last_edited_time": "2023-07-31T17:00:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e63d1be3-f3cc-4cf4-b11b-c00d6a81ccf2/blurred_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=60f2abc56033fad07136f0c249435965c1997e7d131435fa234c09c4cdcdc4f0&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.013Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.blurredglass"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Blurred Glass Watch Face",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Blurred Glass Watch Face",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Blurred-Glass-Watch-Face-bb3aca8c3ade45e394af48fa23435ad0",
+      "public_url": "https://cavera.notion.site/Blurred-Glass-Watch-Face-bb3aca8c3ade45e394af48fa23435ad0"
+    },
+    {
+      "object": "page",
+      "id": "30100890-6fec-4ee0-b185-d492836479a0",
+      "created_time": "2023-07-30T04:43:00.000Z",
+      "last_edited_time": "2023-07-31T17:05:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/74282b94-c161-4293-b01e-c2cff274471a/mailing_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=0f57efc2b7f3212acfe592e2244d456fba49c54b13297b20396443a91e518af3&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.012Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "80f898bd-d6bd-43c7-9da3-b5007f655567",
+              "name": "CMP",
+              "color": "green"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "CrearMedia Perú Mailing",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "CrearMedia Perú Mailing",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/CrearMedia-Per-Mailing-301008906fec4ee0b185d492836479a0",
+      "public_url": "https://cavera.notion.site/CrearMedia-Per-Mailing-301008906fec4ee0b185d492836479a0"
+    },
+    {
+      "object": "page",
+      "id": "2d956e9d-05dd-40f0-a96e-892ffb7e5912",
+      "created_time": "2023-07-30T04:37:00.000Z",
+      "last_edited_time": "2023-07-31T16:58:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/dd83e7f6-eaf6-4b65-8111-41f0cf0a968b/colortrails_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=94f010f5512c741fd60071b636139bd7511ca10deb20087fcde062e3767315e6&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.010Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.colortrails"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Color Trails Watch Face",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Color Trails Watch Face",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Color-Trails-Watch-Face-2d956e9d05dd40f0a96e892ffb7e5912",
+      "public_url": "https://cavera.notion.site/Color-Trails-Watch-Face-2d956e9d05dd40f0a96e892ffb7e5912"
+    },
+    {
+      "object": "page",
+      "id": "55348866-192b-4eb2-8b8d-0b3b8d4c2599",
+      "created_time": "2023-07-30T04:32:00.000Z",
+      "last_edited_time": "2023-07-31T16:56:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d8ffd384-f799-48d5-803e-664b1bcc5736/vcr_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=5307b20102480e33c350365c062fd0d12869f5c9b83590e8b231f04c9f188b1e&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.012Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.vcrdigits"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "VCR Digits Watch Face",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "VCR Digits Watch Face",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/VCR-Digits-Watch-Face-55348866192b4eb28b8d0b3b8d4c2599",
+      "public_url": "https://cavera.notion.site/VCR-Digits-Watch-Face-55348866192b4eb28b8d0b3b8d4c2599"
+    },
+    {
+      "object": "page",
+      "id": "6c568950-1f89-4157-9658-aa71763186a5",
+      "created_time": "2023-07-30T04:27:00.000Z",
+      "last_edited_time": "2023-07-31T16:54:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a683412e-c235-40a1-8285-7b06435c9385/linearww_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=beed77ef2001473ca783dbeef6e949551f704c1ceb97f1158ec304bb74a2281c&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.011Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.linearww"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Linear WW Watch Face",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Linear WW Watch Face",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Linear-WW-Watch-Face-6c5689501f8941579658aa71763186a5",
+      "public_url": "https://cavera.notion.site/Linear-WW-Watch-Face-6c5689501f8941579658aa71763186a5"
+    },
+    {
+      "object": "page",
+      "id": "dbaee75d-56a3-43f2-a024-386f1c7adc24",
+      "created_time": "2023-07-30T04:21:00.000Z",
+      "last_edited_time": "2023-07-31T16:53:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4e24ca24-555e-4ac9-a619-2c8f59cf85d6/teatime_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=33359c1178cd46c69241399ee23fffdf8d9983b73ae67719b8d70bb4c09d0a47&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.032Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.teaface"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Tea Time Watch Face",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Tea Time Watch Face",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Tea-Time-Watch-Face-dbaee75d56a343f2a024386f1c7adc24",
+      "public_url": "https://cavera.notion.site/Tea-Time-Watch-Face-dbaee75d56a343f2a024386f1c7adc24"
+    },
+    {
+      "object": "page",
+      "id": "9f315510-3191-489a-a53c-2490793c9e68",
+      "created_time": "2023-07-30T04:17:00.000Z",
+      "last_edited_time": "2023-07-31T16:50:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1a6f99e1-26f5-4876-816e-3344181f9180/nixie_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=a4d0b77c8aaf8ca42426c7e6dca7d888c771b8c1bec2ab34b1d79dab7723210b&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.010Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.nixienumbers"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Nixie Numbers Watch Face",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Nixie Numbers Watch Face",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Nixie-Numbers-Watch-Face-9f3155103191489aa53c2490793c9e68",
+      "public_url": "https://cavera.notion.site/Nixie-Numbers-Watch-Face-9f3155103191489aa53c2490793c9e68"
+    },
+    {
+      "object": "page",
+      "id": "a7351fc3-bd1e-4376-b955-f258b0698404",
+      "created_time": "2023-07-30T04:13:00.000Z",
+      "last_edited_time": "2023-07-31T16:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/48f6fbed-5e69-4b70-9cd9-5c9b1dd1c3f8/linear_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=01c91835d54a06b7b54743d9c85d9d7721a75f43337581eb46b20bd0013643dc&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.012Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.linear"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Linear Watch Face",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Linear Watch Face",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Linear-Watch-Face-a7351fc3bd1e4376b955f258b0698404",
+      "public_url": "https://cavera.notion.site/Linear-Watch-Face-a7351fc3bd1e4376b955f258b0698404"
+    },
+    {
+      "object": "page",
+      "id": "602b5d20-b4f8-482b-9e85-612515762bee",
+      "created_time": "2023-07-30T04:08:00.000Z",
+      "last_edited_time": "2023-07-31T16:20:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e1ada8d5-2652-4149-9545-55c8b235bac4/woodnleds_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=9ededdba8965e2d1e60ffdc53812d094c8332be041870cc8aab712880217e1aa&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.008Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.woodnleds"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Wood'n LEDs Watch Face",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Wood'n LEDs Watch Face",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Wood-n-LEDs-Watch-Face-602b5d20b4f8482b9e85612515762bee",
+      "public_url": "https://cavera.notion.site/Wood-n-LEDs-Watch-Face-602b5d20b4f8482b9e85612515762bee"
+    },
+    {
+      "object": "page",
+      "id": "aa56cb56-76f5-466b-8390-71ca4e1545af",
+      "created_time": "2023-07-30T04:00:00.000Z",
+      "last_edited_time": "2023-07-31T16:19:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fb0af536-7a0e-4c63-9e05-9c4b97e9b9e4/sunlight_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=640fd8c38f39d9ec995567f98d9df4b3514d2befe60fe1a016caeb8737e7c969&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.009Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.sunlight"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Sunlight Watch Face",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Sunlight Watch Face",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Sunlight-Watch-Face-aa56cb5676f5466b839071ca4e1545af",
+      "public_url": "https://cavera.notion.site/Sunlight-Watch-Face-aa56cb5676f5466b839071ca4e1545af"
+    },
+    {
+      "object": "page",
+      "id": "a6826df3-ace8-4b57-9c02-ee9f95f55e76",
+      "created_time": "2023-07-15T15:50:00.000Z",
+      "last_edited_time": "2023-07-15T15:53:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "mB[T",
+            "name": "Local",
+            "color": "purple"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "c09e6174-bbe6-4422-b21d-20e6a37d7b49",
+              "name": "PC",
+              "color": "orange"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "86b67b8e-c40a-4bb6-84c7-134fa020745c",
+              "name": "Premiere",
+              "color": "purple"
+            },
+            {
+              "id": "fcb1c85d-f042-40a4-9a1f-07a24c7f0abd",
+              "name": "Audition",
+              "color": "green"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Book trailer",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Book trailer",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Book-trailer-a6826df3ace84b579c02ee9f95f55e76",
+      "public_url": "https://cavera.notion.site/Book-trailer-a6826df3ace84b579c02ee9f95f55e76"
+    },
+    {
+      "object": "page",
+      "id": "9d3c6abf-5a15-43e1-9609-4610d8ca6b9f",
+      "created_time": "2023-07-15T00:13:00.000Z",
+      "last_edited_time": "2023-07-31T19:19:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f2f628b0-de49-4d0c-a72d-c30d54637899/localhost_3000_todo-react.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=8818805492ff79e43741d5505894e1b3de3b3dd9857419c99978bbd75e8ca8ae&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.032Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fhbu",
+            "name": "Github",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "7cbc8d88-2d5e-42ef-899d-a288c3a6a83c",
+              "name": "Platzi",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": "https://cavera.github.io/todo-react/"
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "981bbe2f-4018-46e2-9f7a-cfb64867059e",
+              "name": "React JS",
+              "color": "blue"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://cavera.github.io/todo-react/"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Todo react App",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Todo react App",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Todo-react-App-9d3c6abf5a1543e196094610d8ca6b9f",
+      "public_url": "https://cavera.notion.site/Todo-react-App-9d3c6abf5a1543e196094610d8ca6b9f"
+    },
+    {
+      "object": "page",
+      "id": "4a2eb94d-7315-4b3c-8fd5-abd941b7d469",
+      "created_time": "2023-07-15T00:10:00.000Z",
+      "last_edited_time": "2023-07-31T19:19:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bf50aea9-b65a-474b-8145-cf7b5573f3f0/fe-mentor-agecalc.netlify.app_.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=f3e6af2d8c2502803306aae57cce70fa84f4d73476528dd60d59166d52d51e01&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.010Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fhbu",
+            "name": "Github",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "4b784963-5fb8-46dc-a1e2-eea952dbd3d2",
+              "name": "Github",
+              "color": "gray"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": "https://github.com/cavera/age-calculator-app"
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "a2b8f0be-82ab-4acf-b3e0-93aeae87eeda",
+              "name": "SASS",
+              "color": "pink"
+            },
+            {
+              "id": "981bbe2f-4018-46e2-9f7a-cfb64867059e",
+              "name": "React JS",
+              "color": "blue"
+            },
+            {
+              "id": "ba5bd231-d473-4448-afcd-59e713318bb8",
+              "name": "GSAP",
+              "color": "green"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://fe-mentor-agecalc.netlify.app/"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Age Calculator App",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Age Calculator App",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Age-Calculator-App-4a2eb94d73154b3c8fd5abd941b7d469",
+      "public_url": "https://cavera.notion.site/Age-Calculator-App-4a2eb94d73154b3c8fd5abd941b7d469"
+    },
+    {
+      "object": "page",
+      "id": "224c7e5d-b76b-45ba-a174-b05a5644682f",
+      "created_time": "2023-07-15T00:02:00.000Z",
+      "last_edited_time": "2023-07-31T15:37:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/79be9d7d-bcf4-4f8f-8d3f-70ae9b6471e9/cover2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=0fa19005a1ab059c23e45f510d4a2dad6a4ae7d00227857eb578b33264bf2697&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.008Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": "https://www.behance.net/gallery/151632723/crearmedape-Website-Icons"
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://crearmedia.pe/"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Crearmedia.pe",
+                "link": {
+                  "url": "http://crearmedia.pe/"
+                }
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Crearmedia.pe",
+              "href": "http://crearmedia.pe/"
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": " Icons",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": " Icons",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Crearmedia-pe-Icons-224c7e5db76b45baa174b05a5644682f",
+      "public_url": "https://cavera.notion.site/Crearmedia-pe-Icons-224c7e5db76b45baa174b05a5644682f"
+    },
+    {
+      "object": "page",
+      "id": "9bf34e28-4583-41e7-a922-6c2f97b72d8d",
+      "created_time": "2023-07-14T23:54:00.000Z",
+      "last_edited_time": "2023-07-31T15:42:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c514db74-2525-446e-9bb5-8b7a61504519/moonfases_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=92e0b4051b437ec38d091fb9dc4764f306cdc41562a16ca3bc7d4c1e7eca8cb4&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.011Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": "https://www.behance.net/gallery/158579121/Moon-Fases-Watch-Face"
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.moonfase"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Moon Fases Watch Face",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Moon Fases Watch Face",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Moon-Fases-Watch-Face-9bf34e28458341e7a9226c2f97b72d8d",
+      "public_url": "https://cavera.notion.site/Moon-Fases-Watch-Face-9bf34e28458341e7a9226c2f97b72d8d"
+    },
+    {
+      "object": "page",
+      "id": "e2b89929-de62-48d8-a09d-575e83b64bed",
+      "created_time": "2023-06-08T16:44:00.000Z",
+      "last_edited_time": "2023-07-31T18:19:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b687d565-16c7-4d45-a9b9-bc48aea6d8a7/xoxo-tic.netlify.app_.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=94fc552e7ef008fd7c794d327897f6dd6ed49be45e0eddf513558f64b3c890b8&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.012Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fhbu",
+            "name": "Github",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "b7d0a6db-a8ae-45e6-b7b4-e3f97dfcc4e7",
+              "name": "Youtube",
+              "color": "red"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": "https://github.com/cavera/tic-tac-toe"
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "981bbe2f-4018-46e2-9f7a-cfb64867059e",
+              "name": "React JS",
+              "color": "blue"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Convertirlo en conecta 4",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Convertirlo en conecta 4",
+              "href": null
+            }
+          ]
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://xoxo-tic.netlify.app/"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Tic tac toe game",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Tic tac toe game",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Tic-tac-toe-game-e2b89929de6248d8a09d575e83b64bed",
+      "public_url": "https://cavera.notion.site/Tic-tac-toe-game-e2b89929de6248d8a09d575e83b64bed"
+    },
+    {
+      "object": "page",
+      "id": "99dab0b3-2da9-4e41-9ddd-581c4c0eca2e",
+      "created_time": "2023-06-08T16:43:00.000Z",
+      "last_edited_time": "2023-07-31T19:17:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/425143dd-f155-4b9d-9b79-cd0c94785fd5/shopi-store_s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=4d79cc70941a748ea2e987b25029f3e4f06aa71390a797045570e6bc5fb62c4d&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.032Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fhbu",
+            "name": "Github",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "7cbc8d88-2d5e-42ef-899d-a288c3a6a83c",
+              "name": "Platzi",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": "https://github.com/cavera/react-store"
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "981bbe2f-4018-46e2-9f7a-cfb64867059e",
+              "name": "React JS",
+              "color": "blue"
+            },
+            {
+              "id": "96b23048-527f-491d-9011-ac35b75a2dcc",
+              "name": "Tailwind",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://shopi-store.netlify.app/"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Shopi Store",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Shopi Store",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Shopi-Store-99dab0b32da94e419ddd581c4c0eca2e",
+      "public_url": "https://cavera.notion.site/Shopi-Store-99dab0b32da94e419ddd581c4c0eca2e"
+    },
+    {
+      "object": "page",
+      "id": "3462cdb2-208f-4637-8233-943ac47294ca",
+      "created_time": "2023-06-08T16:41:00.000Z",
+      "last_edited_time": "2023-07-31T19:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4990aac7-73b8-499c-b211-2d8e0f6ac0bd/cav-movie.netlify_s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=ecd4f813affe2f3ad65bcfce0afd762e9fe5a192a3ceb2271a07cc6a9f40557e&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.010Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fhbu",
+            "name": "Github",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "7cbc8d88-2d5e-42ef-899d-a288c3a6a83c",
+              "name": "Platzi",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": "https://github.com/cavera/myMovies"
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "981bbe2f-4018-46e2-9f7a-cfb64867059e",
+              "name": "React JS",
+              "color": "blue"
+            },
+            {
+              "id": "a2b8f0be-82ab-4acf-b3e0-93aeae87eeda",
+              "name": "SASS",
+              "color": "pink"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://cav-movie.netlify.app/"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "myMovies",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "myMovies",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/myMovies-3462cdb2208f46378233943ac47294ca",
+      "public_url": "https://cavera.notion.site/myMovies-3462cdb2208f46378233943ac47294ca"
+    },
+    {
+      "object": "page",
+      "id": "589488bb-1f9a-4951-8770-a92543cbdd1e",
+      "created_time": "2022-11-19T18:28:00.000Z",
+      "last_edited_time": "2023-06-08T16:41:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Watchfaces",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Watchfaces",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Watchfaces-589488bb1f9a49518770a92543cbdd1e",
+      "public_url": "https://cavera.notion.site/Watchfaces-589488bb1f9a49518770a92543cbdd1e"
+    },
+    {
+      "object": "page",
+      "id": "8b767151-0c12-4f26-a004-77cf8e582966",
+      "created_time": "2022-11-18T00:11:00.000Z",
+      "last_edited_time": "2023-07-31T15:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/09bc910e-90ee-4bd9-8f3f-50c08501f372/bubblecolors_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=bbc59a33f7c37fb044630b980c02d1f60a0c06dbfa03086116c3c39f59dded8f&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.014Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "cc0b51dd-029d-4b5e-8317-2012b2badc3b",
+              "name": "Behance",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": "https://www.behance.net/gallery/157335133/Bubble-Colors-Watch-Face"
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.bubblecolors"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Bubble Colors",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Bubble Colors",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Bubble-Colors-8b7671510c124f26a00477cf8e582966",
+      "public_url": "https://cavera.notion.site/Bubble-Colors-8b7671510c124f26a00477cf8e582966"
+    },
+    {
+      "object": "page",
+      "id": "b6ab6ea3-f59b-4b91-8daa-88b6eae97ea7",
+      "created_time": "2022-08-29T15:01:00.000Z",
+      "last_edited_time": "2023-07-31T17:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/319956a3-328b-48e4-abe4-a5723be4e98f/onboard.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=0aab05ad470bb02f6e708835c882f50a8c8ca55838fb3180c0e81f80bf8ac31b&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.011Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "80f898bd-d6bd-43c7-9da3-b5007f655567",
+              "name": "CMP",
+              "color": "green"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": "https://www.behance.net/gallery/151225343/Bank-Onboarding"
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Bank Onboarding prototype",
+                "link": null
+              },
+              "annotations": {
+                "bold": true,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Bank Onboarding prototype",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Bank-Onboarding-prototype-b6ab6ea3f59b4b918daa88b6eae97ea7",
+      "public_url": "https://cavera.notion.site/Bank-Onboarding-prototype-b6ab6ea3f59b4b918daa88b6eae97ea7"
+    },
+    {
+      "object": "page",
+      "id": "f41abea2-afb5-49db-8387-47ef607eabb1",
+      "created_time": "2022-08-24T23:36:00.000Z",
+      "last_edited_time": "2023-07-15T00:07:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "mB[T",
+            "name": "Local",
+            "color": "purple"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "0c50ecf0-f952-48a0-a4c7-64ab6b9b5ce8",
+              "name": "Twitter",
+              "color": "default"
+            },
+            {
+              "id": "c09e6174-bbe6-4422-b21d-20e6a37d7b49",
+              "name": "PC",
+              "color": "orange"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "6c6b75e5-0f9a-49e7-8745-47ea8c402eb8",
+              "name": "Sketch",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Daily UI 051 - 060",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Daily UI 051 - 060",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Daily-UI-051-060-f41abea2afb549db838747ef607eabb1",
+      "public_url": "https://cavera.notion.site/Daily-UI-051-060-f41abea2afb549db838747ef607eabb1"
+    },
+    {
+      "object": "page",
+      "id": "0a42d0d2-e5c9-455a-971c-4386d62df94c",
+      "created_time": "2022-08-22T01:14:00.000Z",
+      "last_edited_time": "2022-08-22T01:15:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fARj",
+            "name": "Sin personalizar",
+            "color": "gray"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "4b784963-5fb8-46dc-a1e2-eea952dbd3d2",
+              "name": "Github",
+              "color": "gray"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa89e49a-1b91-43d6-a517-2f60b60b66d6",
+              "name": "Illustrator",
+              "color": "orange"
+            },
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "d02abff9-c944-4c69-8cf6-1ba774db0f56",
+              "name": "Pug",
+              "color": "yellow"
+            },
+            {
+              "id": "cc4a0294-3bbf-4580-883f-52482c3a12da",
+              "name": "Stylus",
+              "color": "green"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Aplicación de selección",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Aplicación de selección",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Aplicaci-n-de-selecci-n-0a42d0d2e5c9455a971c4386d62df94c",
+      "public_url": "https://cavera.notion.site/Aplicaci-n-de-selecci-n-0a42d0d2e5c9455a971c4386d62df94c"
+    },
+    {
+      "object": "page",
+      "id": "0ffaac67-5d7e-419b-bf62-778561391375",
+      "created_time": "2022-08-16T20:01:00.000Z",
+      "last_edited_time": "2023-07-31T19:44:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e7fbe7b6-d412-4074-91f5-692e2289a680/dailyui.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=69e4c4d9bb288cd62093c444a1a062c786c8aefdee6d100024955ffa26911b7b&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.011Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "FV]U",
+            "name": "Behance",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "6c6b75e5-0f9a-49e7-8745-47ea8c402eb8",
+              "name": "Sketch",
+              "color": "yellow"
+            },
+            {
+              "id": "aa89e49a-1b91-43d6-a517-2f60b60b66d6",
+              "name": "Illustrator",
+              "color": "orange"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://www.behance.net/gallery/151367013/dailyui-Twitter-challenge-posts"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Daily UI",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Daily UI",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Daily-UI-0ffaac675d7e419bbf62778561391375",
+      "public_url": "https://cavera.notion.site/Daily-UI-0ffaac675d7e419bbf62778561391375"
+    },
+    {
+      "object": "page",
+      "id": "3917ed7a-01b3-4eef-ad5a-955d86187908",
+      "created_time": "2022-08-16T19:55:00.000Z",
+      "last_edited_time": "2023-07-30T18:28:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "a9726fda-3694-4b79-849c-78bb1f5badbe",
+            "name": "In progress",
+            "color": "blue"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "80f898bd-d6bd-43c7-9da3-b5007f655567",
+              "name": "CMP",
+              "color": "green"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "be8f81d1-3fe4-493b-849f-c6d9b83aea21",
+              "name": "Web Design",
+              "color": "pink"
+            },
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "e1d0eb5f-78eb-43d0-940e-68f173246466",
+              "name": "After Effects",
+              "color": "purple"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Incluirlo como parte del portafolio",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Incluirlo como parte del portafolio",
+              "href": null
+            }
+          ]
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "https://sincovidperu.com/",
+                "link": {
+                  "url": "https://sincovidperu.com/"
+                }
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "https://sincovidperu.com/",
+              "href": "https://sincovidperu.com/"
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/https-sincovidperu-com-3917ed7a01b34eefad5a955d86187908",
+      "public_url": "https://cavera.notion.site/https-sincovidperu-com-3917ed7a01b34eefad5a955d86187908"
+    },
+    {
+      "object": "page",
+      "id": "b52643ec-0cd9-4e24-811d-4f672a71f484",
+      "created_time": "2022-08-16T16:14:00.000Z",
+      "last_edited_time": "2022-08-16T19:58:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "2d41b7f2-30ba-4093-a0c5-56eabb259a44",
+              "name": "Codepen",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Degradados CSS",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Degradados CSS",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Degradados-CSS-b52643ec0cd94e24811d4f672a71f484",
+      "public_url": "https://cavera.notion.site/Degradados-CSS-b52643ec0cd94e24811d4f672a71f484"
+    },
+    {
+      "object": "page",
+      "id": "99feaf79-dc90-4687-a302-3073ab46df57",
+      "created_time": "2022-08-16T16:09:00.000Z",
+      "last_edited_time": "2022-08-16T19:58:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "2d41b7f2-30ba-4093-a0c5-56eabb259a44",
+              "name": "Codepen",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d4ddcbab-e30c-4fe1-94a5-9a3a704f378c",
+              "name": "SVG",
+              "color": "orange"
+            },
+            {
+              "id": "ba5bd231-d473-4448-afcd-59e713318bb8",
+              "name": "GSAP",
+              "color": "green"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Temperatura ideal",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Temperatura ideal",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Temperatura-ideal-99feaf79dc904687a3023073ab46df57",
+      "public_url": "https://cavera.notion.site/Temperatura-ideal-99feaf79dc904687a3023073ab46df57"
+    },
+    {
+      "object": "page",
+      "id": "cee12bc5-8ac1-4a8f-9968-e15cfca92e66",
+      "created_time": "2022-08-16T16:07:00.000Z",
+      "last_edited_time": "2022-08-16T19:58:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "2d41b7f2-30ba-4093-a0c5-56eabb259a44",
+              "name": "Codepen",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d4ddcbab-e30c-4fe1-94a5-9a3a704f378c",
+              "name": "SVG",
+              "color": "orange"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Target (Estados)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Target (Estados)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Target-Estados-cee12bc58ac14a8f9968e15cfca92e66",
+      "public_url": "https://cavera.notion.site/Target-Estados-cee12bc58ac14a8f9968e15cfca92e66"
+    },
+    {
+      "object": "page",
+      "id": "b6c03c62-9294-437d-bfa2-5e93bda2e2a9",
+      "created_time": "2022-08-16T16:06:00.000Z",
+      "last_edited_time": "2022-08-16T19:58:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "2d41b7f2-30ba-4093-a0c5-56eabb259a44",
+              "name": "Codepen",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Apertura de Libro 3d (CSS)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Apertura de Libro 3d (CSS)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Apertura-de-Libro-3d-CSS-b6c03c629294437dbfa25e93bda2e2a9",
+      "public_url": "https://cavera.notion.site/Apertura-de-Libro-3d-CSS-b6c03c629294437dbfa25e93bda2e2a9"
+    },
+    {
+      "object": "page",
+      "id": "4978de9c-c580-49a1-81e3-a47cd9b0c889",
+      "created_time": "2022-08-16T16:05:00.000Z",
+      "last_edited_time": "2022-08-16T19:58:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fARj",
+            "name": "Sin personalizar",
+            "color": "gray"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "2d41b7f2-30ba-4093-a0c5-56eabb259a44",
+              "name": "Codepen",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d4ddcbab-e30c-4fe1-94a5-9a3a704f378c",
+              "name": "SVG",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Progreso sonrisa (Índice de satisfacción)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Progreso sonrisa (Índice de satisfacción)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Progreso-sonrisa-ndice-de-satisfacci-n-4978de9cc58049a181e3a47cd9b0c889",
+      "public_url": "https://cavera.notion.site/Progreso-sonrisa-ndice-de-satisfacci-n-4978de9cc58049a181e3a47cd9b0c889"
+    },
+    {
+      "object": "page",
+      "id": "199a5795-f674-424f-a91d-cc8d9a7728c5",
+      "created_time": "2022-08-16T16:04:00.000Z",
+      "last_edited_time": "2022-08-16T19:59:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fARj",
+            "name": "Sin personalizar",
+            "color": "gray"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "2d41b7f2-30ba-4093-a0c5-56eabb259a44",
+              "name": "Codepen",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d4ddcbab-e30c-4fe1-94a5-9a3a704f378c",
+              "name": "SVG",
+              "color": "orange"
+            },
+            {
+              "id": "ba5bd231-d473-4448-afcd-59e713318bb8",
+              "name": "GSAP",
+              "color": "green"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Asistente virtual",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Asistente virtual",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Asistente-virtual-199a5795f674424fa91dcc8d9a7728c5",
+      "public_url": "https://cavera.notion.site/Asistente-virtual-199a5795f674424fa91dcc8d9a7728c5"
+    },
+    {
+      "object": "page",
+      "id": "3973599b-aafe-4418-8c3d-bf04671ce253",
+      "created_time": "2022-08-16T16:02:00.000Z",
+      "last_edited_time": "2022-08-16T19:59:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fARj",
+            "name": "Sin personalizar",
+            "color": "gray"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "2d41b7f2-30ba-4093-a0c5-56eabb259a44",
+              "name": "Codepen",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Conversor CM to PX",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Conversor CM to PX",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Conversor-CM-to-PX-3973599baafe44188c3dbf04671ce253",
+      "public_url": "https://cavera.notion.site/Conversor-CM-to-PX-3973599baafe44188c3dbf04671ce253"
+    },
+    {
+      "object": "page",
+      "id": "6eaa772c-5563-425e-bc62-6cd8f1a55386",
+      "created_time": "2022-08-16T15:59:00.000Z",
+      "last_edited_time": "2022-08-16T19:59:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "2d41b7f2-30ba-4093-a0c5-56eabb259a44",
+              "name": "Codepen",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d4ddcbab-e30c-4fe1-94a5-9a3a704f378c",
+              "name": "SVG",
+              "color": "orange"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Indicador de emociones",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Indicador de emociones",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Indicador-de-emociones-6eaa772c5563425ebc626cd8f1a55386",
+      "public_url": "https://cavera.notion.site/Indicador-de-emociones-6eaa772c5563425ebc626cd8f1a55386"
+    },
+    {
+      "object": "page",
+      "id": "c79c01b2-fda6-4c8a-b671-664d5b65a547",
+      "created_time": "2022-08-16T15:55:00.000Z",
+      "last_edited_time": "2022-08-16T19:59:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "2d41b7f2-30ba-4093-a0c5-56eabb259a44",
+              "name": "Codepen",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Temporizador",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Temporizador",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Temporizador-c79c01b2fda64c8ab671664d5b65a547",
+      "public_url": "https://cavera.notion.site/Temporizador-c79c01b2fda64c8ab671664d5b65a547"
+    },
+    {
+      "object": "page",
+      "id": "2a635607-6e6c-4785-bffc-c885bb96bdc6",
+      "created_time": "2022-08-16T15:51:00.000Z",
+      "last_edited_time": "2022-09-19T02:19:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "a9726fda-3694-4b79-849c-78bb1f5badbe",
+            "name": "In progress",
+            "color": "blue"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "2d41b7f2-30ba-4093-a0c5-56eabb259a44",
+              "name": "Codepen",
+              "color": "blue"
+            },
+            {
+              "id": "80f898bd-d6bd-43c7-9da3-b5007f655567",
+              "name": "CMP",
+              "color": "green"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "CMP Interacción 1",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "CMP Interacción 1",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/CMP-Interacci-n-1-2a6356076e6c4785bffcc885bb96bdc6",
+      "public_url": "https://cavera.notion.site/CMP-Interacci-n-1-2a6356076e6c4785bffcc885bb96bdc6"
+    },
+    {
+      "object": "page",
+      "id": "f9c4a5a8-114f-4393-9c9b-d0d4a12a57a1",
+      "created_time": "2022-08-16T15:50:00.000Z",
+      "last_edited_time": "2022-08-16T19:59:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fARj",
+            "name": "Sin personalizar",
+            "color": "gray"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "2d41b7f2-30ba-4093-a0c5-56eabb259a44",
+              "name": "Codepen",
+              "color": "blue"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Iconos editables (Texto CSS)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Iconos editables (Texto CSS)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Iconos-editables-Texto-CSS-f9c4a5a8114f43939c9bd0d4a12a57a1",
+      "public_url": "https://cavera.notion.site/Iconos-editables-Texto-CSS-f9c4a5a8114f43939c9bd0d4a12a57a1"
+    },
+    {
+      "object": "page",
+      "id": "103f3c20-7691-43e4-a1ae-a6ad9f896d03",
+      "created_time": "2022-08-15T17:13:00.000Z",
+      "last_edited_time": "2022-08-16T19:59:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "80f898bd-d6bd-43c7-9da3-b5007f655567",
+              "name": "CMP",
+              "color": "green"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d4ddcbab-e30c-4fe1-94a5-9a3a704f378c",
+              "name": "SVG",
+              "color": "orange"
+            },
+            {
+              "id": "ba5bd231-d473-4448-afcd-59e713318bb8",
+              "name": "GSAP",
+              "color": "green"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Navegación radar SVG",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Navegación radar SVG",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Navegaci-n-radar-SVG-103f3c20769143e4a1aea6ad9f896d03",
+      "public_url": "https://cavera.notion.site/Navegaci-n-radar-SVG-103f3c20769143e4a1aea6ad9f896d03"
+    },
+    {
+      "object": "page",
+      "id": "7d2a5291-4b69-4dc5-a02e-9a3357c0dc01",
+      "created_time": "2022-08-15T17:12:00.000Z",
+      "last_edited_time": "2022-08-16T20:00:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "80f898bd-d6bd-43c7-9da3-b5007f655567",
+              "name": "CMP",
+              "color": "green"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Austral inducción curso cumplimiento",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Austral inducción curso cumplimiento",
+              "href": null
+            }
+          ]
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Botones + pop only CSS",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Botones + pop only CSS",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Botones-pop-only-CSS-7d2a52914b694dc5a02e9a3357c0dc01",
+      "public_url": "https://cavera.notion.site/Botones-pop-only-CSS-7d2a52914b694dc5a02e9a3357c0dc01"
+    },
+    {
+      "object": "page",
+      "id": "aab7f41b-8fa6-441f-966e-d70b61ed521b",
+      "created_time": "2022-08-11T17:24:00.000Z",
+      "last_edited_time": "2022-08-11T17:24:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "b7d0a6db-a8ae-45e6-b7b4-e3f97dfcc4e7",
+              "name": "Youtube",
+              "color": "red"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "https://www.youtube.com/watch?v=JavCEJ5hodc",
+                "link": {
+                  "url": "https://www.youtube.com/watch?v=JavCEJ5hodc"
+                }
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "https://www.youtube.com/watch?v=JavCEJ5hodc",
+              "href": "https://www.youtube.com/watch?v=JavCEJ5hodc"
+            }
+          ]
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Maquetar app afasia",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Maquetar app afasia",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Maquetar-app-afasia-aab7f41b8fa6441f966ed70b61ed521b",
+      "public_url": "https://cavera.notion.site/Maquetar-app-afasia-aab7f41b8fa6441f966ed70b61ed521b"
+    },
+    {
+      "object": "page",
+      "id": "54d5a350-7c1f-472b-885c-f46a3684b1d9",
+      "created_time": "2022-08-10T22:26:00.000Z",
+      "last_edited_time": "2022-08-16T20:01:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "80f898bd-d6bd-43c7-9da3-b5007f655567",
+              "name": "CMP",
+              "color": "green"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "be8f81d1-3fe4-493b-849f-c6d9b83aea21",
+              "name": "Web Design",
+              "color": "pink"
+            },
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Quien quiere ser millonario",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Quien quiere ser millonario",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Quien-quiere-ser-millonario-54d5a3507c1f472b885cf46a3684b1d9",
+      "public_url": "https://cavera.notion.site/Quien-quiere-ser-millonario-54d5a3507c1f472b885cf46a3684b1d9"
+    },
+    {
+      "object": "page",
+      "id": "7c6624a4-aa86-470d-9f21-aea51ca5f5d7",
+      "created_time": "2022-08-10T22:26:00.000Z",
+      "last_edited_time": "2022-08-16T20:00:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "80f898bd-d6bd-43c7-9da3-b5007f655567",
+              "name": "CMP",
+              "color": "green"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d4ddcbab-e30c-4fe1-94a5-9a3a704f378c",
+              "name": "SVG",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "ba5bd231-d473-4448-afcd-59e713318bb8",
+              "name": "GSAP",
+              "color": "green"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "estresómetro",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "estresómetro",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/estres-metro-7c6624a4aa86470d9f21aea51ca5f5d7",
+      "public_url": "https://cavera.notion.site/estres-metro-7c6624a4aa86470d9f21aea51ca5f5d7"
+    },
+    {
+      "object": "page",
+      "id": "9c32fc8b-ddb9-434e-a130-26ef636d59fc",
+      "created_time": "2022-08-10T17:44:00.000Z",
+      "last_edited_time": "2022-08-16T20:00:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fARj",
+            "name": "Sin personalizar",
+            "color": "gray"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "4345126f-f581-4bbb-9fac-45a17b6c9887",
+              "name": "JavaScript30",
+              "color": "yellow"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Podría traer de la api pública de flickr o de 500px.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Podría traer de la api pública de flickr o de 500px.",
+              "href": null
+            }
+          ]
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Galería de imágenes",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Galería de imágenes",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Galer-a-de-im-genes-9c32fc8bddb9434ea13026ef636d59fc",
+      "public_url": "https://cavera.notion.site/Galer-a-de-im-genes-9c32fc8bddb9434ea13026ef636d59fc"
+    },
+    {
+      "object": "page",
+      "id": "09ca74ab-a0f9-4d47-a229-a73069e9e777",
+      "created_time": "2022-08-10T15:48:00.000Z",
+      "last_edited_time": "2022-08-16T20:00:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fARj",
+            "name": "Sin personalizar",
+            "color": "gray"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "4345126f-f581-4bbb-9fac-45a17b6c9887",
+              "name": "JavaScript30",
+              "color": "yellow"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Podría conectarlo con la librería DOM to png",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Podría conectarlo con la librería DOM to png",
+              "href": null
+            }
+          ]
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Modificar CSS variables",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Modificar CSS variables",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Modificar-CSS-variables-09ca74aba0f94d47a229a73069e9e777",
+      "public_url": "https://cavera.notion.site/Modificar-CSS-variables-09ca74aba0f94d47a229a73069e9e777"
+    },
+    {
+      "object": "page",
+      "id": "13843b19-5b1b-4508-b6a3-41734cee8ea7",
+      "created_time": "2022-08-10T14:41:00.000Z",
+      "last_edited_time": "2022-08-16T20:01:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fARj",
+            "name": "Sin personalizar",
+            "color": "gray"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "4345126f-f581-4bbb-9fac-45a17b6c9887",
+              "name": "JavaScript30",
+              "color": "yellow"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Un diseño o muy cásico o muy moderno",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Un diseño o muy cásico o muy moderno",
+              "href": null
+            }
+          ]
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Reloj análogo",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Reloj análogo",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Reloj-an-logo-13843b195b1b4508b6a341734cee8ea7",
+      "public_url": "https://cavera.notion.site/Reloj-an-logo-13843b195b1b4508b6a341734cee8ea7"
+    },
+    {
+      "object": "page",
+      "id": "5da824c2-fee1-4428-837f-cd2553ba3883",
+      "created_time": "2022-08-10T14:41:00.000Z",
+      "last_edited_time": "2023-07-31T18:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": {
+        "type": "file",
+        "file": {
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f8c84b37-ff9e-4f5a-ab81-f403f52db0c7/cavera.github.io_drag-and-drop-interaction_.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T225426Z&X-Amz-Expires=3600&X-Amz-Signature=6848a38718d0af382d27203440f939de68280556e0b15a4ab483764eb10e6b56&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-07-31T23:54:26.013Z"
+        }
+      },
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fhbu",
+            "name": "Github",
+            "color": "green"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "4b784963-5fb8-46dc-a1e2-eea952dbd3d2",
+              "name": "Github",
+              "color": "gray"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": "https://github.com/cavera/drag-and-drop-interaction"
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            },
+            {
+              "id": "ba5bd231-d473-4448-afcd-59e713318bb8",
+              "name": "GSAP",
+              "color": "green"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Debo ver cual es el mejor para adaptarlo",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Debo ver cual es el mejor para adaptarlo",
+              "href": null
+            }
+          ]
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": "https://cavera.github.io/drag-and-drop-interaction/"
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Complete the sentence",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Complete the sentence",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Complete-the-sentence-5da824c2fee14428837fcd2553ba3883",
+      "public_url": "https://cavera.notion.site/Complete-the-sentence-5da824c2fee14428837fcd2553ba3883"
+    },
+    {
+      "object": "page",
+      "id": "dde8e875-a93e-4959-9ff5-f77e750f6fd1",
+      "created_time": "2022-08-10T14:41:00.000Z",
+      "last_edited_time": "2022-08-16T20:01:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "fARj",
+            "name": "Sin personalizar",
+            "color": "gray"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "4345126f-f581-4bbb-9fac-45a17b6c9887",
+              "name": "JavaScript30",
+              "color": "yellow"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
+              "name": "CSS",
+              "color": "blue"
+            },
+            {
+              "id": "d4ddcbab-e30c-4fe1-94a5-9a3a704f378c",
+              "name": "SVG",
+              "color": "orange"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            }
+          ]
+        },
+        "Idea para mejorarlo": {
+          "id": "mPEx",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Una batería hecha con svg tal vez.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Una batería hecha con svg tal vez.",
+              "href": null
+            }
+          ]
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Batería",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Batería",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Bater-a-dde8e875a93e49599ff5f77e750f6fd1",
+      "public_url": "https://cavera.notion.site/Bater-a-dde8e875a93e49599ff5f77e750f6fd1"
+    }
+  ],
+  "next_cursor": null,
+  "has_more": false,
+  "type": "page_or_database",
+  "page_or_database": {}
+}
