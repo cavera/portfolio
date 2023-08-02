@@ -1,8 +1,13 @@
 import '../styles/globals.scss'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { TopBar } from '@/components/TopBar'
+import { Footer } from '@/components/Footer'
+import { Montserrat } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({
+	subsets: ['latin'],
+	variable: '--main-font-family',
+})
 
 export const metadata: Metadata = {
 	title: `UI Designer (Front-end dev too)`,
@@ -12,7 +17,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en'>
-			<body className={inter.className}>{children}</body>
+			<body className={`${montserrat.variable} sans-serif`}>
+				<TopBar />
+				<main>{children}</main>
+				<Footer />
+			</body>
 		</html>
 	)
 }

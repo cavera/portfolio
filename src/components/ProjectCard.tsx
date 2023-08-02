@@ -1,4 +1,6 @@
-export function ProjectCard({ project }) {
+import { TProject } from '@/types/Types'
+
+export function ProjectCard({ project }: { project: TProject }) {
 	return (
 		<article className='card'>
 			<div className='project-info'>
@@ -9,8 +11,8 @@ export function ProjectCard({ project }) {
 				src={project.cover}
 				alt={''}
 			/>
-			<a href={project.source}>Source</a>
-			<a href={project.live_link}>Live</a>
+			<a href={`${project.source}`}>Source</a>
+			<a href={`${project.live_link}`}>Live</a>
 		</article>
 	)
 }
