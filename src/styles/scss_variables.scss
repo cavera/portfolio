@@ -1,1 +1,70 @@
+/* Colors */
+$yellow-yellow09: #221a07ff;
+$yellow-yellow08: #584311ff;
+$yellow-yellow07: #8e6b1cff;
+$yellow-yellow06: #c39426ff;
+$yellow-yellow05: #f9bd31ff;
+$yellow-yellow04: #fdecc4ff;
+$yellow-yellow03: #fcdc93ff;
+$yellow-yellow02: #facd62ff;
+$yellow-yellow01: #fffcf5ff;
+
+$blue-blue09: #041d25ff;
+$blue-blue08: #254c59ff;
+$blue-blue07: #477c8dff;
+$blue-blue06: #68abc1ff;
+$blue-blue05: #8adaf5ff;
+$blue-blue04: #a5e3f7ff;
+$blue-blue03: #c1ebf9ff;
+$blue-blue02: #dcf4fcff;
+$blue-blue01: #f8fcfeff;
+
+$tags-html: #e44d26ff;
+$tags-css: #264de4ff;
+$tags-js: #f7df1eff;
+$tags-react: #00d8ffff;
+$tags-gsap: #88ce02ff;
+$tags-sass: #cd6799ff;
+$tags-ai: #ff9a00ff;
+$tags-ps: #31a8ffff;
+$tags-id: #ff3366ff;
+$tags-ae_pr_au: #9999ffff;
+$tags-figma: #a259ffff;
+$tags-sketch: #fdad00ff;
+$tags-typescript: #3178c6ff;
+$tags-tailwind: #38bdf8ff;
+
+/* Spaces */
+
+$spaceo5x: 2px;
+$space1x: 4px;
+$space2x: 8px;
+$space3x: 12px;
+$space4x: 16px;
+$space5x: 20px;
+$space6x: 24px;
+$space7x: 28px;
+$space8x: 32px;
+$space9x: 36px;
+$space10x: 48px;
+
+$basics-primary: $blue-blue05;
+$basics-secondary: $yellow-yellow05;
+$basics-bg: $blue-blue09;
+$basics-text: $blue-blue01;
+$basics-primary-80: rgba(4, 29, 37, 0.8);
+
+/* Spaces */
+
+$wrapper: 1164px;
+
+/* Text-size styles */
+$text-link: 18px;
+$h2: 24px;
+$h1: 48px;
+$tag-text: 14px;
+
+/* Effect styles */
+$glass: 0px 11px 7px rgba(4, 29, 37, 0.5);
+
 $color-stroke-glow: radial-gradient(rgba(4, 29, 37, 0.016) 0%, rgba(4, 29, 37, 0.016) 100%);

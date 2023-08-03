@@ -1,0 +1,61 @@
+@import '../../styles/scss_variables', '../../styles/mixins';
+
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	gap: $space7x;
+	width: 100%;
+}
+
+.card {
+	max-width: 454px;
+	flex-grow: 1;
+	border: 2px solid transparent;
+	border-image: $color-stroke-glow;
+
+	width: auto;
+	height: 290px;
+	background: $blue-blue08;
+	border-radius: $space8x;
+	padding: $space5x;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	h1 {
+		font-size: 2rem;
+		font-weight: 700;
+		color: $basics-primary;
+	}
+
+	h2 {
+		font-size: 1rem;
+		font-weight: 300;
+	}
+
+	img {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: -2;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background: linear-gradient(116deg, rgba(4, 29, 37, 0.9) 37%, rgba(4, 29, 37, 0) 74%);
+		z-index: -1;
+	}
+}
+
+.project_info {
+	display: flex;
+	flex-direction: column;
+}

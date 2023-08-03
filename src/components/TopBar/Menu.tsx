@@ -1,8 +1,10 @@
 import Link from 'next/link'
 
+import styles from './TopBar.module.scss'
+
 export const Menu = () => {
 	return (
-		<nav>
+		<nav className={styles.nav}>
 			<ul>
 				<li>
 					<Link href='/about'>About</Link>

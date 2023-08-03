@@ -1,0 +1,49 @@
+@import '../../styles/scss_variables', '../../styles/mixins';
+
+.logo_container {
+	font-size: 74px;
+	line-height: 98%;
+	color: $basics-text;
+	// display: flex;
+	// flex-direction: column;
+	transition: all 0.4s ease-in-out;
+	width: 8ch;
+	min-height: 3em;
+	flex-shrink: 0;
+
+	&:hover {
+		// flex-direction: row;
+		.br {
+			display: none;
+		}
+		.logo_name,
+		.logo_name2 {
+			font-size: 0;
+		}
+		.logo_text {
+			color: $basics-secondary;
+			transition-delay: 0.4s;
+		}
+	}
+}
+
+.br {
+	transition: display 0.4s ease-in-out;
+	transition-delay: 0.4s;
+}
+
+.logo_name {
+	font-weight: 300;
+	opacity: 0.6;
+	transition: font-size 0.4s ease-in-out;
+}
+
+.logo-name2 {
+	@extend .logo_name;
+	transition-delay: 0.4s;
+}
+
+.logo_text {
+	font-weight: 700;
+	transition: all 0.4s ease-in-out;
+}

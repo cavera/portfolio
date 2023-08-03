@@ -1,0 +1,51 @@
+@import '../../styles/scss_variables', '../../styles/mixins';
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: $space6x;
+	position: fixed;
+	inset: 0 0 auto;
+	z-index: 10;
+	background: $basics-primary-80;
+	@include effect-style-glass;
+}
+
+.header_logo {
+	display: flex;
+	align-items: baseline;
+	gap: $space4x;
+}
+.h1 {
+	font-size: 32px;
+	font-weight: 700;
+	color: $basics-secondary;
+}
+
+.h2 {
+	font-size: 24px;
+	font-weight: 300;
+	line-height: normal;
+}
+.role_main {
+	color: $basics-primary;
+}
+
+.nav {
+	ul {
+		display: flex;
+		padding-top: $space2x;
+		gap: $space3x;
+
+		li {
+			list-style: none;
+		}
+	}
+	a {
+		color: $basics-primary;
+		font-size: 18px;
+		text-decoration: underline;
+		font-weight: 300;
+	}
+}

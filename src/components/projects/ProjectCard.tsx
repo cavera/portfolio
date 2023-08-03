@@ -1,9 +1,11 @@
 import { TProject } from '@/types/Types'
 
+import styles from './projects.module.scss'
+
 export function ProjectCard({ project }: { project: TProject }) {
 	return (
-		<article className='card'>
-			<div className='project-info'>
+		<article className={styles.card}>
+			<div className={styles.project_info}>
 				<h1>{project.name}</h1>
 				<h2>{project.subtitle}</h2>
 			</div>
