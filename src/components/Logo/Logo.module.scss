@@ -1,49 +1,47 @@
 @import '../../styles/scss_variables', '../../styles/mixins';
 
 .logo_container {
+	--speed: 0.5s;
+	--speed2x: calc(var(--speed) / 2);
+	color: var(--basics-text);
 	font-size: 74px;
-	line-height: 98%;
-	color: $basics-text;
-	// display: flex;
-	// flex-direction: column;
-	transition: all 0.4s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	line-height: 0.9;
 	width: 8ch;
+	overflow: hidden;
 	min-height: 3em;
 	flex-shrink: 0;
 
 	&:hover {
-		// flex-direction: row;
-		.br {
-			display: none;
-		}
-		.logo_name,
-		.logo_name2 {
+		.to_hide {
 			font-size: 0;
 		}
+		.hidden {
+			opacity: 1;
+		}
 		.logo_text {
-			color: $basics-secondary;
-			transition-delay: 0.4s;
+			color: var(--basics-secondary);
 		}
 	}
-}
 
-.br {
-	transition: display 0.4s ease-in-out;
-	transition-delay: 0.4s;
+	p {
+		font-size: 74px;
+	}
 }
 
 .logo_name {
 	font-weight: 300;
 	opacity: 0.6;
-	transition: font-size 0.4s ease-in-out;
-}
-
-.logo-name2 {
-	@extend .logo_name;
-	transition-delay: 0.4s;
+	transition: all var(--speed) ease-in-out;
 }
 
 .logo_text {
 	font-weight: 700;
-	transition: all 0.4s ease-in-out;
+	transition: all var(--speed) ease-in-out;
+}
+
+.hidden {
+	opacity: 0;
 }

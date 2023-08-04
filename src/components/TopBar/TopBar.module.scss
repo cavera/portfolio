@@ -1,26 +1,37 @@
-@import '../../styles/scss_variables', '../../styles/mixins';
+@import '../../styles/mixins';
 
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: $space6x;
+	padding: var(--2x) 0;
+	height: 80px;
 	position: fixed;
 	inset: 0 0 auto;
 	z-index: 10;
-	background: $basics-primary-80;
-	@include effect-style-glass;
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		width: 100vw;
+		transform: translateX(-50%);
+		background: var(--basics-primary-80);
+		@include effect-style-glass;
+		z-index: -1;
+	}
 }
 
 .header_logo {
 	display: flex;
 	align-items: baseline;
-	gap: $space4x;
+	gap: var(--4x);
 }
 .h1 {
 	font-size: 32px;
 	font-weight: 700;
-	color: $basics-secondary;
+	color: var(--basics-secondary);
 }
 
 .h2 {
@@ -29,21 +40,21 @@
 	line-height: normal;
 }
 .role_main {
-	color: $basics-primary;
+	color: var(--basics-primary);
 }
 
 .nav {
 	ul {
 		display: flex;
-		padding-top: $space2x;
-		gap: $space3x;
+		padding-top: var(--2x);
+		gap: var(--3x);
 
 		li {
 			list-style: none;
 		}
 	}
 	a {
-		color: $basics-primary;
+		color: var(--basics-primary);
 		font-size: 18px;
 		text-decoration: underline;
 		font-weight: 300;

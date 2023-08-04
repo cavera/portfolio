@@ -1,0 +1,11 @@
+.custom-bevel {
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: '';
+		inset: 0 var(--8x) auto var(--8x);
+		height: 2px;
+		background: linear-gradient(90deg, transparent, rgba(138, 218, 245, 0.6), transparent);
+	}
+}

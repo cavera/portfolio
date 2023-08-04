@@ -18,7 +18,7 @@
 	font-size: 3rem;
 	font-family: 'Montserrat';
 	font-weight: 700;
-	color: var(--basics-secondary);
+	color: $basics-secondary;
 }
 @mixin text-style-tag-text() {
 	font-size: 0.875rem;

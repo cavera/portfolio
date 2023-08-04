@@ -19,7 +19,7 @@ export const HeaderLogo = () => {
 }
 
 const Role = ({ children }: { children: string }) => {
-	return <span className='role-main'>{children}</span>
+	return <span className={styles.role_main}>{children}</span>
 }
 const Also = ({ children }: { children: string }) => {
 	return <span className='role-also'>{children}</span>
