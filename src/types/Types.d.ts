@@ -2,9 +2,9 @@ export interface IProjects {
 	TProjects?: TProject[]
 }
 
-export interface TProject {
+export type TProject = {
 	cover?: string
-	name?: string
+	title?: string
 	subtitle?: string
 	source?: null | string
 	live_link?: null | string

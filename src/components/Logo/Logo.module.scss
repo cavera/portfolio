@@ -2,17 +2,21 @@
 
 .logo_container {
 	--speed: 0.5s;
-	--speed2x: calc(var(--speed) / 2);
+	--logo-size: 74px;
 	color: var(--basics-text);
-	font-size: 74px;
+	font-size: var(--logo-size);
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 	line-height: 0.9;
-	width: 8ch;
 	overflow: hidden;
-	min-height: 3em;
+	// width: 8ch;
+	// min-height: 3em;
 	flex-shrink: 0;
+
+	@include tablet {
+		--logo-size: 32px;
+	}
 
 	&:hover {
 		.to_hide {
@@ -27,7 +31,7 @@
 	}
 
 	p {
-		font-size: 74px;
+		font-size: var(--logo-size);
 	}
 }
 

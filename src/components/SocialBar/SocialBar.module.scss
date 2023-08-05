@@ -1,0 +1,19 @@
+.socialbar {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--6x);
+	--icon-size: var(--8x);
+
+	a {
+		// font-size: var(--icon-size);
+		color: var(--basics-primary);
+		transition: all 0.3s ease-in-out;
+		svg {
+			width: 1em;
+			height: 1em;
+		}
+		&:hover {
+			color: var(--basics-secondary);
+		}
+	}
+}

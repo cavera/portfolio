@@ -1,6 +1,7 @@
 import { mapElementsData } from '@/data/mapData'
 import { ProjectCard } from './ProjectCard'
 import { SectionTitle } from '../SectionTitle'
+import Link from 'next/link'
 import { TProject } from '@/types/Types'
 
 import styles from './projects.module.scss'

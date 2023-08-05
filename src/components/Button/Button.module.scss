@@ -1,0 +1,24 @@
+.button {
+	display: inline-flex;
+	min-height: var(--10x);
+	padding: var(--2x) var(--3x);
+	align-items: center;
+	gap: var(--3x);
+	border-radius: var(--3x);
+	border: 1px solid currentColor;
+	font-weight: 700;
+	font-size: var(--6x);
+	svg {
+		width: 1em;
+		height: 1em;
+	}
+}
+
+.primary {
+	color: var(--basics-bg);
+	background: var(--basics-secondary);
+}
+.secondary {
+	color: var(--basics-secondary);
+	background: var(--basics-primary-50);
+}

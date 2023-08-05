@@ -1,7 +1,7 @@
 .custom-bevel {
 	position: relative;
 
-	&:before {
+	&:after {
 		position: absolute;
 		content: '';
 		inset: 0 var(--8x) auto var(--8x);

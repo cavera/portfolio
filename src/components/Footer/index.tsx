@@ -7,7 +7,7 @@ export const Footer = () => {
 		<footer className={styles.footer}>
 			<span>cavera 2023</span>
 
-			<SocialBar />
+			<SocialBar size={24} />
 		</footer>
 	)
 }

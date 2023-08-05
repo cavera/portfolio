@@ -4,11 +4,19 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: var(--2x) 0;
+	padding: var(--2x) var(--6x);
 	height: 80px;
 	position: fixed;
 	inset: 0 0 auto;
 	z-index: 10;
+
+	@include desktopLG {
+		padding: var(--2x) 0;
+	}
+	@include desktop {
+		padding: var(--2x) var(--6x);
+	}
+
 	&:before {
 		position: absolute;
 		content: '';

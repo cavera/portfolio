@@ -14,6 +14,16 @@ export async function getElements() {
 					equals: true,
 				},
 			},
+			sorts: [
+				{
+					timestamp: 'created_time',
+					direction: 'ascending',
+				},
+				// {
+				// 	timstamp: 'last_edited_time',
+				// 	direction: 'descending',
+				// },
+			],
 		})
 		return response.results
 	} catch (error) {

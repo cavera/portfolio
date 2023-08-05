@@ -1,0 +1,70 @@
+.project {
+	width: 100%;
+
+	img {
+		width: auto;
+		max-width: 100%;
+		max-height: 80vh;
+	}
+}
+
+.cover {
+	width: 100%;
+	max-height: 60vh;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	gap: var(--3x);
+	align-items: center;
+
+	img {
+		height: auto;
+		object-fit: cover;
+	}
+}
+
+.title_block {
+	grid-column: 1/ 5;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	h1,
+	p {
+		text-align: right;
+	}
+}
+
+.cover_img {
+	grid-column: 5/-1;
+}
+
+.project_cta {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: var(--4x);
+}
+
+.content {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	gap: var(--3x);
+	width: 100%;
+}
+
+.other_content {
+	grid-column: 1/7;
+}
+
+.project_texts {
+	grid-column: 4/-1;
+	display: flex;
+	flex-direction: column;
+	padding: var(--8x);
+	gap: var(--3x);
+	border-radius: var(--8-x, 32px);
+	background: var(--basics-primary-90);
+	/* Glass */
+	box-shadow: 0px 11px 7px 0px var(--basics-primary-50);
+	backdrop-filter: blur(10px);
+}

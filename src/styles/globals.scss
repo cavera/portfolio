@@ -55,11 +55,14 @@
 	--basics-secondary: var(--yellow-yellow05);
 	--basics-bg: var(--blue-blue09);
 	--basics-text: var(--blue-blue02);
+
+	--basics-primary-90: rgba(4, 29, 37, 0.9);
 	--basics-primary-80: rgba(4, 29, 37, 0.8);
+	--basics-primary-50: rgba(4, 29, 37, 0.5);
 
 	/* Spaces */
 
-	--wrapper: 1164px;
+	--wrapper: 1024px;
 
 	/* Text-size styles */
 	--h1: 48px;
@@ -78,15 +81,24 @@
 	:root {
 	}
 }
-
-@media (max-width: 1163px) {
+@include desktopLG {
 	:root {
-		--wrapper: 900px;
+		--p: 18px;
 	}
 }
-@media (min-width: 1164px) {
+@include desktop {
 	:root {
-		--wrapper: 1164px;
+		--p: 16px;
+	}
+}
+@include tablet {
+	:root {
+		--p: 16px;
+	}
+}
+@include mobile {
+	:root {
+		--p: 16px;
 	}
 }
 
@@ -128,7 +140,14 @@ body {
 		'footer';
 	min-height: 100vh;
 	padding: 80px var(--10x) 0;
-	background: radial-gradient(64.12% 64.12% at 100% 51.5%, rgba(138, 218, 245, 0.1) 0%, rgba(138, 218, 245, 0) 100%), radial-gradient(70.25% 70.25% at 0% 100%, rgba(249, 189, 49, 0.1) 0%, rgba(249, 189, 49, 0) 100%), radial-gradient(77.63% 77.63% at -0% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+	&:before {
+		content: '';
+		position: fixed;
+		inset: 0;
+		background: radial-gradient(64% 64% at 100% 50%, var(--basics-primary), transparent), radial-gradient(70% 70% at 0% 100%, var(--basics-secondary), transparent), radial-gradient(77% 77% at 0% 0%, var(--basics-text), transparent);
+		opacity: 0.1;
+		z-index: -1;
+	}
 
 	& > header,
 	& > main,
@@ -182,10 +201,35 @@ p {
 	font-size: var(--p);
 }
 
-.hero {
+section.hero {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	min-height: calc(100vh - 80px);
+	padding-top: var(--8x);
+	position: relative;
+
+	@include tablet {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: var(--6x);
+	}
+
+	article {
+		display: flex;
+		flex-direction: column;
+		gap: var(--4x);
+	}
+	.scroll-icon {
+		padding: var(--6x);
+		color: var(--basics-secondary);
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		svg {
+		}
+	}
 }
 
 .section-title {
