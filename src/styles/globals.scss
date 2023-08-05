@@ -19,7 +19,7 @@
 	--blue-blue05: #8adaf5ff;
 	--blue-blue04: #a5e3f7ff;
 	--blue-blue03: #c1ebf9ff;
-	--blue-blue02: #dcf4fcff;
+	--blue-blue02: rgb(220, 244, 252);
 	--blue-blue01: #f8fcfeff;
 
 	--tags-html: #e44d26ff;
@@ -75,10 +75,23 @@
 	--glass: 0px 11px 7px rgba(4, 29, 37, 0.5);
 
 	--color-stroke-glow: radial-gradient(rgba(4, 29, 37, 0.016) 0%, rgba(4, 29, 37, 0.016) 100%);
+	color: var(--basics-text);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
+	}
+}
+@media (prefers-color-scheme: light) {
+	:root {
+		--basics-primary: var(--blue-blue08);
+		--basics-secondary: var(--yellow-yellow05);
+		--basics-bg: var(--blue-blue02);
+		--basics-text: var(--blue-blue09);
+
+		--basics-primary-90: rgba(220, 244, 252, 0.9);
+		--basics-primary-80: rgba(220, 244, 252, 0.8);
+		--basics-primary-50: rgba(220, 244, 252, 0.5);
 	}
 }
 @include desktopLG {
@@ -199,6 +212,10 @@ section {
 
 p {
 	font-size: var(--p);
+}
+
+img {
+	object-fit: cover;
 }
 
 section.hero {

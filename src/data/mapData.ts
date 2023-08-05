@@ -35,7 +35,7 @@ interface ParsedBlock {
 export async function mapPageInfo(id: string) {
 	const data = await getPageInfo(id)
 	const pageBlocks = await mapPageContent(id)
-	// console.log(pageBlocks.results)
+	console.log(pageBlocks.results)
 
 	const { cover, properties } = data
 	const { title, subtitle, live_link, source } = properties
@@ -44,22 +44,26 @@ export async function mapPageInfo(id: string) {
 		paragraph: (block: any) => ({
 			type: block.type,
 			text: block.paragraph?.rich_text[0]?.plain_text,
+			id: block.id,
 		}),
 
 		embed: (block: any) => ({
 			type: block.type,
 			url: block.embed?.url,
+			id: block.id,
 		}),
 
 		image: (block: any) => ({
 			type: block.type,
 			url: block.image?.file.url,
 			caption: block.image?.caption,
+			id: block.id,
 		}),
 
 		link_preview: (block: any) => ({
 			type: block.type,
 			url: block.link_preview?.url,
+			id: block.id,
 		}),
 	}
 
@@ -75,7 +79,7 @@ export async function mapPageInfo(id: string) {
 			type: block.type,
 		}
 	})
-	console.log(blocks)
+	// console.log(blocks)
 	const mappedInfo = {
 		cover: cover?.file.url,
 		title: title.title[0]?.plain_text,

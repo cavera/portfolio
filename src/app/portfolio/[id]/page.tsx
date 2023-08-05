@@ -11,14 +11,8 @@ async function Page({ params }: { params: { id: string } }) {
 	const mappedData = await mapPageInfo(id)
 	const groupOfBlocks = groupBlocks(mappedData.blocks)
 
-	// console.log(groupOfBlocks)
-	// console.log(mappedData.blocks)
-
 	const { blocks, cover, title, subtitle, live_link, source } = mappedData
 	const { paragraph, image, embed } = groupOfBlocks
-
-	// console.log(paragraph)
-	// console.log(image)
 
 	return (
 		<section className={styles.project}>
@@ -53,21 +47,25 @@ async function Page({ params }: { params: { id: string } }) {
 				<div className={styles.project_texts}>
 					{paragraph?.map((block: any) => {
 						const Component = blockMap[block.type]
-						return <Component {...block} />
+						return (
+							<Component
+								{...block}
+								key={block.id}
+							/>
+						)
 					})}
 				</div>
-				{/* <div>
-				{image?.map((block: any) => {
-					const Component = blockMap[block.type]
-					return <Component {...block} />
-				})}
-			</div> */}
 
 				<div className={styles.other_content}>
 					{blocks?.map((block: any) => {
 						if (block.type === 'paragraph') return null
 						const Component = blockMap[block.type]
-						return <Component {...block} />
+						return (
+							<Component
+								{...block}
+								key={block.id}
+							/>
+						)
 					})}
 				</div>
 			</div>
