@@ -6,8 +6,8 @@ export const HeaderLogo = () => {
 		<div className={styles.header_logo}>
 			<Link href='/'>
 				<h1 className={styles.h1}>
-					<span>cave</span>
-					<span>ra</span>
+					<span>ca</span>
+					<span>vera</span>
 				</h1>
 			</Link>
 			<h2 className={styles.h2}>
