@@ -40,12 +40,20 @@
 	font-size: 32px;
 	font-weight: 700;
 	color: var(--basics-secondary);
+	@include mobile {
+		display: flex;
+		flex-direction: column;
+		line-height: 0.9;
+	}
 }
 
 .h2 {
 	font-size: 24px;
 	font-weight: 300;
 	line-height: normal;
+	@include mobile {
+		display: none;
+	}
 }
 .role_main {
 	color: var(--basics-primary);

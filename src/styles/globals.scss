@@ -112,6 +112,9 @@
 @include mobile {
 	:root {
 		--p: 16px;
+
+		--8x: 16px;
+		--10x: 40px;
 	}
 }
 
@@ -168,6 +171,9 @@ body {
 		margin: 0 auto;
 		width: 100%;
 		max-width: var(--wrapper);
+	}
+	@include mobile {
+		padding: 80px var(--4x) 0;
 	}
 }
 
