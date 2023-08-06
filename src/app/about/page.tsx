@@ -1,13 +1,22 @@
 import { SectionTitle } from '@/components/SectionTitle'
+import Image from 'next/image'
 function About() {
 	return (
 		<section className='only-content'>
 			<SectionTitle>About</SectionTitle>
 			<div className='section-content'>
 				<div className='section-content-image'>
-					<img
+					{/* <img
 						src='https://res.cloudinary.com/dwrxp5sqk/image/upload/v1691101258/cavera/profile_about.jpg'
 						alt='about'
+					/> */}
+					<Image
+						src='https://res.cloudinary.com/dwrxp5sqk/image/upload/v1691101258/cavera/profile_about.jpg'
+						alt='about'
+						width={500}
+						height={500}
+						objectFit='cover'
+						priority
 					/>
 				</div>
 

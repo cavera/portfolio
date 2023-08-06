@@ -3,8 +3,14 @@ import { SVGProps } from 'react'
 // https://github.com/FortAwesome/Font-Awesome
 // https://icones.js.org/collection/fa6-brands
 
+type IconComponent = (props: SVGProps<SVGSVGElement>) => JSX.Element
+
+type TBrands = {
+	[key: string]: IconComponent
+}
+
 const defaultSize = '1.5em'
-export function Fa6BrandsGithub(props: SVGProps<SVGSVGElement>) {
+function Fa6BrandsGithub(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -19,7 +25,7 @@ export function Fa6BrandsGithub(props: SVGProps<SVGSVGElement>) {
 	)
 }
 
-export function Fa6BrandsBehance(props: SVGProps<SVGSVGElement>) {
+function Fa6BrandsBehance(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -34,7 +40,7 @@ export function Fa6BrandsBehance(props: SVGProps<SVGSVGElement>) {
 	)
 }
 
-export function Fa6BrandsLinkedinIn(props: SVGProps<SVGSVGElement>) {
+function Fa6BrandsLinkedinIn(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -49,7 +55,7 @@ export function Fa6BrandsLinkedinIn(props: SVGProps<SVGSVGElement>) {
 	)
 }
 
-export function Fa6BrandsCodepen(props: SVGProps<SVGSVGElement>) {
+function Fa6BrandsCodepen(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -64,7 +70,7 @@ export function Fa6BrandsCodepen(props: SVGProps<SVGSVGElement>) {
 	)
 }
 
-export function Fa6Brands500px(props: SVGProps<SVGSVGElement>) {
+function Fa6Brands500px(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -79,7 +85,7 @@ export function Fa6Brands500px(props: SVGProps<SVGSVGElement>) {
 	)
 }
 
-export function Fa6BrandsGooglePlay(props: SVGProps<SVGSVGElement>) {
+function Fa6BrandsGooglePlay(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -94,7 +100,7 @@ export function Fa6BrandsGooglePlay(props: SVGProps<SVGSVGElement>) {
 	)
 }
 
-export function Fa6BrandsVimeoV(props: SVGProps<SVGSVGElement>) {
+function Fa6BrandsVimeoV(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -109,7 +115,7 @@ export function Fa6BrandsVimeoV(props: SVGProps<SVGSVGElement>) {
 	)
 }
 
-export function Fa6BrandsDribbble(props: SVGProps<SVGSVGElement>) {
+function Fa6BrandsDribbble(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -124,7 +130,7 @@ export function Fa6BrandsDribbble(props: SVGProps<SVGSVGElement>) {
 	)
 }
 
-export function Fa6BrandsYoutube(props: SVGProps<SVGSVGElement>) {
+function Fa6BrandsYoutube(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -139,7 +145,7 @@ export function Fa6BrandsYoutube(props: SVGProps<SVGSVGElement>) {
 	)
 }
 
-export function Fa6BrandsFigma(props: SVGProps<SVGSVGElement>) {
+function Fa6BrandsFigma(props: SVGProps<SVGSVGElement>) {
 	return (
 		<svg
 			xmlns='http://www.w3.org/2000/svg'
@@ -154,15 +160,15 @@ export function Fa6BrandsFigma(props: SVGProps<SVGSVGElement>) {
 	)
 }
 
-export const Brands = {
-	github: Fa6BrandsGithub,
-	behance: Fa6BrandsBehance,
-	linkedin: Fa6BrandsLinkedinIn,
-	codepen: Fa6BrandsCodepen,
-	'500px': Fa6Brands500px,
-	play: Fa6BrandsGooglePlay,
-	vimeo: Fa6BrandsVimeoV,
-	dribbble: Fa6BrandsDribbble,
-	youtube: Fa6BrandsYoutube,
-	figma: Fa6BrandsFigma,
+export const Brands: TBrands = {
+	github: (props: SVGProps<SVGSVGElement>) => <Fa6BrandsGithub {...props} />,
+	behance: (props: SVGProps<SVGSVGElement>) => <Fa6BrandsBehance {...props} />,
+	linkedin: (props: SVGProps<SVGSVGElement>) => <Fa6BrandsLinkedinIn {...props} />,
+	codepen: (props: SVGProps<SVGSVGElement>) => <Fa6BrandsCodepen {...props} />,
+	'500px': (props: SVGProps<SVGSVGElement>) => <Fa6Brands500px {...props} />,
+	play: (props: SVGProps<SVGSVGElement>) => <Fa6BrandsGooglePlay {...props} />,
+	vimeo: (props: SVGProps<SVGSVGElement>) => <Fa6BrandsVimeoV {...props} />,
+	dribbble: (props: SVGProps<SVGSVGElement>) => <Fa6BrandsDribbble {...props} />,
+	youtube: (props: SVGProps<SVGSVGElement>) => <Fa6BrandsYoutube {...props} />,
+	figma: (props: SVGProps<SVGSVGElement>) => <Fa6BrandsFigma {...props} />,
 }

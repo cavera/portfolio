@@ -10,7 +10,7 @@
 
 .cover {
 	width: 100%;
-	max-height: 60vh;
+	aspect-ratio: 3 / 2;
 	overflow: hidden;
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);

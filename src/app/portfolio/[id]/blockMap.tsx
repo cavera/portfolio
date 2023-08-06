@@ -38,14 +38,17 @@ export const blockMap: { [key: string]: BlockComponent } = {
 	heading_3: (block: Block) => <h3>{block.text}</h3>,
 
 	image: (block: Block) => (
-		<Image
+		// <Image
+		// 	src={block.url as string}
+		// 	alt={block.text as string}
+		// 	quality={100}
+		// 	width={600}
+		// 	height={400}
+		// 	objectFit='cover'
+		// />
+		<img
 			src={block.url as string}
 			alt={block.text as string}
-			quality={100}
-			width={600}
-			height={400}
-			layout='responsive'
-			objectFit='cover'
 		/>
 	),
 

@@ -35,7 +35,7 @@ interface ParsedBlock {
 export async function mapPageInfo(id: string) {
 	const data = await getPageInfo(id)
 	const pageBlocks = await mapPageContent(id)
-	console.log(pageBlocks.results)
+	// console.log(pageBlocks.results)
 
 	const { cover, properties } = data
 	const { title, subtitle, live_link, source } = properties
