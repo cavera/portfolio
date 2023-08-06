@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import ImageFrame from '@/components/ImageFrame'
 
 // import styles from './project.module.scss'
 
@@ -38,17 +39,13 @@ export const blockMap: { [key: string]: BlockComponent } = {
 	heading_3: (block: Block) => <h3>{block.text}</h3>,
 
 	image: (block: Block) => (
-		// <Image
-		// 	src={block.url as string}
-		// 	alt={block.text as string}
-		// 	quality={100}
-		// 	width={600}
-		// 	height={400}
-		// 	objectFit='cover'
-		// />
-		<img
+		<ImageFrame
 			src={block.url as string}
-			alt={block.text as string}
+			alt={(block.text as string) || 'snapshoot'}
+			quality={100}
+			width={600}
+			height={400}
+			objectFit='cover'
 		/>
 	),
 

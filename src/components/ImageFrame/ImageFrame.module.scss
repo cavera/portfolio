@@ -1,0 +1,12 @@
+@import '../../styles/utilities';
+
+.image_frame {
+	border-radius: var(--8x);
+	overflow: hidden;
+	@extend .custom-bevel;
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}

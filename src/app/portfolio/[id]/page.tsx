@@ -2,7 +2,7 @@ import { SectionTitle } from '@/components/SectionTitle'
 import { mapPageInfo } from '@/data/mapData'
 import { blockMap, groupBlocks } from './blockMap'
 import Button from '@/components/Button'
-import Image from 'next/image'
+import ImageFrame from '@/components/ImageFrame'
 
 import styles from './project.module.scss'
 
@@ -38,7 +38,7 @@ async function Page({ params }: { params: { id: string } }) {
 					</div>
 				</div>
 				<div className={styles.cover_img}>
-					<Image
+					<ImageFrame
 						src={cover}
 						alt={title}
 						width={600}
