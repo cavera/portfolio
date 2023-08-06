@@ -1,0 +1,19 @@
+@import '../../styles/mixins';
+
+.nav {
+	ul {
+		display: flex;
+		padding-top: var(--2x);
+		gap: var(--3x);
+
+		li {
+			list-style: none;
+		}
+	}
+	a {
+		color: var(--basics-primary);
+		font-size: 18px;
+		text-decoration: underline;
+		font-weight: 300;
+	}
+}

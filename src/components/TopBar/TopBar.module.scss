@@ -17,6 +17,10 @@
 		padding: var(--2x) var(--6x);
 	}
 
+	@include mobile {
+		display: none;
+	}
+
 	&:before {
 		position: absolute;
 		content: '';
@@ -57,22 +61,4 @@
 }
 .role_main {
 	color: var(--basics-primary);
-}
-
-.nav {
-	ul {
-		display: flex;
-		padding-top: var(--2x);
-		gap: var(--3x);
-
-		li {
-			list-style: none;
-		}
-	}
-	a {
-		color: var(--basics-primary);
-		font-size: 18px;
-		text-decoration: underline;
-		font-weight: 300;
-	}
 }

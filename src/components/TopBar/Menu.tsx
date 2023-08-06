@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import styles from './TopBar.module.scss'
+import styles from './Menu.module.scss'
 
 export const Menu = () => {
 	return (

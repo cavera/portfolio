@@ -1,4 +1,4 @@
-@import '../../styles/utilities';
+@import '../../styles/utilities', '../../styles/mixins';
 
 .footer {
 	display: flex;
@@ -9,5 +9,27 @@
 	@extend .custom-bevel;
 	span {
 		font-size: var(--p);
+	}
+	@include mobile {
+		justify-content: center;
+	}
+}
+
+.footer_info {
+	@include mobile {
+		display: none;
+	}
+}
+
+.social {
+	@include mobile {
+		display: none;
+	}
+}
+
+.menu {
+	display: none;
+	@include mobile {
+		display: block;
 	}
 }
