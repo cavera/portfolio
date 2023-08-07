@@ -10,10 +10,11 @@
 	align-content: center;
 	line-height: 0.9;
 	overflow: hidden;
-	// width: 8ch;
-	// min-height: 3em;
 	flex-shrink: 0;
 
+	@include desktop {
+		--logo-size: 56px;
+	}
 	@include tablet {
 		--logo-size: 32px;
 	}

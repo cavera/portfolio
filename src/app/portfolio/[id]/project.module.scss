@@ -30,9 +30,14 @@
 	h1,
 	p {
 		text-align: right;
+		@include mobile {
+			text-align: left;
+		}
 	}
 	@include mobile {
 		grid-column: 1 / -1;
+		align-items: flex-start;
+		gap: var(--2x);
 	}
 }
 

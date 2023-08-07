@@ -18,20 +18,30 @@
 	}
 
 	@include mobile {
-		display: none;
+		display: grid;
+		grid-template-columns: 64px 1fr 64px;
+		place-items: center;
+
+		gap: var(--5x);
+		inset: auto 0 0;
+		padding: var(--2x) 0;
 	}
 
 	&:before {
 		position: absolute;
 		content: '';
-		top: 0;
+		top: -10px;
 		bottom: 0;
 		left: 50%;
-		width: 100vw;
+		width: calc(100vw + 20px);
 		transform: translateX(-50%);
 		background: var(--basics-primary-80);
 		@include effect-style-glass;
 		z-index: -1;
+		@include mobile {
+			top: 0;
+			bottom: -10px;
+		}
 	}
 }
 
@@ -39,9 +49,12 @@
 	display: flex;
 	align-items: baseline;
 	gap: var(--4x);
+	@include mobile {
+		grid-column: 1/2;
+	}
 }
 .h1 {
-	font-size: 32px;
+	font-size: var(--8x);
 	font-weight: 700;
 	color: var(--basics-secondary);
 	@include mobile {

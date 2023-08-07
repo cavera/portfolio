@@ -1,7 +1,6 @@
 import React from 'react'
 import SocialBar from '../SocialBar'
 import styles from './Footer.module.scss'
-import { Menu } from '../TopBar/Menu'
 
 export const Footer = () => {
 	return (
@@ -10,10 +9,6 @@ export const Footer = () => {
 
 			<div className={styles.social}>
 				<SocialBar size={24} />
-			</div>
-
-			<div className={styles.menu}>
-				<Menu />
 			</div>
 		</footer>
 	)

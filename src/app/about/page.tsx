@@ -11,7 +11,6 @@ function About() {
 						alt='about'
 						width={500}
 						height={500}
-						objectFit='cover'
 						priority
 					/>
 				</div>

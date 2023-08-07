@@ -8,12 +8,31 @@
 
 		li {
 			list-style: none;
+			color: var(--basics-primary);
 		}
 	}
-	a {
-		color: var(--basics-primary);
-		font-size: 18px;
-		text-decoration: underline;
-		font-weight: 300;
+	@include mobile {
+		grid-column: 2/3;
 	}
+}
+.nav_link {
+	color: currentColor;
+	font-size: var(--4x);
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	gap: var(--1x);
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	@include mobile {
+		flex-direction: column;
+	}
+}
+
+.active {
+	color: var(--basics-secondary);
+	text-decoration: underline;
 }

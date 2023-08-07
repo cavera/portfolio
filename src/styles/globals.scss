@@ -20,7 +20,7 @@
 	--blue-blue04: #a5e3f7ff;
 	--blue-blue03: #c1ebf9ff;
 	--blue-blue02: rgb(220, 244, 252);
-	--blue-blue01: #f8fcfeff;
+	--blue-blue01: rgb(248, 252, 254);
 
 	--tags-html: #e44d26ff;
 	--tags-css: #264de4ff;
@@ -86,12 +86,12 @@
 	:root {
 		--basics-primary: var(--blue-blue08);
 		--basics-secondary: var(--blue-blue07);
-		--basics-bg: var(--blue-blue02);
+		--basics-bg: var(--blue-blue01);
 		--basics-text: var(--blue-blue09);
 
-		--basics-primary-90: rgba(220, 244, 252, 0.9);
-		--basics-primary-80: rgba(220, 244, 252, 0.8);
-		--basics-primary-50: rgba(220, 244, 252, 0.5);
+		--basics-primary-90: rgba(248, 252, 254, 0.9);
+		--basics-primary-80: rgba(248, 252, 254, 0.8);
+		--basics-primary-50: rgba(248, 252, 254, 0.5);
 	}
 }
 @include desktopLG {
@@ -126,6 +126,8 @@
 
 html {
 	background: var(--basics-bg);
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
 }
 
 html,
@@ -156,12 +158,13 @@ body {
 		'footer';
 	min-height: 100vh;
 	padding: 80px var(--10x) 0;
+
 	&:before {
 		content: '';
 		position: fixed;
 		inset: 0;
 		background: radial-gradient(64% 64% at 100% 50%, var(--basics-primary), transparent), radial-gradient(70% 70% at 0% 100%, var(--basics-secondary), transparent), radial-gradient(77% 77% at 0% 0%, var(--basics-text), transparent);
-		opacity: 0.1;
+		opacity: 0.11;
 		z-index: -1;
 	}
 
@@ -172,6 +175,7 @@ body {
 		width: 100%;
 		max-width: var(--wrapper);
 	}
+
 	@include mobile {
 		// padding: 80px var(--4x) 0;
 		padding: var(--4x) var(--4x) 80px;
@@ -192,6 +196,8 @@ footer {
 
 section {
 	min-height: calc(100vh - 160px);
+	scroll-snap-align: start;
+
 	&.only-content {
 		display: flex;
 		flex-direction: column;
@@ -211,6 +217,11 @@ section {
 	}
 	&-text {
 		width: 70%;
+		p {
+			@supports (text-wrap: balance) {
+				text-wrap: balance;
+			}
+		}
 		p:not(:last-child) {
 			margin-bottom: 1em;
 		}
@@ -268,8 +279,6 @@ section.hero {
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		svg {
-		}
 	}
 }
 
@@ -282,5 +291,12 @@ section.hero {
 		font-weight: 700;
 		width: 100%;
 		color: var(--basics-primary);
+		@supports (text-wrap: balance) {
+			text-wrap: balance;
+		}
+	}
+
+	@include mobile {
+		padding: 0;
 	}
 }
