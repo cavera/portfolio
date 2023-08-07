@@ -33,12 +33,12 @@ export const metadata: Metadata = {
 		siteName: `UI Designer (Front-end dev too)`,
 		images: [
 			{
-				url: 'public/og.png',
+				url: 'public/og.jpg',
 				width: 640,
 				height: 480,
 			},
 			{
-				url: 'public/og-alt.png',
+				url: 'public/og-alt.jpg',
 				width: 1024,
 				height: 768,
 				alt: 'My custom alt',
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
 		// siteId: '1467726470533754880',
 		creator: '@cavera_de',
 		creatorId: '1467726470533754880',
-		images: ['public/og.png'],
+		images: ['public/og.jpg'],
 	},
 }
 
