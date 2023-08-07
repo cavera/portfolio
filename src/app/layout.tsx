@@ -65,14 +65,14 @@ export const metadata: Metadata = {
 			{ url: 'favicon-32x32.png', sizes: '32x32' },
 			{ url: 'favicon-16x16.png', sizes: '16x16' },
 		],
-		shortcut: 'favicon.ico',
+		shortcut: 'icon.png',
 		apple: 'apple-touch-icon.png',
 		other: {
 			rel: 'apple-touch-icon-precomposed',
 			url: 'apple-touch-icon.png',
 		},
 	},
-	manifest: 'site.manifest.json',
+	manifest: 'site.webmanifest',
 	twitter: {
 		card: 'summary_large_image',
 		title: 'Leonardo Fonseca Rivera',
