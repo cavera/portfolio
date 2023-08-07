@@ -1,4 +1,4 @@
-@import '../../styles/scss_variables', '../../styles/mixins';
+@import '../../styles/mixins';
 
 .logo_container {
 	--speed: 0.5s;
@@ -16,7 +16,7 @@
 		--logo-size: 56px;
 	}
 	@include tablet {
-		--logo-size: 32px;
+		--logo-size: 48px;
 	}
 
 	&:hover {
