@@ -33,12 +33,12 @@ export const metadata: Metadata = {
 		siteName: `UI Designer (Front-end dev too)`,
 		images: [
 			{
-				url: 'public/og.jpg',
+				url: 'og.jpg',
 				width: 640,
 				height: 480,
 			},
 			{
-				url: 'public/og-alt.jpg',
+				url: 'og-alt.jpg',
 				width: 1024,
 				height: 768,
 				alt: 'My custom alt',
@@ -62,17 +62,17 @@ export const metadata: Metadata = {
 	},
 	icons: {
 		icon: [
-			{ url: 'public/favicon-32x32.png', sizes: '32x32' },
-			{ url: 'public/favicon-16x16.png', sizes: '16x16' },
+			{ url: 'favicon-32x32.png', sizes: '32x32' },
+			{ url: 'favicon-16x16.png', sizes: '16x16' },
 		],
-		shortcut: 'public/icon.png',
-		apple: 'public/apple-touch-icon.png',
+		shortcut: 'icon.png',
+		apple: 'apple-touch-icon.png',
 		other: {
 			rel: 'apple-touch-icon-precomposed',
-			url: 'public/apple-touch-icon.png',
+			url: 'apple-touch-icon.png',
 		},
 	},
-	manifest: 'public/manifest.json',
+	manifest: 'site.manifest.json',
 	twitter: {
 		card: 'summary_large_image',
 		title: 'Leonardo Fonseca Rivera',
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
 		// siteId: '1467726470533754880',
 		creator: '@cavera_de',
 		creatorId: '1467726470533754880',
-		images: ['public/og.jpg'],
+		images: ['og.jpg'],
 	},
 }
 
