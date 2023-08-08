@@ -1,0 +1,41 @@
+@import '../../styles/utilities', '../../styles/mixins';
+
+.hero {
+	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+
+	min-height: calc(100vh - 80px);
+	min-height: calc(100dvh - 80px);
+	padding-top: var(--8x);
+	position: relative;
+
+	@include tablet {
+		gap: var(--6x);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	article {
+		display: flex;
+		flex-direction: column;
+		gap: var(--4x);
+	}
+}
+.hero_logo {
+	grid-column: 1 / 5;
+	user-select: none;
+}
+.hero_content {
+	grid-column: 5 / -1;
+}
+.scroll_icon {
+	padding: var(--6x);
+	color: var(--basics-secondary);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}

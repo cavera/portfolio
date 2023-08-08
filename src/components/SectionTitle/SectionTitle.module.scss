@@ -1,0 +1,14 @@
+.section_title {
+	width: 100%;
+
+	h1 {
+		font-size: var(--10x);
+		font-weight: 700;
+		width: 100%;
+		color: var(--basics-primary);
+		line-height: 1.1;
+		@supports (text-wrap: balance) {
+			text-wrap: balance;
+		}
+	}
+}

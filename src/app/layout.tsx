@@ -72,7 +72,7 @@ export const metadata: Metadata = {
 			url: 'apple-touch-icon.png',
 		},
 	},
-	manifest: 'site.webmanifest',
+	// manifest: 'site.webmanifest',
 	twitter: {
 		card: 'summary_large_image',
 		title: 'Leonardo Fonseca Rivera',

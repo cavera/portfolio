@@ -34,10 +34,17 @@
 			text-align: left;
 		}
 	}
+	p {
+		margin-bottom: 1em;
+	}
 	@include mobile {
 		grid-column: 1 / -1;
 		align-items: flex-start;
 		gap: var(--2x);
+	}
+
+	@include mobile {
+		padding: 0;
 	}
 }
 
@@ -73,7 +80,7 @@
 }
 
 .project_texts {
-	grid-column: 4/-1;
+	grid-column: 5/-1;
 	margin: var(--8x) 0;
 	display: flex;
 	flex-direction: column;

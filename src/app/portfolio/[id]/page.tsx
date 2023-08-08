@@ -15,27 +15,57 @@ async function Page({ params }: { params: { id: string } }) {
 	const { blocks, cover, title, subtitle, live_link, source } = mappedData
 	const { paragraph, image, embed } = groupOfBlocks
 
+	const renderCTAs = () => (
+		<>
+			{source && (
+				<Button
+					type='secondary'
+					link={source}
+				/>
+			)}
+			{live_link && (
+				<Button
+					type='primary'
+					text='Live'
+					link={live_link}
+				/>
+			)}
+		</>
+	)
+
+	const renderParagraphs = () => {
+		return paragraph?.map((block: any) => {
+			const Component = blockMap[block.type]
+			return (
+				<Component
+					{...block}
+					key={block.id}
+				/>
+			)
+		})
+	}
+
+	const renderImagesAndObjects = () => {
+		return blocks?.map((block: any) => {
+			if (block.type === 'paragraph') return null
+			const Component = blockMap[block.type]
+			return (
+				<Component
+					{...block}
+					key={block.id}
+				/>
+			)
+		})
+	}
+
 	return (
 		<section className={styles.project}>
+			{/* cover */}
 			<div className={styles.cover}>
 				<div className={styles.title_block}>
 					<SectionTitle>{title}</SectionTitle>
 					<p>{subtitle}</p>
-					<div className={styles.project_cta}>
-						{source && (
-							<Button
-								type='secondary'
-								link={source}
-							/>
-						)}
-						{live_link && (
-							<Button
-								type='primary'
-								text='Live'
-								link={live_link}
-							/>
-						)}
-					</div>
+					<div className={styles.project_cta}>{renderCTAs()}</div>
 				</div>
 				<div className={styles.cover_img}>
 					<ImageFrame
@@ -49,30 +79,8 @@ async function Page({ params }: { params: { id: string } }) {
 			</div>
 			{/* content */}
 			<div className={styles.content}>
-				<div className={styles.project_texts}>
-					{paragraph?.map((block: any) => {
-						const Component = blockMap[block.type]
-						return (
-							<Component
-								{...block}
-								key={block.id}
-							/>
-						)
-					})}
-				</div>
-
-				<div className={styles.other_content}>
-					{blocks?.map((block: any) => {
-						if (block.type === 'paragraph') return null
-						const Component = blockMap[block.type]
-						return (
-							<Component
-								{...block}
-								key={block.id}
-							/>
-						)
-					})}
-				</div>
+				<div className={styles.project_texts}>{renderParagraphs()}</div>
+				<div className={styles.other_content}>{renderImagesAndObjects()}</div>
 			</div>
 		</section>
 	)

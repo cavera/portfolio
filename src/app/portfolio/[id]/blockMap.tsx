@@ -45,7 +45,6 @@ export const blockMap: { [key: string]: BlockComponent } = {
 			quality={100}
 			width={600}
 			height={400}
-			objectFit='cover'
 		/>
 	),
 

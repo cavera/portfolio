@@ -188,6 +188,14 @@ header {
 
 main {
 	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	gap: var(--4x);
+	padding-top: var(--4x);
+
+	@include mobile {
+		padding-top: 0;
+	}
 }
 
 footer {
@@ -235,70 +243,4 @@ p {
 
 img {
 	object-fit: cover;
-}
-
-section.hero {
-	align-items: center;
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-
-	min-height: calc(100vh - 80px);
-	min-height: calc(100dvh - 80px);
-	padding-top: var(--8x);
-	position: relative;
-
-	@include tablet {
-		gap: var(--6x);
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-	}
-
-	article {
-		display: flex;
-		flex-direction: column;
-		gap: var(--4x);
-	}
-
-	.hero-logo {
-		grid-column: 1 / 5;
-		user-select: none;
-		// @include tablet {
-		// 	grid-column: 1 / -1;
-		// }
-	}
-	.hero-content {
-		grid-column: 5 / -1;
-		// @include tablet {
-		// 	grid-column: 1 / -1;
-		// }
-	}
-	.scroll-icon {
-		padding: var(--6x);
-		color: var(--basics-secondary);
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-}
-
-.section-title {
-	width: 100%;
-	padding: var(--3x) 0px;
-
-	h1 {
-		font-size: 3rem;
-		font-weight: 700;
-		width: 100%;
-		color: var(--basics-primary);
-		@supports (text-wrap: balance) {
-			text-wrap: balance;
-		}
-	}
-
-	@include mobile {
-		padding: 0;
-	}
 }
