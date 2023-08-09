@@ -8,6 +8,7 @@ import styles from './projects.module.scss'
 
 async function Projects() {
 	const mappedData = await mapElementsData()
+
 	return (
 		<>
 			<SectionTitle>Projects</SectionTitle>

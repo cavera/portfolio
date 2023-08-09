@@ -12,3 +12,5 @@ export const siteLanguage = 'en_US'
 export const siteType = 'website'
 export const siteKeywords = ['Next.js', 'React', 'JavaScript', 'Figma', 'UI Design', 'Front-end', 'Frontend', 'Graphic Design', 'e-learning', 'CSS', 'Portfolio', 'Eficacia', 'lider', 'developer', 'freelancer', 'remote', 'TypeScript', 'Git', 'Ready', '1500', 'IA', 'AI', 'C1,TI', 'Maquetación', 'From idea to solution', 'Portafolio', 'Asesoría', 'Soporte SAP', 'Sudáfrica', 'Colombia', 'India', 'Perú', 'España', 'Certified', 'Tech', 'tech', 'TECH', 'TIC', 'UI Designer', 'Visual Studio Code', 'UI', 'Design,Tecnología']
 export const siteColorScheme = 'normal'
+
+export const CV_BLOCK_ID = '53f20ffa-1d72-4bf9-b9f6-81efbe1f8aa3'
