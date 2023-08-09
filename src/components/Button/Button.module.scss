@@ -8,17 +8,33 @@
 	border: 1px solid currentColor;
 	font-weight: 700;
 	font-size: var(--6x);
+	transition: all 0.2s ease-in-out;
+
 	svg {
 		width: 1em;
 		height: 1em;
+	}
+
+	&:hover {
+		// translate: 0 calc(-1 * var(--o5x));
+		scale: 1.05;
+	}
+	&:active {
+		scale: 0.9;
 	}
 }
 
 .primary {
 	color: var(--basics-bg);
 	background: var(--basics-secondary);
+	&:hover {
+		background: var(--basics-secondary-light);
+	}
 }
 .secondary {
 	color: var(--basics-secondary);
 	background: var(--basics-primary-80);
+	&:hover {
+		color: var(--basics-secondary-light);
+	}
 }

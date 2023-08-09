@@ -1,5 +1,5 @@
 import { TProject } from '@/types/Types'
-import styles from '../projects/projects.module.scss'
+import styles from './Tags.module.scss'
 
 const Tags = ({ skills }: { skills: TProject['skills'] }) => {
 	return (

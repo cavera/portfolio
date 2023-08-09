@@ -2,10 +2,11 @@
 
 .project {
 	width: 100%;
-
+	padding: var(--8x) 0;
 	img {
 		max-height: 80vh;
 	}
+	position: relative;
 }
 
 .cover {
@@ -15,6 +16,10 @@
 	grid-template-columns: repeat(10, 1fr);
 	gap: var(--3x);
 	align-items: center;
+
+	position: sticky;
+	top: var(--20x);
+	z-index: 3;
 
 	img {
 		height: auto;

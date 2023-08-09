@@ -3,238 +3,13 @@
   "results": [
     {
       "object": "block",
-      "id": "7825680c-0c47-42d4-ba96-e48ef4c03cd3",
+      "id": "605ad310-cb96-4f09-b9d1-d2e63437a46a",
       "parent": {
         "type": "page_id",
-        "page_id": "8b767151-0c12-4f26-a004-77cf8e582966"
+        "page_id": "e920ea11-eb82-49e9-acc3-209983622f37"
       },
-      "created_time": "2023-07-30T03:19:00.000Z",
-      "last_edited_time": "2023-07-30T03:20:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "has_children": false,
-      "archived": false,
-      "type": "paragraph",
-      "paragraph": {
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Simplicity, beauty, and readability were all taken into consideration when designing this watch face. ",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Simplicity, beauty, and readability were all taken into consideration when designing this watch face. ",
-            "href": null
-          },
-          {
-            "type": "text",
-            "text": {
-              "content": "This was my first exposure to a watch's user experience.",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "This was my first exposure to a watch's user experience.",
-            "href": null
-          }
-        ],
-        "color": "default"
-      }
-    },
-    {
-      "object": "block",
-      "id": "09265502-ea87-4e10-b389-55f5b81c1ce8",
-      "parent": {
-        "type": "page_id",
-        "page_id": "8b767151-0c12-4f26-a004-77cf8e582966"
-      },
-      "created_time": "2023-07-30T03:20:00.000Z",
-      "last_edited_time": "2023-07-30T03:20:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "has_children": false,
-      "archived": false,
-      "type": "paragraph",
-      "paragraph": {
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "It has heart monitor and a space to customize relevant information as the date or the battery of the watch.",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "It has heart monitor and a space to customize relevant information as the date or the battery of the watch.",
-            "href": null
-          }
-        ],
-        "color": "default"
-      }
-    },
-    {
-      "object": "block",
-      "id": "092f223c-cc72-4200-b5fd-d92c76de22f8",
-      "parent": {
-        "type": "page_id",
-        "page_id": "8b767151-0c12-4f26-a004-77cf8e582966"
-      },
-      "created_time": "2023-07-30T03:20:00.000Z",
-      "last_edited_time": "2023-07-30T03:20:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "has_children": false,
-      "archived": false,
-      "type": "paragraph",
-      "paragraph": {
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "It comes with a variety of color themes, Always On Display included.",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "It comes with a variety of color themes, Always On Display included.",
-            "href": null
-          }
-        ],
-        "color": "default"
-      }
-    },
-    {
-      "object": "block",
-      "id": "c48b8e38-671d-4ed2-8233-6d21385c859f",
-      "parent": {
-        "type": "page_id",
-        "page_id": "8b767151-0c12-4f26-a004-77cf8e582966"
-      },
-      "created_time": "2023-07-30T03:20:00.000Z",
-      "last_edited_time": "2023-07-30T03:20:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "has_children": false,
-      "archived": false,
-      "type": "paragraph",
-      "paragraph": {
-        "rich_text": [
-          {
-            "type": "text",
-            "text": {
-              "content": "Also, this watch face is already available on the ",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Also, this watch face is already available on the ",
-            "href": null
-          },
-          {
-            "type": "text",
-            "text": {
-              "content": "Play Store",
-              "link": {
-                "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.bubblecolors"
-              }
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": "Play Store",
-            "href": "https://play.google.com/store/apps/details?id=com.watchfacestudio.bubblecolors"
-          },
-          {
-            "type": "text",
-            "text": {
-              "content": ".",
-              "link": null
-            },
-            "annotations": {
-              "bold": false,
-              "italic": false,
-              "strikethrough": false,
-              "underline": false,
-              "code": false,
-              "color": "default"
-            },
-            "plain_text": ".",
-            "href": null
-          }
-        ],
-        "color": "default"
-      }
-    },
-    {
-      "object": "block",
-      "id": "adb6e57c-1bcf-4d74-a7ef-d23197a01ad8",
-      "parent": {
-        "type": "page_id",
-        "page_id": "8b767151-0c12-4f26-a004-77cf8e582966"
-      },
-      "created_time": "2023-07-30T03:23:00.000Z",
-      "last_edited_time": "2023-07-31T15:44:00.000Z",
+      "created_time": "2023-08-09T18:19:00.000Z",
+      "last_edited_time": "2023-08-09T18:19:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -250,20 +25,20 @@
         "caption": [],
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ff446d82-b951-43d2-b655-f2c4d0fa14ac/Phone4.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T230348Z&X-Amz-Expires=3600&X-Amz-Signature=3b4c2096415ba33874b8680d75f6d3c829f5c45024404ed8bc3d40d29e739c72&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-01T00:03:48.494Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/31cd1be6-634f-409c-b0dd-6274433ee8d2/ago_elementos.png.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213127Z&X-Amz-Expires=3600&X-Amz-Signature=4dfd01ba1c3fdbe27b6f8c6ab26325f1c4b9ad4a2b7f5434b39e6d23c23302de&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-09T22:31:27.589Z"
         }
       }
     },
     {
       "object": "block",
-      "id": "d7de916d-697a-4c00-bc9d-3b0f5d720a85",
+      "id": "74d3aa40-1082-4208-9bd4-d7ed2b2b9b8a",
       "parent": {
         "type": "page_id",
-        "page_id": "8b767151-0c12-4f26-a004-77cf8e582966"
+        "page_id": "e920ea11-eb82-49e9-acc3-209983622f37"
       },
-      "created_time": "2023-07-30T03:23:00.000Z",
-      "last_edited_time": "2023-07-30T03:23:00.000Z",
+      "created_time": "2023-08-09T18:19:00.000Z",
+      "last_edited_time": "2023-08-09T18:19:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -279,20 +54,20 @@
         "caption": [],
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f4ec92c1-8d33-4e0b-8a87-4a61a6a8ccc3/Phone5.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T230348Z&X-Amz-Expires=3600&X-Amz-Signature=c098b607ae28e3d58ae55107560ec1d93ff42efea5b53babb7f392ec78011dfc&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-01T00:03:48.499Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2f099343-0365-4747-b835-8ebc8b66e25b/curso_agua.png.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213127Z&X-Amz-Expires=3600&X-Amz-Signature=a7c0de94322949994d704981dbc01440bff5d136f9da98354ee7e6a326a82d1b&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-09T22:31:27.593Z"
         }
       }
     },
     {
       "object": "block",
-      "id": "ba6fcd55-d071-41a5-b8b2-730aa29169f4",
+      "id": "1359f4f1-c358-4303-adf5-88fc23c4b946",
       "parent": {
         "type": "page_id",
-        "page_id": "8b767151-0c12-4f26-a004-77cf8e582966"
+        "page_id": "e920ea11-eb82-49e9-acc3-209983622f37"
       },
-      "created_time": "2023-07-30T03:23:00.000Z",
-      "last_edited_time": "2023-07-30T03:23:00.000Z",
+      "created_time": "2023-08-09T18:19:00.000Z",
+      "last_edited_time": "2023-08-09T18:19:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -308,20 +83,20 @@
         "caption": [],
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/79b8bec2-05af-45f8-9e76-11a96c4a89e5/phone3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T230348Z&X-Amz-Expires=3600&X-Amz-Signature=73f201291d165a43940c360a8b0b1cb792c421e421430825f3b86ef3eedb74ca&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-01T00:03:48.496Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/97665922-3b0b-4622-aca7-2ea7d6a0e210/sep_valor.png.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213127Z&X-Amz-Expires=3600&X-Amz-Signature=e4bb1039355e227ceab42089161de5c9e8d7c53f0c046292c4218e7fae45f9b9&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-09T22:31:27.591Z"
         }
       }
     },
     {
       "object": "block",
-      "id": "ec69b2cb-4dc5-444d-87e8-95e1f3bdc731",
+      "id": "b84a1fef-bbc0-492e-8d89-ae8312a5d270",
       "parent": {
         "type": "page_id",
-        "page_id": "8b767151-0c12-4f26-a004-77cf8e582966"
+        "page_id": "e920ea11-eb82-49e9-acc3-209983622f37"
       },
-      "created_time": "2023-07-30T03:23:00.000Z",
-      "last_edited_time": "2023-07-30T03:23:00.000Z",
+      "created_time": "2023-08-09T18:19:00.000Z",
+      "last_edited_time": "2023-08-09T18:19:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -337,63 +112,9 @@
         "caption": [],
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a5fb34c7-e260-41b8-92ba-71d063c573b3/phone2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T230348Z&X-Amz-Expires=3600&X-Amz-Signature=740d87db32bded041871c58daa745f5f896fee68089b9e2246ff3feb4a8204e0&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-01T00:03:48.499Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/acfe995b-f279-4742-8604-668c3402589d/tips_post.png.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213127Z&X-Amz-Expires=3600&X-Amz-Signature=bf270e9889449a9945ca93c4e558fc77fccba6727654857b24cf0845422bd53a&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-09T22:31:27.591Z"
         }
-      }
-    },
-    {
-      "object": "block",
-      "id": "8ff9b8ef-89c4-4afc-9ee3-782ccd43ca5f",
-      "parent": {
-        "type": "page_id",
-        "page_id": "8b767151-0c12-4f26-a004-77cf8e582966"
-      },
-      "created_time": "2023-07-30T03:23:00.000Z",
-      "last_edited_time": "2023-07-30T03:23:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "has_children": false,
-      "archived": false,
-      "type": "image",
-      "image": {
-        "caption": [],
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f93690d5-3132-4ad0-8546-59be1d1b7e5e/phone1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230731%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230731T230348Z&X-Amz-Expires=3600&X-Amz-Signature=a2fcf763da48446e0afa8d402192779173b3ebf1853dd0c4edd46accf6faf64c&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-01T00:03:48.497Z"
-        }
-      }
-    },
-    {
-      "object": "block",
-      "id": "2c653017-d15a-4fdb-934b-721dcb6fc64f",
-      "parent": {
-        "type": "page_id",
-        "page_id": "8b767151-0c12-4f26-a004-77cf8e582966"
-      },
-      "created_time": "2023-07-30T03:21:00.000Z",
-      "last_edited_time": "2023-07-30T03:21:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "has_children": false,
-      "archived": false,
-      "type": "paragraph",
-      "paragraph": {
-        "rich_text": [],
-        "color": "default"
       }
     }
   ],

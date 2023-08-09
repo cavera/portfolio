@@ -68,7 +68,7 @@
 	font-size: 24px;
 	font-weight: 300;
 	line-height: normal;
-	@include mobile {
+	@include tablet {
 		display: none;
 	}
 }

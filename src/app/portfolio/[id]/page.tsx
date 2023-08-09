@@ -33,30 +33,34 @@ async function Page({ params }: { params: { id: string } }) {
 		</>
 	)
 
-	const renderParagraphs = () => {
-		return paragraph?.map((block: any) => {
-			const Component = blockMap[block.type]
-			return (
-				<Component
-					{...block}
-					key={block.id}
-				/>
-			)
-		})
-	}
+	const renderParagraphs = () => (
+		<div className={styles.project_texts}>
+			{paragraph?.map((block: any) => {
+				const Component = blockMap[block.type]
+				return (
+					<Component
+						{...block}
+						key={block.id}
+					/>
+				)
+			})}
+		</div>
+	)
 
-	const renderImagesAndObjects = () => {
-		return blocks?.map((block: any) => {
-			if (block.type === 'paragraph') return null
-			const Component = blockMap[block.type]
-			return (
-				<Component
-					{...block}
-					key={block.id}
-				/>
-			)
-		})
-	}
+	const renderImagesAndObjects = () => (
+		<div className={styles.other_content}>
+			{blocks?.map((block: any) => {
+				if (block.type === 'paragraph') return null
+				const Component = blockMap[block.type]
+				return (
+					<Component
+						{...block}
+						key={block.id}
+					/>
+				)
+			})}
+		</div>
+	)
 
 	return (
 		<section className={styles.project}>
@@ -79,8 +83,8 @@ async function Page({ params }: { params: { id: string } }) {
 			</div>
 			{/* content */}
 			<div className={styles.content}>
-				<div className={styles.project_texts}>{renderParagraphs()}</div>
-				<div className={styles.other_content}>{renderImagesAndObjects()}</div>
+				{renderParagraphs()}
+				{renderImagesAndObjects()}
 			</div>
 		</section>
 	)

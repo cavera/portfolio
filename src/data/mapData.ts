@@ -1,4 +1,5 @@
 import { getElements, getPageContent, getPageInfo } from '../data/notion'
+import { DEFAULT_PROJECT_BG } from './consts'
 export async function mapElementsData() {
 	const data = await getElements()
 
@@ -7,7 +8,7 @@ export async function mapElementsData() {
 		const { title, subtitle, source, live_link, skills } = properties
 
 		const mappedInfo = {
-			cover: cover?.file.url,
+			cover: cover?.file.url || DEFAULT_PROJECT_BG,
 			title: title?.title[0].plain_text,
 			subtitle: subtitle?.rich_text[0]?.plain_text,
 			source: source?.url,
@@ -81,7 +82,7 @@ export async function mapPageInfo(id: string) {
 	})
 	// console.log(blocks)
 	const mappedInfo = {
-		cover: cover?.file.url,
+		cover: cover?.file.url || DEFAULT_PROJECT_BG,
 		title: title.title[0]?.plain_text,
 		subtitle: subtitle?.rich_text[0]?.plain_text,
 		live_link: live_link?.url,

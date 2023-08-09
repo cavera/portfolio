@@ -3,6 +3,7 @@
 .image_frame {
 	border-radius: var(--8x);
 	overflow: hidden;
+	background-color: var(--basics-primary-50);
 	@extend .custom-bevel;
 	img {
 		display: block;

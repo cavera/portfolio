@@ -14,3 +14,5 @@ export const siteKeywords = ['Next.js', 'React', 'JavaScript', 'Figma', 'UI Desi
 export const siteColorScheme = 'normal'
 
 export const CV_BLOCK_ID = '53f20ffa-1d72-4bf9-b9f6-81efbe1f8aa3'
+
+export const DEFAULT_PROJECT_BG = '/images/default_bg.jpg'

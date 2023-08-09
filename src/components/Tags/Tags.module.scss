@@ -1,0 +1,66 @@
+.tags_container {
+	display: flex;
+	align-items: flex-start;
+	align-content: flex-start;
+	align-self: stretch;
+	gap: 4px var(--1x);
+	flex-wrap: wrap;
+	margin-block-start: var(--3x);
+	transition: all 0.3s ease-in-out;
+}
+
+.tag {
+	font-size: 14px;
+	font-weight: 700;
+	padding: var(--o5x) var(--2x);
+	border-radius: var(--2-x, 8px);
+	border-width: 1px;
+	border-style: solid;
+	background: var(--basics-primary-50);
+	transition: all 0.3s ease-in-out;
+	overflow: 0;
+}
+.html {
+	border-color: var(--tags-html);
+}
+.css {
+	border-color: var(--tags-css);
+}
+.javascript {
+	border-color: var(--tags-js);
+}
+.react {
+	border-color: var(--tags-react);
+}
+.gsap {
+	border-color: var(--tags-gsap);
+}
+.sass {
+	border-color: var(--tags-sass);
+}
+.illustrator {
+	border-color: var(--tags-ai);
+}
+.photoshop {
+	border-color: var(--tags-ps);
+}
+.indesign {
+	border-color: var(--tags-id);
+}
+.after,
+.premiere,
+.audition {
+	border-color: var(--tags-ae_pr_au);
+}
+.figma {
+	border-color: var(--tags-figma);
+}
+.sketch {
+	border-color: var(--tags-sketch);
+}
+.typescript {
+	border-color: var(--tags-typescript);
+}
+.tailwind {
+	border-color: var(--tags-tailwind);
+}
