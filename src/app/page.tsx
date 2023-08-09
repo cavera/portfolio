@@ -6,9 +6,7 @@ export default function Home() {
 		<>
 			<Hero />
 
-			<section>
-				<Projects />
-			</section>
+			<Projects filtered={true} />
 		</>
 	)
 }
