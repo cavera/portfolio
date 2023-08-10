@@ -3,31 +3,34 @@
 .project {
 	width: 100%;
 	scroll-snap-align: unset;
-	img {
-		max-height: 80vh;
-	}
+
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(3, auto);
+	gap: var(--3x);
+	align-items: start;
 	position: relative;
+
 	@include mobile {
 		padding-top: var(--8x);
+		display: flex;
+		flex-direction: column;
 	}
 }
 
-.cover {
-	width: 100%;
-	overflow: hidden;
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	gap: var(--3x);
-	align-items: center;
-
-	// position: sticky;
+.title_block,
+.cover_img {
+	grid-row: 1 / 2;
+	position: sticky;
 	top: var(--20x);
-	z-index: 3;
+	align-items: flex-end;
 
-	img {
-		height: auto;
-		aspect-ratio: 3 / 2;
-		object-fit: cover;
+	@include mobile {
+		position: relative;
+		top: 0;
+		align-items: flex-start;
+		gap: var(--2x);
+		padding: 0;
 	}
 }
 
@@ -35,7 +38,9 @@
 	grid-column: 1/ 5;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+
+	z-index: 3;
+
 	h1,
 	p {
 		text-align: right;
@@ -46,21 +51,30 @@
 	p {
 		margin-bottom: 1em;
 	}
-	@include mobile {
-		grid-column: 1 / -1;
-		align-items: flex-start;
-		gap: var(--2x);
-	}
 
-	@include mobile {
-		padding: 0;
+	&:before {
+		content: '';
+		position: absolute;
+		inset: 0 calc(-1 * var(--3x)) 0 0;
+		backdrop-filter: blur(10px);
+		z-index: -1;
+		border-radius: var(--8x);
+	}
+	@include tablet {
+		&:before {
+			display: none;
+		}
 	}
 }
 
 .cover_img {
 	grid-column: 5/-1;
-	@include mobile {
-		grid-column: 1 / -1;
+	z-index: 1;
+
+	img {
+		height: auto;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
 	}
 }
 
@@ -71,37 +85,43 @@
 	gap: var(--4x);
 }
 
-.content {
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	gap: var(--3x);
-	width: 100%;
-}
-
-.other_content {
-	grid-column: 1/7;
-	display: flex;
-	flex-direction: column;
-	gap: var(--8x);
-	@include mobile {
-		grid-column: 1 / -1;
-	}
-}
-
 .project_texts {
 	grid-column: 5/-1;
-	margin: var(--8x) 0;
 	display: flex;
 	flex-direction: column;
 	padding: var(--8x);
 	gap: var(--3x);
 	border-radius: var(--8x);
-	background: var(--basics-primary-90);
+	background: var(--basics-primary-80);
+
+	position: sticky;
+	top: var(--20x);
+	z-index: 6;
+
+	@include mobile {
+		top: var(--4x);
+	}
 
 	/* Glass */
 	box-shadow: 0px 11px 7px 0px var(--basics-primary-50);
 	backdrop-filter: blur(10px);
-	@include mobile {
-		grid-column: 1 / -1;
+}
+
+.other_content {
+	gap: var(--8x);
+	grid-column: 1/6;
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--8x);
+
+	img {
+		max-height: 80vh;
+	}
+
+	& > div {
+		&:hover {
+			z-index: 10;
+		}
 	}
 }

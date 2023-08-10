@@ -50,9 +50,13 @@
 		.project_cta {
 			opacity: 1;
 		}
-		.tag {
-			opacity: 0;
+
+		.project_info {
+			& > div {
+				opacity: 0;
+			}
 		}
+
 		img {
 			transform: scale(1);
 		}

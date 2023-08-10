@@ -114,6 +114,7 @@
 }
 @include tablet {
 	:root {
+		--10x: 40px;
 		--p: 16px;
 	}
 }
@@ -136,6 +137,9 @@ html {
 	background: var(--basics-bg);
 	scroll-behavior: smooth;
 	scroll-snap-type: y proximity;
+	@include tablet {
+		scroll-snap-type: none;
+	}
 }
 
 html,
@@ -209,6 +213,9 @@ main {
 footer {
 	grid-area: footer;
 	scroll-snap-align: start;
+	@include tablet {
+		scroll-snap-align: unset;
+	}
 }
 
 section {

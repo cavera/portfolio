@@ -1,10 +1,10 @@
 import { TProject } from '@/types/Types'
-import Button from '../Button'
 
 import styles from './ProjectCard.module.scss'
 import Tags from '../Tags'
 import Link from 'next/link'
 import Image from 'next/image'
+import CTAs from '../CTAs'
 
 export function ProjectCard({ project }: { project: TProject }) {
 	const { cover, title, subtitle, live_link, source, skills, id } = project
@@ -29,19 +29,10 @@ export function ProjectCard({ project }: { project: TProject }) {
 				+
 			</Link>
 			<div className={styles.project_cta}>
-				{source && (
-					<Button
-						type='secondary'
-						link={source}
-					/>
-				)}
-				{live_link && (
-					<Button
-						type='primary'
-						text='Live'
-						link={live_link}
-					/>
-				)}
+				<CTAs
+					source={source}
+					live_link={live_link}
+				/>
 			</div>
 		</article>
 	)

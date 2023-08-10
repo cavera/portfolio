@@ -14,7 +14,7 @@ export type BlockComponent = (block: Block) => JSX.Element
 export type BlockGroup = (blocks: Block[]) => any
 
 export const groupBlocks: BlockGroup = blocks => {
-	const grouped = blocks.reduce((acc: any, item: any) => {
+	const grouped = blocks?.reduce((acc: any, item: any) => {
 		if (!item?.type) return null
 		const { type } = item
 

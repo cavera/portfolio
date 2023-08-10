@@ -1,5 +1,7 @@
 const { Client } = require('@notionhq/client')
 import mockData from '../data/mocks/mockList.json'
+import mockCard from '../data/mocks/mockCard.json'
+import mockCardContent from '../data/mocks/mockCardContent.json'
 
 const notion = new Client({ auth: process.env.NEXT_PUBLIC_NOTION_TOKEN })
 
@@ -32,15 +34,25 @@ export async function getElements() {
 	}
 }
 export async function getPageInfo(pageId: string) {
-	const response = await notion.pages.retrieve({ page_id: pageId })
+	try {
+		const response = await notion.pages.retrieve({ page_id: pageId })
 
-	return response
+		return response
+	} catch (error) {
+		return mockCard
+		throw new Error('error retreiving Page data')
+	}
 }
 export async function getPageContent(pageId: string) {
-	const response = await notion.blocks.children.list({
-		block_id: pageId,
-		page_size: 50,
-	})
+	try {
+		const response = await notion.blocks.children.list({
+			block_id: pageId,
+			page_size: 50,
+		})
 
-	return response
+		return response
+	} catch (error) {
+		return mockCardContent
+		throw new Error('error retreiving Page content')
+	}
 }

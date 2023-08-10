@@ -1,125 +1,111 @@
 {
-  "object": "list",
-  "results": [
-    {
-      "object": "block",
-      "id": "605ad310-cb96-4f09-b9d1-d2e63437a46a",
-      "parent": {
-        "type": "page_id",
-        "page_id": "e920ea11-eb82-49e9-acc3-209983622f37"
-      },
-      "created_time": "2023-08-09T18:19:00.000Z",
-      "last_edited_time": "2023-08-09T18:19:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "has_children": false,
-      "archived": false,
-      "type": "image",
-      "image": {
-        "caption": [],
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/31cd1be6-634f-409c-b0dd-6274433ee8d2/ago_elementos.png.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213127Z&X-Amz-Expires=3600&X-Amz-Signature=4dfd01ba1c3fdbe27b6f8c6ab26325f1c4b9ad4a2b7f5434b39e6d23c23302de&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:31:27.589Z"
-        }
+  "object": "page",
+  "id": "b237a541-0ced-492b-973e-38d6a7743ab3",
+  "created_time": "2023-08-10T16:47:00.000Z",
+  "last_edited_time": "2023-08-10T17:03:00.000Z",
+  "created_by": {
+    "object": "user",
+    "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+  },
+  "last_edited_by": {
+    "object": "user",
+    "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+  },
+  "cover": null,
+  "icon": null,
+  "parent": {
+    "type": "database_id",
+    "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+  },
+  "archived": false,
+  "properties": {
+    "progress": {
+      "id": "ERxJ",
+      "type": "status",
+      "status": {
+        "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+        "name": "Not started",
+        "color": "default"
       }
     },
-    {
-      "object": "block",
-      "id": "74d3aa40-1082-4208-9bd4-d7ed2b2b9b8a",
-      "parent": {
-        "type": "page_id",
-        "page_id": "e920ea11-eb82-49e9-acc3-209983622f37"
-      },
-      "created_time": "2023-08-09T18:19:00.000Z",
-      "last_edited_time": "2023-08-09T18:19:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "has_children": false,
-      "archived": false,
-      "type": "image",
-      "image": {
-        "caption": [],
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2f099343-0365-4747-b835-8ebc8b66e25b/curso_agua.png.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213127Z&X-Amz-Expires=3600&X-Amz-Signature=a7c0de94322949994d704981dbc01440bff5d136f9da98354ee7e6a326a82d1b&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:31:27.593Z"
-        }
-      }
+    "public": {
+      "id": "NF%40%3F",
+      "type": "checkbox",
+      "checkbox": false
     },
-    {
-      "object": "block",
-      "id": "1359f4f1-c358-4303-adf5-88fc23c4b946",
-      "parent": {
-        "type": "page_id",
-        "page_id": "e920ea11-eb82-49e9-acc3-209983622f37"
-      },
-      "created_time": "2023-08-09T18:19:00.000Z",
-      "last_edited_time": "2023-08-09T18:19:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "has_children": false,
-      "archived": false,
-      "type": "image",
-      "image": {
-        "caption": [],
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/97665922-3b0b-4622-aca7-2ea7d6a0e210/sep_valor.png.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213127Z&X-Amz-Expires=3600&X-Amz-Signature=e4bb1039355e227ceab42089161de5c9e8d7c53f0c046292c4218e7fae45f9b9&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:31:27.591Z"
+    "origin": {
+      "id": "Poi%3E",
+      "type": "multi_select",
+      "multi_select": [
+        {
+          "id": "8f11385e-df28-42dd-aebb-18ed800c1e07",
+          "name": "A",
+          "color": "default"
         }
-      }
+      ]
     },
-    {
-      "object": "block",
-      "id": "b84a1fef-bbc0-492e-8d89-ae8312a5d270",
-      "parent": {
-        "type": "page_id",
-        "page_id": "e920ea11-eb82-49e9-acc3-209983622f37"
-      },
-      "created_time": "2023-08-09T18:19:00.000Z",
-      "last_edited_time": "2023-08-09T18:19:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "has_children": false,
-      "archived": false,
-      "type": "image",
-      "image": {
-        "caption": [],
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/acfe995b-f279-4742-8604-668c3402589d/tips_post.png.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213127Z&X-Amz-Expires=3600&X-Amz-Signature=bf270e9889449a9945ca93c4e558fc77fccba6727654857b24cf0845422bd53a&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:31:27.591Z"
+    "source": {
+      "id": "XWCz",
+      "type": "url",
+      "url": null
+    },
+    "subtitle": {
+      "id": "_%5DnB",
+      "type": "rich_text",
+      "rich_text": [
+        {
+          "type": "text",
+          "text": {
+            "content": "page",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "page",
+          "href": null
         }
-      }
+      ]
+    },
+    "skills": {
+      "id": "d%5ETj",
+      "type": "multi_select",
+      "multi_select": []
+    },
+    "live_link": {
+      "id": "opPF",
+      "type": "url",
+      "url": null
+    },
+    "title": {
+      "id": "title",
+      "type": "title",
+      "title": [
+        {
+          "type": "text",
+          "text": {
+            "content": "Not found",
+            "link": null
+          },
+          "annotations": {
+            "bold": false,
+            "italic": false,
+            "strikethrough": false,
+            "underline": false,
+            "code": false,
+            "color": "default"
+          },
+          "plain_text": "Not found",
+          "href": null
+        }
+      ]
     }
-  ],
-  "next_cursor": null,
-  "has_more": false,
-  "type": "block",
-  "block": {}
+  },
+  "url": "https://www.notion.so/Not-found-b237a5410ced492b973e38d6a7743ab3",
+  "public_url": "https://cavera.notion.site/Not-found-b237a5410ced492b973e38d6a7743ab3"
 }

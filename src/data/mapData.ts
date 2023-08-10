@@ -68,7 +68,7 @@ export async function mapPageInfo(id: string) {
 		}),
 	}
 
-	const blocks = pageBlocks?.results.map((block: any) => {
+	const blocks = pageBlocks?.results?.map((block: any) => {
 		// console.log(block.type)
 
 		const parser = blockParsers[block.type]
