@@ -3,7 +3,6 @@ import { TProject } from '@/types/Types'
 import styles from './ProjectCard.module.scss'
 import Tags from '../Tags'
 import Link from 'next/link'
-// import Image from 'next/image'
 import CTAs from '../CTAs'
 
 export function ProjectCard({ project }: { project: TProject }) {
@@ -11,13 +10,6 @@ export function ProjectCard({ project }: { project: TProject }) {
 
 	return (
 		<article className={styles.card}>
-			{/* <Image
-				src={`${cover}`}
-				alt={''}
-				width={300}
-				height={300}
-				priority={true}
-			/> */}
 			<img
 				src={cover}
 				alt={title}
