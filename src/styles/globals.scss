@@ -135,7 +135,7 @@
 html {
 	background: var(--basics-bg);
 	scroll-behavior: smooth;
-	scroll-snap-type: y mandatory;
+	scroll-snap-type: y proximity;
 }
 
 html,

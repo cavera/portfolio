@@ -2,11 +2,14 @@
 
 .project {
 	width: 100%;
-	padding: var(--8x) 0;
+	scroll-snap-align: unset;
 	img {
 		max-height: 80vh;
 	}
 	position: relative;
+	@include mobile {
+		padding-top: var(--8x);
+	}
 }
 
 .cover {
@@ -17,12 +20,13 @@
 	gap: var(--3x);
 	align-items: center;
 
-	position: sticky;
+	// position: sticky;
 	top: var(--20x);
 	z-index: 3;
 
 	img {
 		height: auto;
+		aspect-ratio: 3 / 2;
 		object-fit: cover;
 	}
 }
@@ -93,6 +97,7 @@
 	gap: var(--3x);
 	border-radius: var(--8x);
 	background: var(--basics-primary-90);
+
 	/* Glass */
 	box-shadow: 0px 11px 7px 0px var(--basics-primary-50);
 	backdrop-filter: blur(10px);
