@@ -64,7 +64,12 @@ export const blockMap: { [key: string]: BlockComponent } = {
 
 	bookmark: (block: Block) => <a href={block.url}>{block.text}</a>,
 
-	embed: (block: Block) => <iframe src={block.url} />,
+	embed: (block: Block) => (
+		<iframe
+			src={block.url}
+			height={'400'}
+		/>
+	),
 
 	video: (block: Block) => (
 		<video controls>

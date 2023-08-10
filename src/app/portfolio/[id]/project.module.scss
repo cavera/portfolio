@@ -115,8 +115,20 @@
 	flex-direction: column;
 	gap: var(--8x);
 
+	margin-bottom: var(--8x);
+
 	img {
 		max-height: 80vh;
+	}
+
+	iframe {
+		max-height: 45vh;
+		z-index: 10;
+		border: 0;
+		border-radius: var(--3x);
+	}
+	&:has(iframe) {
+		grid-column: 5/-1;
 	}
 
 	& > div {
