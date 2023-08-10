@@ -223,6 +223,9 @@ section {
 		justify-content: center;
 		gap: var(--8x);
 	}
+	@include mobile {
+		padding-top: var(--8x);
+	}
 }
 
 .section-content {
@@ -232,6 +235,13 @@ section {
 		width: 30%;
 		img {
 			width: 100%;
+		}
+		@include mobile {
+			width: 100%;
+
+			img {
+				max-height: 40vh;
+			}
 		}
 	}
 	&-text {
@@ -244,6 +254,12 @@ section {
 		p:not(:last-child) {
 			margin-bottom: 1em;
 		}
+		@include mobile {
+			width: 100%;
+		}
+	}
+	@include mobile {
+		flex-direction: column;
 	}
 }
 
@@ -253,4 +269,10 @@ p {
 
 img {
 	object-fit: cover;
+}
+
+/*----------  helpers  ----------*/
+
+.scroll-end {
+	scroll-snap-align: start;
 }

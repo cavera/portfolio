@@ -1,8 +1,7 @@
-import { TProject } from '@/types/Types'
 import { mapElementsData } from '@/data/mapData'
-import { ProjectCard } from '../ProjectCard'
 import { SectionTitle } from '../SectionTitle'
-import Link from 'next/link'
+import ProjectsList from '../ProjectsList'
+import { MoreLink } from './MoreLink'
 
 import styles from './projects.module.scss'
 
@@ -13,23 +12,9 @@ async function Projects(props: any) {
 	return (
 		<section className={styles.projects_container}>
 			<SectionTitle>Projects</SectionTitle>
-			<div className={styles.projects}>
-				{filteredData.map((project: TProject) => (
-					<ProjectCard
-						project={project}
-						key={project.id}
-					/>
-				))}
-			</div>
-			{filtered && (
-				<div className={styles.more}>
-					<Link
-						href='/portfolio'
-						className={styles.more_link}>
-						More projects...
-					</Link>
-				</div>
-			)}
+
+			<ProjectsList filteredData={filteredData} />
+			<MoreLink filtered={filtered} />
 		</section>
 	)
 }

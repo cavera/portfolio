@@ -57,6 +57,9 @@
 			transform: scale(1);
 		}
 	}
+	@include mobile {
+		width: 100%;
+	}
 }
 
 .card_link {

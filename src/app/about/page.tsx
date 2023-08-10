@@ -28,11 +28,13 @@ async function About() {
 					<p>What sets me apart from other UI designers and Front-end developers is my ability to combine both design and development skills to create a seamless user experience. I believe that the best designs are not only visually appealing but are also intuitive and easy to use.</p>
 					<p>I come from the world of e-learning, where the goal is always to make some type of knowledge didactic, interesting, and simple to learn. To that end, I create user interfaces that help provide this knowledge in a way that is unlike the normal dull and generic manner in which educational material is presented.</p>
 					<p>If you want to know more about me, you can download my CV below. I hope you enjoy it too!</p>
-					<Button
-						link={url}
-						type='primary'
-						text='Download CV'
-					/>
+					<div className='scroll-end'>
+						<Button
+							link={url}
+							type='primary'
+							text='Download CV'
+						/>
+					</div>
 				</div>
 			</div>
 		</section>
