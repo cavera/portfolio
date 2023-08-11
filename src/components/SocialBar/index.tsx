@@ -1,3 +1,5 @@
+'use client'
+
 import { Mail } from 'iconoir-react'
 import { Brands } from '../Icons/Brands'
 import { Icon } from './Icon'
