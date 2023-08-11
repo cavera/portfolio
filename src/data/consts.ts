@@ -17,4 +17,4 @@ export const CV_BLOCK_ID = '53f20ffa-1d72-4bf9-b9f6-81efbe1f8aa3'
 
 export const DEFAULT_PROJECT_BG = '/images/default_bg.jpg'
 
-export const CV_URL = CAVERA.portfolio.url+ 'UI_Designer_FrontEnd_Leonardo_Fonseca.pdf'
+export const CV_URL = CAVERA.portfolio.url+ 'cv/UI_Designer_FrontEnd_Leonardo_Fonseca.pdf'
