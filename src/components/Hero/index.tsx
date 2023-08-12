@@ -10,6 +10,7 @@ import styles from './Hero.module.scss'
 const Hero = () => {
 	const logoRef = useRef<HTMLDivElement>(null)
 	const contentRef = useRef<HTMLDivElement>(null)
+	const socialRef = useRef<HTMLDivElement>(null)
 
 	// gsap animations
 	useLayoutEffect(() => {
@@ -34,7 +35,7 @@ const Hero = () => {
 				0.5
 			)
 			.fromTo(
-				contentRef.current?.getElementsByTagName('a') as any,
+				socialRef.current?.getElementsByTagName('a') as any,
 				{
 					autoAlpha: 0,
 				},
@@ -58,7 +59,9 @@ const Hero = () => {
 				ref={contentRef}>
 				<p>With 10+ years of experience designing user interfaces and interactions for virtual courses in Latin America. I am proficient in Figma, Adobe Illustrator, HTML, CSS, JavaScript, and GSAP. I am committed to continuous learning and growth, and I am able to bridge the gap between designers and programmers.</p>
 			</article>
-			<aside className={styles.social}>
+			<aside
+				className={styles.social}
+				ref={socialRef}>
 				<SocialBar size={32} />
 			</aside>
 			<div className={styles.scroll_icon}>
