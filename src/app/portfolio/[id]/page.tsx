@@ -3,6 +3,8 @@ import { mapPageInfo } from '@/data/mapData'
 import { blockMap, groupBlocks } from './blockMap'
 import ImageFrame from '@/components/ImageFrame'
 import CTAs from '@/components/CTAs'
+import Tags from '@/components/Tags'
+
 import EndOfSection from './EndOfSection'
 
 import styles from './project.module.scss'
@@ -13,7 +15,7 @@ async function Page({ params }: { params: { id: string } }) {
 	const mappedData = await mapPageInfo(id)
 	const groupOfBlocks = groupBlocks(mappedData.blocks)
 
-	const { blocks, cover, title, subtitle, live_link, source } = mappedData
+	const { blocks, cover, title, subtitle, live_link, source, skills } = mappedData
 	const { paragraph, image, embed } = groupOfBlocks
 
 	const renderParagraphs = () => (
@@ -27,6 +29,7 @@ async function Page({ params }: { params: { id: string } }) {
 					/>
 				)
 			})}
+			<Tags skills={skills} />
 		</div>
 	)
 

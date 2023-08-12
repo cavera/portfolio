@@ -3,6 +3,11 @@
 .card {
 	flex: 1 0 auto;
 	height: 290px;
+
+	background-image: url('/images/default_bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
 	min-width: 290px;
 	border-radius: var(--8x);
 	box-shadow: 0 0 10px var(--basics-primary-80);
@@ -21,7 +26,7 @@
 
 	h2 {
 		font-size: 1rem;
-		font-weight: 300;
+		font-weight: 500;
 	}
 
 	img {

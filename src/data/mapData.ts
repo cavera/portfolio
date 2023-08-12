@@ -39,7 +39,7 @@ export async function mapPageInfo(id: string) {
 	// console.log(pageBlocks.results)
 
 	const { cover, properties } = data
-	const { title, subtitle, live_link, source } = properties
+	const { title, subtitle, live_link, source, skills } = properties
 
 	const blockParsers: { [key: string]: (block: any) => ParsedBlock } = {
 		paragraph: (block: any) => ({
@@ -88,6 +88,7 @@ export async function mapPageInfo(id: string) {
 		live_link: live_link?.url,
 		source: source?.url,
 		blocks: blocks,
+		skills: skills?.multi_select.map((skill: { name: string }) => skill.name),
 	}
 
 	return mappedInfo

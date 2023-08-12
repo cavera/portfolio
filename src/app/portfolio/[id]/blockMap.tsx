@@ -30,7 +30,10 @@ export const groupBlocks: BlockGroup = blocks => {
 }
 
 export const blockMap: { [key: string]: BlockComponent } = {
-	paragraph: (block: Block) => <p>{block.text}</p>,
+	paragraph: (block: Block) => {
+		if (!block.text || block.text.length < 1) return <></>
+		return <p>{block.text}</p>
+	},
 
 	heading_1: (block: Block) => <h1>{block.text}</h1>,
 

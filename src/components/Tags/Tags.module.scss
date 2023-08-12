@@ -3,64 +3,83 @@
 	align-items: flex-start;
 	align-content: flex-start;
 	align-self: stretch;
-	gap: 4px var(--1x);
+	gap: var(--2x);
 	flex-wrap: wrap;
 	margin-block-start: var(--3x);
 	transition: all 0.3s ease-in-out;
 }
 
 .tag {
+	--_tag-color:var(--basics-bg)
 	font-size: 14px;
-	font-weight: 700;
-	padding: var(--o5x) var(--2x);
-	border-radius: var(--2-x, 8px);
-	border-width: 1px;
-	border-style: solid;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.7);
 	background: var(--basics-primary-50);
+	padding: var(--o5x) var(--2x);
+	border-radius: var(--4x);
 	transition: all 0.3s ease-in-out;
 	overflow: 0;
+	position:relative;
+	
+	&:before,
+	&:after{
+		content:'';
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		border-radius: var(--4x);
+	}
+	&:before{
+		opacity: 0.5;
+		background-color: var(--_tag-color);
+	}
+	&:after{
+		border: 1px solid var(--_tag-color);
+		opacity: 0.8;
+
+	}
 }
 .html {
-	border-color: var(--tags-html);
+	--_tag-color: var(--tags-html);
 }
 .css {
-	border-color: var(--tags-css);
+	--_tag-color: var(--tags-css);
 }
-.javascript {
-	border-color: var(--tags-js);
+.javascript, .js {
+	--_tag-color: var(--tags-js);
 }
 .react {
-	border-color: var(--tags-react);
+	--_tag-color: var(--tags-react);
 }
 .gsap {
-	border-color: var(--tags-gsap);
+	--_tag-color: var(--tags-gsap);
 }
 .sass {
-	border-color: var(--tags-sass);
+	--_tag-color: var(--tags-sass);
 }
 .illustrator {
-	border-color: var(--tags-ai);
+	--_tag-color: var(--tags-ai);
 }
 .photoshop {
-	border-color: var(--tags-ps);
+	--_tag-color: var(--tags-ps);
 }
 .indesign {
-	border-color: var(--tags-id);
+	--_tag-color: var(--tags-id);
 }
 .after,
 .premiere,
 .audition {
-	border-color: var(--tags-ae_pr_au);
+	--_tag-color: var(--tags-ae_pr_au);
 }
 .figma {
-	border-color: var(--tags-figma);
+	--_tag-color: var(--tags-figma);
 }
 .sketch {
-	border-color: var(--tags-sketch);
+	--_tag-color: var(--tags-sketch);
 }
 .typescript {
-	border-color: var(--tags-typescript);
+	--_tag-color: var(--tags-typescript);
 }
 .tailwind {
-	border-color: var(--tags-tailwind);
+	--_tag-color: var(--tags-tailwind);
 }
