@@ -19,6 +19,11 @@
 		align-items: flex-start;
 	}
 
+	@include mobile {
+		min-height: calc(100vh - 80px);
+		min-height: calc(100dvh - 80px);
+	}
+
 	article {
 		display: flex;
 		flex-direction: column;

@@ -1,4 +1,5 @@
 import styles from './ImageFrame.module.scss'
+
 const ImageFrame = (props: any) => {
 	const { src, alt } = props
 	return (

@@ -11,6 +11,7 @@ const Hero = () => {
 	const logoRef = useRef<HTMLDivElement>(null)
 	const contentRef = useRef<HTMLDivElement>(null)
 	const socialRef = useRef<HTMLDivElement>(null)
+	const scrollRef = useRef<HTMLDivElement>(null)
 
 	// gsap animations
 	useLayoutEffect(() => {
@@ -46,6 +47,14 @@ const Hero = () => {
 				},
 				'-=1'
 			)
+			.from(
+				scrollRef.current,
+				{
+					autoAlpha: 0,
+					y: '+=30',
+				},
+				'+=1'
+			)
 	}, [])
 	return (
 		<section className={styles.hero}>
@@ -64,7 +73,9 @@ const Hero = () => {
 				ref={socialRef}>
 				<SocialBar size={32} />
 			</aside>
-			<div className={styles.scroll_icon}>
+			<div
+				className={styles.scroll_icon}
+				ref={scrollRef}>
 				<MouseScrollWheel
 					height={32}
 					width={32}
