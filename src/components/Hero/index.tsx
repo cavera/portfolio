@@ -57,8 +57,10 @@ const Hero = () => {
 				className={styles.hero_content}
 				ref={contentRef}>
 				<p>With 10+ years of experience designing user interfaces and interactions for virtual courses in Latin America. I am proficient in Figma, Adobe Illustrator, HTML, CSS, JavaScript, and GSAP. I am committed to continuous learning and growth, and I am able to bridge the gap between designers and programmers.</p>
-				<SocialBar size={32} />
 			</article>
+			<aside className={styles.social}>
+				<SocialBar size={32} />
+			</aside>
 			<div className={styles.scroll_icon}>
 				<MouseScrollWheel
 					height={32}

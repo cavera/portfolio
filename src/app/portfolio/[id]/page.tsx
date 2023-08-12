@@ -3,6 +3,7 @@ import { mapPageInfo } from '@/data/mapData'
 import { blockMap, groupBlocks } from './blockMap'
 import ImageFrame from '@/components/ImageFrame'
 import CTAs from '@/components/CTAs'
+import EndOfSection from './EndOfSection'
 
 import styles from './project.module.scss'
 
@@ -69,6 +70,7 @@ async function Page({ params }: { params: { id: string } }) {
 			{/* content */}
 			{renderParagraphs()}
 			{renderImagesAndObjects()}
+			<EndOfSection />
 		</section>
 	)
 }
