@@ -13,8 +13,10 @@ async function Projects(props: any) {
 		<section className={styles.projects_container}>
 			<SectionTitle>Projects</SectionTitle>
 
-			<ProjectsList filteredData={filteredData} />
-			<MoreLink filtered={filtered} />
+			<ProjectsList
+				filteredData={filteredData}
+				filtered={filtered}
+			/>
 		</section>
 	)
 }

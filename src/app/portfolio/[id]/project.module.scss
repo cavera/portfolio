@@ -70,7 +70,7 @@
 .cover_img {
 	grid-column: 5/-1;
 	z-index: 1;
-	mask-image: linear-gradient(black, transparent);
+	mask-image: linear-gradient(black 0%, rgba(0, 0, 0, 0.5) 30%, transparent 80%);
 
 	img {
 		aspect-ratio: 16 / 9;

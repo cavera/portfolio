@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { TProject } from '@/types/Types'
 import styles from './projects.module.scss'
 
-export const MoreLink = ({ filtered }: { filtered: TProject[] }) => {
+export const MoreLink = ({ filtered }: { filtered: boolean }) => {
 	return (
 		<>
 			{filtered && (

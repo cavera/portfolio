@@ -1,4 +1,19 @@
 .tags_container {
+	--tags-html: #e44d26;
+	--tags-css: #264de4;
+	--tags-js: #f7df1e;
+	--tags-react: #00d8ff;
+	--tags-gsap: #88ce02;
+	--tags-sass: #cd6799;
+	--tags-ai: #ff9a00;
+	--tags-ps: #31a8ff;
+	--tags-id: #ff3366;
+	--tags-ae_pr_au: #9999ff;
+	--tags-figma: #a259ff;
+	--tags-sketch: #fdad00;
+	--tags-typescript: #3178c6;
+	--tags-tailwind: #38bdf8;
+
 	display: flex;
 	align-items: flex-start;
 	align-content: flex-start;

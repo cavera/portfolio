@@ -3,16 +3,12 @@
 .image_frame {
 	border-radius: var(--8x);
 	overflow: hidden;
-	min-height: 300px;
+	min-height: auto;
 	@extend .custom-bevel;
 	img {
 		border-radius: inherit;
 		display: block;
 		width: 100%;
 		height: 100%;
-	}
-
-	@include mobile {
-		min-height: auto;
 	}
 }
