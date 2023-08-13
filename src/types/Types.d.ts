@@ -10,4 +10,5 @@ export type TProject = {
 	live_link?: null | string
 	skills?: string[]
 	id?: string
+	featured?: boolean
 }

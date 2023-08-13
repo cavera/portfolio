@@ -1,7 +1,7 @@
 @import '../../styles/mixins', '../../styles/utilities';
 
 .card {
-	flex: 1 0 auto;
+	flex: 2 0 auto;
 	height: 290px;
 
 	background-image: url('/images/default_bg.jpg');
@@ -67,6 +67,7 @@
 			transform: scale(1);
 		}
 	}
+
 	@include tablet {
 		max-width: 100%;
 	}

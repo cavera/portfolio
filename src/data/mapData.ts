@@ -5,7 +5,7 @@ export async function mapElementsData() {
 
 	return data.map((page: { id: string; properties: any; cover: any }) => {
 		const { id, properties, cover } = page
-		const { title, subtitle, source, live_link, skills } = properties
+		const { title, subtitle, source, live_link, skills, featured } = properties
 
 		const mappedInfo = {
 			cover: cover?.file.url || DEFAULT_PROJECT_BG,
@@ -15,6 +15,7 @@ export async function mapElementsData() {
 			live_link: live_link?.url,
 			skills: skills?.multi_select.map((skill: { name: string }) => skill.name),
 			id,
+			featured: featured?.checkbox,
 		}
 		// console.log(mappedInfo)
 		return mappedInfo
