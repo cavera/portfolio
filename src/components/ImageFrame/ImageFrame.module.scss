@@ -1,12 +1,8 @@
-@import '../../styles/utilities';
+@import '../../styles/utilities', '../../styles/mixins.scss';
 
 .image_frame {
 	border-radius: var(--8x);
 	overflow: hidden;
-	// background-color: var(--basics-primary-50);
-	// background-image: url('/images/default_bg.jpg');
-	// background-size: cover;
-	// background-repeat: no-repeat;
 	min-height: 300px;
 	@extend .custom-bevel;
 	img {
@@ -14,5 +10,9 @@
 		display: block;
 		width: 100%;
 		height: 100%;
+	}
+
+	@include mobile {
+		min-height: auto;
 	}
 }
