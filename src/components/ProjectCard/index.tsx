@@ -9,7 +9,10 @@ export function ProjectCard({ project }: { project: TProject }) {
 	const { cover, title, subtitle, live_link, source, skills, id } = project
 
 	return (
-		<article className={styles.card}>
+		<article
+			className={styles.card}
+			// style={{ backgroundImage: `url(${cover})` }}
+		>
 			<img
 				src={cover}
 				alt={title}
