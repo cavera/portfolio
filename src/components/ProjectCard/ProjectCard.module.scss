@@ -66,6 +66,9 @@
 			transform: scale(1);
 		}
 	}
+	@include tablet {
+		max-width: 100%;
+	}
 	@include mobile {
 		width: 100%;
 	}
