@@ -3,6 +3,7 @@ import { TProject } from '@/types/Types'
 
 import styles from './ProjectsList.module.scss'
 import { MoreLink } from '../projects/MoreLink'
+
 const ProjectsList = ({ filteredData, filtered = false }: { filteredData: TProject[]; filtered: boolean }) => {
 	return (
 		<>

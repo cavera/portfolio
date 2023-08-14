@@ -5,8 +5,6 @@ import { TProject } from '@/types/Types'
 
 import styles from './projects.module.scss'
 
-export const revalidate = 0
-
 async function Projects(props: any) {
 	const { filtered } = props
 	const mappedData = await mapElementsData()

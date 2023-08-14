@@ -1,5 +1,8 @@
 import { getElements, getPageContent, getPageInfo } from '../data/notion'
 import { DEFAULT_PROJECT_BG } from './consts'
+
+export const revalidate = 60
+
 export async function mapElementsData() {
 	const data = await getElements()
 
