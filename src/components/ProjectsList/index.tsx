@@ -8,7 +8,7 @@ const ProjectsList = ({ filteredData, filtered = false }: { filteredData: TProje
 	return (
 		<>
 			<div className={styles.projects}>
-				{filteredData.map((project: TProject) => (
+				{filteredData?.map((project: TProject) => (
 					<ProjectCard
 						project={project}
 						key={project.id}

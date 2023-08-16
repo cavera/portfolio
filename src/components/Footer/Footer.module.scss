@@ -4,9 +4,11 @@
 	display: flex;
 	max-width: var(--wrapper);
 	padding: var(--6x);
+	height: 80px;
 	justify-content: space-between;
 	align-items: center;
 	@extend .custom-bevel;
+
 	span {
 		font-size: var(--p);
 	}

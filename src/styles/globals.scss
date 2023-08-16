@@ -125,6 +125,7 @@ html {
 	scroll-snap-type: y proximity;
 	@include tablet {
 		scroll-snap-type: none;
+		overflow-x: hidden;
 	}
 }
 
@@ -143,7 +144,8 @@ a {
 body {
 	--gra-rad: 64%;
 	display: grid;
-	grid-template-rows: min-content 1fr auto;
+	grid-template-rows: auto 1fr auto;
+	// grid-template-rows: 0 0.9fr 80px;
 	gap: 0px;
 	grid-template-areas:
 		'header'
