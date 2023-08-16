@@ -1,19 +1,21 @@
-import styles from './Logo.module.scss'
+// import styles from './Logo.module.scss'
+import './Logo.scss'
 
-export const Logo = () => {
+export const Logo = (props: any) => {
+	// const { logo_container, logo_name, logo_text, hidden, to_hide, normal } = styles
 	return (
-		<div className={styles.logo_container}>
-			<p className={`${styles.logo_name} ${styles.to_hide}`}>Leonardo</p>
+		<div className={`logo_container normal`}>
+			<p className={`logo_name to_hide`}>Leonardo</p>
 
 			<p>
-				<span className={`${styles.logo_name} ${styles.to_hide}`}>Fonse</span>
-				<strong className={styles.logo_text}>ca</strong>
-				<strong className={`${styles.logo_text} ${styles.hidden}`}>vera</strong>
+				<span className={`logo_name to_hide`}>Fonse</span>
+				<strong className={`logo_text`}>ca</strong>
+				<strong className={`logo_text hidden`}>vera</strong>
 			</p>
 
 			<p>
-				<span className={`${styles.logo_name} ${styles.to_hide}`}>Ri</span>
-				<strong className={`${styles.logo_text} ${styles.to_hide}`}>vera</strong>
+				<span className={`logo_name to_hide`}>Ri</span>
+				<strong className={`logo_text to_hide`}>vera</strong>
 			</p>
 		</div>
 	)

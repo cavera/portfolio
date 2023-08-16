@@ -15,25 +15,31 @@ const Hero = () => {
 
 	// gsap animations
 	useLayoutEffect(() => {
+		const speed = 0.5
 		const tl = gsap.timeline({
 			defaults: {
-				duration: 0.8,
 				ease: 'power3.out',
-				delay: 0.5,
+				duration: speed,
 			},
 		})
 
 		tl.from(logoRef.current, {
 			autoAlpha: 0,
 			x: '-=30',
+			duration: speed,
 		})
-			.from(
-				contentRef.current,
-				{
-					autoAlpha: 0,
-					x: '+=30',
+			.from(contentRef.current, {
+				autoAlpha: 0,
+				x: '+=30',
+				duration: speed,
+			})
+			.add('social')
+			.call(
+				() => {
+					logoRef.current?.querySelector('.logo_container')?.classList.remove('normal')
 				},
-				0.5
+				[],
+				'social'
 			)
 			.fromTo(
 				socialRef.current?.getElementsByTagName('a') as any,
@@ -42,10 +48,10 @@ const Hero = () => {
 				},
 				{
 					autoAlpha: 1,
-					duration: 0.3,
-					stagger: 0.2,
+					duration: 0.2,
+					stagger: 0.15,
 				},
-				'-=1'
+				'social+=0.2'
 			)
 			.from(
 				scrollRef.current,
@@ -53,7 +59,7 @@ const Hero = () => {
 					autoAlpha: 0,
 					y: '+=30',
 				},
-				'+=1'
+				`+=${speed}`
 			)
 	}, [])
 	return (
