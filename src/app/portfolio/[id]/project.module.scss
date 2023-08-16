@@ -131,9 +131,8 @@
 		z-index: 10;
 		border: 0;
 		border-radius: var(--3x);
-	}
-	&:has(iframe) {
 		grid-column: 5/-1;
+		width: 100%;
 	}
 
 	& > div {
