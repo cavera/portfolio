@@ -1,6 +1,7 @@
 @import '../../styles/mixins', '../../styles/utilities';
 
 .card {
+	--transition-speed: 0.2s;
 	flex: 2 0 auto;
 	height: 290px;
 
@@ -17,7 +18,7 @@
 	overflow: hidden;
 	position: relative;
 	z-index: 0;
-	transition: all 0.3s ease-in-out;
+	transition: all var(--transition-speed) ease-in-out;
 	@extend .custom-bevel;
 
 	h1 {
@@ -38,7 +39,7 @@
 		height: 100%;
 		object-fit: cover;
 		z-index: -2;
-		transition: all 0.3s ease-in-out;
+		transition: all var(--transition-speed) ease-in-out;
 		transform: scale(1.05);
 	}
 
@@ -85,7 +86,7 @@
 	display: grid;
 	place-items: center;
 	font-size: 4em;
-	transition: opacity 0.3s;
+	transition: opacity var(--transition-speed);
 	opacity: 0;
 
 	&:hover {
@@ -110,6 +111,6 @@
 	align-items: center;
 	gap: var(--4x);
 	align-self: stretch;
-	transition: all 0.3s ease-in-out;
+	transition: all var(--transition-speed) ease-in-out;
 	opacity: 0;
 }

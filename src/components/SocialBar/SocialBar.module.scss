@@ -5,6 +5,8 @@
 	--icon-size: var(--8x);
 
 	a {
+		position: relative;
+
 		// font-size: var(--icon-size);
 		color: var(--basics-primary);
 		transition: all 0.3s ease-in-out;
@@ -14,6 +16,23 @@
 		}
 		&:hover {
 			color: var(--basics-secondary);
+			.tooltip {
+				opacity: 1;
+			}
 		}
 	}
+}
+
+.tooltip {
+	position: absolute;
+	left: 50%;
+	top: 105%;
+	transform: translateX(-50%);
+	background: var(--basics-bg);
+	color: var(--basics-text);
+	opacity: 0;
+	font-size: 0.5em;
+	padding: var(--2x);
+	border-radius: var(--2x);
+	transition: all 0.2s ease-in-out;
 }

@@ -12,11 +12,11 @@ const links = [
 	},
 	{
 		icon: Brands.behance,
-		link: 'https://www.behance.net/cavera',
+		link: 'https://behance.net/cavera',
 	},
 	{
 		icon: Brands.linkedin,
-		link: 'https://www.linkedin.com/in/leonardo-ui/',
+		link: 'https://linkedin.com/in/leonardo-ui/',
 	},
 	{
 		icon: Brands.codepen,
