@@ -12,6 +12,8 @@ export const Icon = (props: { link: string; icon: any }) => {
 	)
 }
 const Tooltip = ({ content }: { content: string }) => {
-	const tooltipContent = content.includes('mailto') ? content.split('mailto:')[1] : content.split('://')[1]
+	const urlPrefix = content.includes('mailto') ? 'mailto:' : 'https://'
+
+	const tooltipContent = content.split(urlPrefix)[1]
 	return <div className={styles.tooltip}>{tooltipContent}</div>
 }

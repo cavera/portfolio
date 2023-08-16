@@ -10,10 +10,12 @@
 		// font-size: var(--icon-size);
 		color: var(--basics-primary);
 		transition: all 0.3s ease-in-out;
+
 		svg {
 			width: 1em;
 			height: 1em;
 		}
+
 		&:hover {
 			color: var(--basics-secondary);
 			.tooltip {
@@ -28,6 +30,7 @@
 	left: 50%;
 	top: 105%;
 	transform: translateX(-50%);
+	width: max-content;
 	background: var(--basics-bg);
 	color: var(--basics-text);
 	opacity: 0;

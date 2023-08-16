@@ -26,3 +26,9 @@
 		@content;
 	}
 }
+
+@mixin smallScreen() {
+	@media (max-height: 600px) {
+		@content;
+	}
+}

@@ -3,16 +3,9 @@ import ImageFrame from '@/components/ImageFrame'
 
 import { getPageContent } from '@/data/notion'
 import Button from '@/components/Button'
-// import { CV_BLOCK_ID } from '@/data/consts'
 import { CV_URL } from '@/data/consts'
 
 async function About() {
-	// const cvId: string = CV_BLOCK_ID
-
-	// const cvData = await getPageContent(cvId)
-	// const url = cvData.results[0]?.file.file.url
-	// console.log(cvData.results[0]);
-
 	const cvurl = CV_URL
 
 	return (
