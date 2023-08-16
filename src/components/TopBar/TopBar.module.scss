@@ -21,6 +21,8 @@
 		display: grid;
 		grid-template-columns: 64px 1fr 64px;
 		place-items: center;
+		width: 100vw;
+		margin: 0;
 
 		gap: var(--5x);
 		inset: auto 0 0;
@@ -40,8 +42,11 @@
 		z-index: -1;
 		display: none;
 		@include mobile {
+			width: auto;
+			transform: none;
+			right: 0;
+			left: 0;
 			top: 0;
-			bottom: -10px;
 			display: block;
 		}
 	}
@@ -70,10 +75,12 @@
 		grid-column: 1/2;
 	}
 }
+
 .h1 {
 	font-size: var(--8x);
 	font-weight: 700;
 	color: var(--basics-secondary);
+
 	@include mobile {
 		display: flex;
 		flex-direction: column;
