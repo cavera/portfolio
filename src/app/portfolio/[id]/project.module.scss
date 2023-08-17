@@ -71,6 +71,7 @@
 	grid-column: 5/-1;
 	z-index: 1;
 	mask-image: linear-gradient(black 0%, rgba(0, 0, 0, 0.7) 30%, transparent 80%);
+	z-index: -1;
 
 	img {
 		aspect-ratio: 16 / 9;
