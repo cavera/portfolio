@@ -9,9 +9,11 @@ export async function mapElementsData() {
 	return data.map((page: { id: string; properties: any; cover: any }) => {
 		const { id, properties, cover } = page
 		const { title, subtitle, source, live_link, skills, featured } = properties
+		const isCoverExternal = cover.type === 'external'
+		const coverSource = isCoverExternal ? cover?.external?.url : cover?.file?.url
 
 		const mappedInfo = {
-			cover: cover?.file.url || DEFAULT_PROJECT_BG,
+			cover: coverSource || DEFAULT_PROJECT_BG,
 			title: title?.title[0].plain_text,
 			subtitle: subtitle?.rich_text[0]?.plain_text,
 			source: source?.url,
@@ -85,8 +87,12 @@ export async function mapPageInfo(id: string) {
 		}
 	})
 	// console.log(blocks)
+
+	const isCoverExternal = cover.type === 'external'
+	const coverSource = isCoverExternal ? cover?.external?.url : cover?.file?.url
+
 	const mappedInfo = {
-		cover: cover?.file.url || DEFAULT_PROJECT_BG,
+		cover: coverSource || DEFAULT_PROJECT_BG,
 		title: title.title[0]?.plain_text,
 		subtitle: subtitle?.rich_text[0]?.plain_text,
 		live_link: live_link?.url,
