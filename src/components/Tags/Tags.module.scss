@@ -4,6 +4,7 @@
 	--tags-js: #f7df1e;
 	--tags-react: #00d8ff;
 	--tags-gsap: #88ce02;
+	--tags-stylus: #b3d107;
 	--tags-sass: #cd6799;
 	--tags-ai: #ff9a00;
 	--tags-ps: #31a8ff;
@@ -13,6 +14,8 @@
 	--tags-sketch: #fdad00;
 	--tags-typescript: #3178c6;
 	--tags-tailwind: #38bdf8;
+	--tags-pug: #a86454;
+	--tags-svg: #ffb13b;
 
 	display: flex;
 	align-items: flex-start;
@@ -25,7 +28,7 @@
 }
 
 .tag {
-	--_tag-color:var(--basics-bg)
+	--_tag-color: var(--basics-primary-light);
 	font-size: 14px;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.9);
@@ -34,24 +37,23 @@
 	border-radius: var(--4x);
 	transition: all 0.3s ease-in-out;
 	overflow: 0;
-	position:relative;
-	
+	position: relative;
+
 	&:before,
-	&:after{
-		content:'';
+	&:after {
+		content: '';
 		position: absolute;
 		inset: 0;
 		z-index: -1;
 		border-radius: var(--4x);
 	}
-	&:before{
+	&:before {
 		opacity: 0.25;
 		background-color: var(--_tag-color);
 	}
-	&:after{
+	&:after {
 		border: 1px solid var(--_tag-color);
 		opacity: 0.5;
-
 	}
 }
 .html {
@@ -60,7 +62,8 @@
 .css {
 	--_tag-color: var(--tags-css);
 }
-.javascript, .js {
+.javascript,
+.js {
 	--_tag-color: var(--tags-js);
 }
 .react,
@@ -98,4 +101,13 @@
 }
 .tailwind {
 	--_tag-color: var(--tags-tailwind);
+}
+.stylus {
+	--_tag-color: var(--tags-stylus);
+}
+.pug {
+	--_tag-color: var(--tags-pug);
+}
+.svg {
+	--_tag-color: var(--tags-svg);
 }
