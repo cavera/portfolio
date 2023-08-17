@@ -3,9 +3,262 @@
   "results": [
     {
       "object": "page",
+      "id": "0d359cab-4b14-4195-a325-31e103ab6953",
+      "created_time": "2023-08-12T04:45:00.000Z",
+      "last_edited_time": "2023-08-12T05:12:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "b7d0a6db-a8ae-45e6-b7b4-e3f97dfcc4e7",
+              "name": "Youtube",
+              "color": "red"
+            },
+            {
+              "id": "80f898bd-d6bd-43c7-9da3-b5007f655567",
+              "name": "CMP",
+              "color": "green"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "subtitle": {
+          "id": "_%5DnB",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Video Edición",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Video Edición",
+              "href": null
+            }
+          ]
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "e1d0eb5f-78eb-43d0-940e-68f173246466",
+              "name": "After Effects",
+              "color": "purple"
+            },
+            {
+              "id": "86b67b8e-c40a-4bb6-84c7-134fa020745c",
+              "name": "Premiere",
+              "color": "purple"
+            },
+            {
+              "id": "aa89e49a-1b91-43d6-a517-2f60b60b66d6",
+              "name": "Illustrator",
+              "color": "orange"
+            }
+          ]
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Reel CrearMedia Perú",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Reel CrearMedia Perú",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Reel-CrearMedia-Per-0d359cab4b144195a32531e103ab6953",
+      "public_url": "https://cavera.notion.site/Reel-CrearMedia-Per-0d359cab4b144195a32531e103ab6953"
+    },
+    {
+      "object": "page",
+      "id": "b237a541-0ced-492b-973e-38d6a7743ab3",
+      "created_time": "2023-08-10T16:47:00.000Z",
+      "last_edited_time": "2023-08-10T17:03:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
+            "name": "Not started",
+            "color": "default"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "8f11385e-df28-42dd-aebb-18ed800c1e07",
+              "name": "A",
+              "color": "default"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "subtitle": {
+          "id": "_%5DnB",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "page",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "page",
+              "href": null
+            }
+          ]
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": []
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Not found",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Not found",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Not-found-b237a5410ced492b973e38d6a7743ab3",
+      "public_url": "https://cavera.notion.site/Not-found-b237a5410ced492b973e38d6a7743ab3"
+    },
+    {
+      "object": "page",
       "id": "e920ea11-eb82-49e9-acc3-209983622f37",
       "created_time": "2023-08-09T18:14:00.000Z",
-      "last_edited_time": "2023-08-09T18:19:00.000Z",
+      "last_edited_time": "2023-08-17T20:16:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -15,10 +268,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4ea53b33-93bd-466f-bfe0-381c7cf4fde5/cover2021.png.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213037Z&X-Amz-Expires=3600&X-Amz-Signature=02cfa9646dc60dcd15c022f5fdbf56eab9e6da12e3beb99c395eeb1309161c79&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.498Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692303399/portfolio/cmp2021.png"
         }
       },
       "icon": null,
@@ -57,6 +309,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -126,9 +383,283 @@
     },
     {
       "object": "page",
+      "id": "2d69e9e9-f416-4049-9e62-8822a2672ece",
+      "created_time": "2023-08-08T18:49:00.000Z",
+      "last_edited_time": "2023-08-09T22:24:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "022ac620-8e51-41d1-9d5d-840c3281167d",
+            "name": "Done",
+            "color": "pink"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "8f11385e-df28-42dd-aebb-18ed800c1e07",
+              "name": "A",
+              "color": "default"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "subtitle": {
+          "id": "_%5DnB",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Website",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Website",
+              "href": null
+            }
+          ]
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "d7f293a5-20df-4095-976e-18fdaa9fdaa0",
+              "name": "Figma",
+              "color": "blue"
+            },
+            {
+              "id": "be8f81d1-3fe4-493b-849f-c6d9b83aea21",
+              "name": "Web Design",
+              "color": "pink"
+            },
+            {
+              "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
+              "name": "HTML",
+              "color": "orange"
+            },
+            {
+              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
+              "name": "JS",
+              "color": "yellow"
+            },
+            {
+              "id": "981bbe2f-4018-46e2-9f7a-cfb64867059e",
+              "name": "React JS",
+              "color": "blue"
+            },
+            {
+              "id": "a2b8f0be-82ab-4acf-b3e0-93aeae87eeda",
+              "name": "SASS",
+              "color": "pink"
+            },
+            {
+              "id": "96517695-3e32-41c7-bdc4-805b33c3713a",
+              "name": "Next.js",
+              "color": "default"
+            }
+          ]
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Portfolio",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Portfolio",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Portfolio-2d69e9e9f41640499e628822a2672ece",
+      "public_url": "https://cavera.notion.site/Portfolio-2d69e9e9f41640499e628822a2672ece"
+    },
+    {
+      "object": "page",
+      "id": "ba56d719-fb6e-4a58-81dc-b6945303636b",
+      "created_time": "2023-08-08T17:22:00.000Z",
+      "last_edited_time": "2023-08-11T02:06:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
+      },
+      "archived": false,
+      "properties": {
+        "progress": {
+          "id": "ERxJ",
+          "type": "status",
+          "status": {
+            "id": "022ac620-8e51-41d1-9d5d-840c3281167d",
+            "name": "Done",
+            "color": "pink"
+          }
+        },
+        "public": {
+          "id": "NF%40%3F",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "origin": {
+          "id": "Poi%3E",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "8f11385e-df28-42dd-aebb-18ed800c1e07",
+              "name": "A",
+              "color": "default"
+            }
+          ]
+        },
+        "source": {
+          "id": "XWCz",
+          "type": "url",
+          "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "subtitle": {
+          "id": "_%5DnB",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "CV",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "CV",
+              "href": null
+            }
+          ]
+        },
+        "skills": {
+          "id": "d%5ETj",
+          "type": "multi_select",
+          "multi_select": [
+            {
+              "id": "e493a8ac-9bf5-4fc7-8360-10dc456ea523",
+              "name": "inDesign",
+              "color": "default"
+            }
+          ]
+        },
+        "live_link": {
+          "id": "opPF",
+          "type": "url",
+          "url": null
+        },
+        "title": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Portfolio CV",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Portfolio CV",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://www.notion.so/Portfolio-CV-ba56d719fb6e4a5881dcb6945303636b",
+      "public_url": "https://cavera.notion.site/Portfolio-CV-ba56d719fb6e4a5881dcb6945303636b"
+    },
+    {
+      "object": "page",
       "id": "6483f3ed-51c3-4762-adfa-cc11357a0d29",
       "created_time": "2023-07-30T18:15:00.000Z",
-      "last_edited_time": "2023-08-01T03:34:00.000Z",
+      "last_edited_time": "2023-08-17T01:50:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -138,10 +669,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d9050ede-7fc9-4e14-a617-4dbb4b90ac7a/codepen.io_collection_xKJNYR_grid_typegrid.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=652d327ebc8acc9b11ecda996c41e4cf0182bf12795691ba8af42e636b235530&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.502Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692236969/portfolio/codepen.io.jpg"
         }
       },
       "icon": null,
@@ -180,6 +710,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -286,7 +821,7 @@
       "object": "page",
       "id": "b70be28b-fb0a-4672-9863-5bfea7546cdf",
       "created_time": "2023-07-30T15:14:00.000Z",
-      "last_edited_time": "2023-08-06T04:21:00.000Z",
+      "last_edited_time": "2023-08-17T20:27:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -296,10 +831,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5edf9043-bc66-481b-b6b3-eb38fc7e168e/posts2023_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=c75f409c3748c7fb1abb65614dc5c375b9a3e5ea744fee7950565af7a846ee4e&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.507Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692304028/portfolio/cmp2023_bg.png"
         }
       },
       "icon": null,
@@ -338,6 +872,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -419,7 +958,7 @@
       "object": "page",
       "id": "d26cacc1-737d-48ff-8074-6df6e9c2ea66",
       "created_time": "2023-07-30T15:02:00.000Z",
-      "last_edited_time": "2023-08-01T03:43:00.000Z",
+      "last_edited_time": "2023-08-17T20:31:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -429,10 +968,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/207d8b41-2a07-4092-854c-88b3b6e9ae0b/posts2022_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=da8d28fdd222b9234360bc5b14be475a0e8130a8d3267c347ddef26dc5ef4f2f&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.527Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692304286/portfolio/cmp2022.png"
         }
       },
       "icon": null,
@@ -471,6 +1009,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -554,8 +1097,8 @@
       "cover": {
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/43aed18e-7877-4078-aa99-d116bc12fa7f/planes_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213037Z&X-Amz-Expires=3600&X-Amz-Signature=2e9d8ed0f199f5ca5405f878a5cdcd220c66dfae2efcfc912cac605f86e85d13&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.498Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/43aed18e-7877-4078-aa99-d116bc12fa7f/planes_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230817T212402Z&X-Amz-Expires=3600&X-Amz-Signature=f383d0e00fe42b6d4f69dfeaa45c16e0be75815ec5e705caa408f3522b17ef93&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-17T22:24:02.701Z"
         }
       },
       "icon": null,
@@ -594,6 +1137,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -677,8 +1225,8 @@
       "cover": {
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/27d0aa87-81f4-490e-a623-3cd0108049ba/timezone_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213037Z&X-Amz-Expires=3600&X-Amz-Signature=4bc6339e311fb42f960e891a84322b554c487ba013b8934fbc24dccb40751ee9&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.500Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/27d0aa87-81f4-490e-a623-3cd0108049ba/timezone_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230817T212402Z&X-Amz-Expires=3600&X-Amz-Signature=6335e5f0d1d1776d3010caf68600aca0fb3dd0af176572eccc06f4d1b574700a&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-17T22:24:02.702Z"
         }
       },
       "icon": null,
@@ -717,6 +1265,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -788,7 +1341,7 @@
       "object": "page",
       "id": "bb3aca8c-3ade-45e3-94af-48fa23435ad0",
       "created_time": "2023-07-30T14:49:00.000Z",
-      "last_edited_time": "2023-08-01T03:44:00.000Z",
+      "last_edited_time": "2023-08-12T04:40:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -800,8 +1353,8 @@
       "cover": {
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e63d1be3-f3cc-4cf4-b11b-c00d6a81ccf2/blurred_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213037Z&X-Amz-Expires=3600&X-Amz-Signature=468be2fe0d2623c1754081c9034895a354eb094726e13d79bebc9754b5de7978&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.498Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e63d1be3-f3cc-4cf4-b11b-c00d6a81ccf2/blurred_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230817T212402Z&X-Amz-Expires=3600&X-Amz-Signature=36372a0a1fedd5796e1bc8ea0209328fc5d38e42ba3ac928ed56835541813ed2&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-17T22:24:02.700Z"
         }
       },
       "icon": null,
@@ -840,6 +1393,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -911,7 +1469,7 @@
       "object": "page",
       "id": "30100890-6fec-4ee0-b185-d492836479a0",
       "created_time": "2023-07-30T04:43:00.000Z",
-      "last_edited_time": "2023-08-01T03:44:00.000Z",
+      "last_edited_time": "2023-08-17T02:18:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -921,10 +1479,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/74282b94-c161-4293-b01e-c2cff274471a/mailing_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=a7acce9096cc68f3eb2d371e5efa268875ee2510ad833f69871bbc5384c8136f&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.504Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692238729/portfolio/cmp_mailing.jpg"
         }
       },
       "icon": null,
@@ -963,6 +1520,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -1046,8 +1608,8 @@
       "cover": {
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/dd83e7f6-eaf6-4b65-8111-41f0cf0a968b/colortrails_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=5d9b684dd5328472ac3d1b3b291756da0f54f5ae39f989f559d1bfd1693c45a6&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.502Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/dd83e7f6-eaf6-4b65-8111-41f0cf0a968b/colortrails_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230817T212402Z&X-Amz-Expires=3600&X-Amz-Signature=b9c5de75ec841e634adf6dcd27e0ee7e632b1e6c40d809c7621a49f5cd03926d&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-17T22:24:02.707Z"
         }
       },
       "icon": null,
@@ -1086,6 +1648,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -1169,8 +1736,8 @@
       "cover": {
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d8ffd384-f799-48d5-803e-664b1bcc5736/vcr_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=86f24bb76eaec6d3d54516e4fcf87dcb9f1161fd5a7489280588ad6290d94dcf&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.506Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d8ffd384-f799-48d5-803e-664b1bcc5736/vcr_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230817T212402Z&X-Amz-Expires=3600&X-Amz-Signature=45264dd65a5a222e4b2e0f974ae277cb8312aa49bb18818f359cefc4db0ee0da&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-17T22:24:02.700Z"
         }
       },
       "icon": null,
@@ -1209,6 +1776,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -1292,8 +1864,8 @@
       "cover": {
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a683412e-c235-40a1-8285-7b06435c9385/linearww_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=f5840e2a76e29c4561cc2fc959f4d8c3bb457c1f1aa492852bf03d41208120b0&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.505Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a683412e-c235-40a1-8285-7b06435c9385/linearww_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230817T212402Z&X-Amz-Expires=3600&X-Amz-Signature=d144a9a1ee3ed9a40ae4e59284bbef58651cbc4f723c7caaad52055e0cc00e58&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-17T22:24:02.708Z"
         }
       },
       "icon": null,
@@ -1332,6 +1904,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -1415,8 +1992,8 @@
       "cover": {
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4e24ca24-555e-4ac9-a619-2c8f59cf85d6/teatime_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213037Z&X-Amz-Expires=3600&X-Amz-Signature=4abe1081fc7fd64aac35c8c22efa69d9eb9bfd122ba79ae137ebf825a02ca8f2&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.497Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4e24ca24-555e-4ac9-a619-2c8f59cf85d6/teatime_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230817T212402Z&X-Amz-Expires=3600&X-Amz-Signature=eeb06023564ecd0a5fc77fc322b1fec39f84dc09c2453de64aa6043ab0cec31f&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-17T22:24:02.710Z"
         }
       },
       "icon": null,
@@ -1455,6 +2032,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -1526,7 +2108,7 @@
       "object": "page",
       "id": "9f315510-3191-489a-a53c-2490793c9e68",
       "created_time": "2023-07-30T04:17:00.000Z",
-      "last_edited_time": "2023-08-01T03:45:00.000Z",
+      "last_edited_time": "2023-08-13T16:38:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -1538,8 +2120,8 @@
       "cover": {
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1a6f99e1-26f5-4876-816e-3344181f9180/nixie_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213037Z&X-Amz-Expires=3600&X-Amz-Signature=defcf160d07b74c6f5fbd9cac7efbd1142c7ccb4de6ab379bdb0aa6e152064d5&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.500Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1a6f99e1-26f5-4876-816e-3344181f9180/nixie_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230817T212402Z&X-Amz-Expires=3600&X-Amz-Signature=b6ad99d58ced01ad2c18d17712cf5059cd0ad8eadb37618191a4ca31dfac9ef1&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-17T22:24:02.703Z"
         }
       },
       "icon": null,
@@ -1578,6 +2160,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -1661,8 +2248,8 @@
       "cover": {
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/48f6fbed-5e69-4b70-9cd9-5c9b1dd1c3f8/linear_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213037Z&X-Amz-Expires=3600&X-Amz-Signature=8b968b3cb62a09a8aa5ee67382f4c1dfacc96f438976851caa8cf1702cbe2dc1&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.500Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/48f6fbed-5e69-4b70-9cd9-5c9b1dd1c3f8/linear_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230817T212402Z&X-Amz-Expires=3600&X-Amz-Signature=df7f3cf08edd46db8cdd45b05b45016d5d2008fa5aa96a5eee6bb1f0510b78f5&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-17T22:24:02.704Z"
         }
       },
       "icon": null,
@@ -1701,6 +2288,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -1784,8 +2376,8 @@
       "cover": {
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e1ada8d5-2652-4149-9545-55c8b235bac4/woodnleds_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213037Z&X-Amz-Expires=3600&X-Amz-Signature=228a1efbb04602d699f793c318e68ac37d1376d1f445f7e2c95ddad474af3c3b&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.499Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e1ada8d5-2652-4149-9545-55c8b235bac4/woodnleds_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230817T212402Z&X-Amz-Expires=3600&X-Amz-Signature=d754da962a63f58b7925afe3458a5da016c3c760c3d8addc42e77cd7c3ab867f&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-17T22:24:02.701Z"
         }
       },
       "icon": null,
@@ -1824,6 +2416,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -1907,8 +2504,8 @@
       "cover": {
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fb0af536-7a0e-4c63-9e05-9c4b97e9b9e4/sunlight_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213037Z&X-Amz-Expires=3600&X-Amz-Signature=456643b1a49a49e28de055434c37bca7587d90711599198e1003559787a74bc1&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.499Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fb0af536-7a0e-4c63-9e05-9c4b97e9b9e4/sunlight_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230817T212402Z&X-Amz-Expires=3600&X-Amz-Signature=726d8aa24ee4dcd170bc66b98c87d4aa18ded5fac698ac47c0b64bde7f8444b6&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-17T22:24:02.705Z"
         }
       },
       "icon": null,
@@ -1947,6 +2544,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -2065,6 +2667,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -2122,7 +2729,7 @@
       "object": "page",
       "id": "9d3c6abf-5a15-43e1-9609-4610d8ca6b9f",
       "created_time": "2023-07-15T00:13:00.000Z",
-      "last_edited_time": "2023-08-08T00:17:00.000Z",
+      "last_edited_time": "2023-08-17T20:36:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -2132,10 +2739,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f2f628b0-de49-4d0c-a72d-c30d54637899/localhost_3000_todo-react.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=cdcebb300fc894d5f9a3dfd4aabecc2e8f30abebb05e718f0d6decb3e5734e79&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.504Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692304591/portfolio/todo.png"
         }
       },
       "icon": null,
@@ -2174,6 +2780,11 @@
           "id": "XWCz",
           "type": "url",
           "url": "https://cavera.github.io/todo-react/"
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -2250,7 +2861,7 @@
       "object": "page",
       "id": "4a2eb94d-7315-4b3c-8fd5-abd941b7d469",
       "created_time": "2023-07-15T00:10:00.000Z",
-      "last_edited_time": "2023-08-06T03:52:00.000Z",
+      "last_edited_time": "2023-08-17T01:01:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -2260,10 +2871,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bf50aea9-b65a-474b-8145-cf7b5573f3f0/fe-mentor-agecalc.netlify.app_.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=73fb715d6cc44ce4c0681d1c81ded3e6243714cba5a5d8e845db3fc76af3910c&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.501Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692234097/portfolio/age_calc.jpg"
         }
       },
       "icon": null,
@@ -2302,6 +2912,11 @@
           "id": "XWCz",
           "type": "url",
           "url": "https://github.com/cavera/age-calculator-app"
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": true
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -2383,7 +2998,7 @@
       "object": "page",
       "id": "224c7e5d-b76b-45ba-a174-b05a5644682f",
       "created_time": "2023-07-15T00:02:00.000Z",
-      "last_edited_time": "2023-08-08T18:46:00.000Z",
+      "last_edited_time": "2023-08-17T21:22:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -2393,10 +3008,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/79be9d7d-bcf4-4f8f-8d3f-70ae9b6471e9/cover2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=aa8df940b509f10192295a7b19100286eb0b15f7108952e4941cc27964eb6d0d&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.503Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692306739/portfolio/cmpicons.jpg"
         }
       },
       "icon": null,
@@ -2435,6 +3049,11 @@
           "id": "XWCz",
           "type": "url",
           "url": "https://www.behance.net/gallery/151632723/crearmedape-Website-Icons"
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -2482,10 +3101,8 @@
             {
               "type": "text",
               "text": {
-                "content": "Crearmedia.pe",
-                "link": {
-                  "url": "http://crearmedia.pe/"
-                }
+                "content": "CrearMedia Website",
+                "link": null
               },
               "annotations": {
                 "bold": false,
@@ -2495,14 +3112,14 @@
                 "code": false,
                 "color": "default"
               },
-              "plain_text": "Crearmedia.pe",
-              "href": "http://crearmedia.pe/"
+              "plain_text": "CrearMedia Website",
+              "href": null
             }
           ]
         }
       },
-      "url": "https://www.notion.so/Crearmedia-pe-224c7e5db76b45baa174b05a5644682f",
-      "public_url": "https://cavera.notion.site/Crearmedia-pe-224c7e5db76b45baa174b05a5644682f"
+      "url": "https://www.notion.so/CrearMedia-Website-224c7e5db76b45baa174b05a5644682f",
+      "public_url": "https://cavera.notion.site/CrearMedia-Website-224c7e5db76b45baa174b05a5644682f"
     },
     {
       "object": "page",
@@ -2520,8 +3137,8 @@
       "cover": {
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c514db74-2525-446e-9bb5-8b7a61504519/moonfases_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213037Z&X-Amz-Expires=3600&X-Amz-Signature=d0c77e75e0d157833ed487f1c61e0cd7aec12258cc5c14ee9188990a84bd6745&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.497Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c514db74-2525-446e-9bb5-8b7a61504519/moonfases_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230817T212402Z&X-Amz-Expires=3600&X-Amz-Signature=4d340cd2fa573fc6648452f9c7570c90c72c716390cfe857725a604a2d3f744e&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-17T22:24:02.708Z"
         }
       },
       "icon": null,
@@ -2560,6 +3177,11 @@
           "id": "XWCz",
           "type": "url",
           "url": "https://www.behance.net/gallery/158579121/Moon-Fases-Watch-Face"
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -2631,7 +3253,7 @@
       "object": "page",
       "id": "e2b89929-de62-48d8-a09d-575e83b64bed",
       "created_time": "2023-06-08T16:44:00.000Z",
-      "last_edited_time": "2023-08-08T04:18:00.000Z",
+      "last_edited_time": "2023-08-17T20:44:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -2641,10 +3263,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b687d565-16c7-4d45-a9b9-bc48aea6d8a7/xoxo-tic.netlify.app_.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=3c716061c4c2f6af7b234469c66974abd093cc02049e83c0194eba45bd17ae97&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.504Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692305076/portfolio/tictactoe.png"
         }
       },
       "icon": null,
@@ -2683,6 +3304,11 @@
           "id": "XWCz",
           "type": "url",
           "url": "https://github.com/cavera/tic-tac-toe"
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -2764,7 +3390,7 @@
       "object": "page",
       "id": "99dab0b3-2da9-4e41-9ddd-581c4c0eca2e",
       "created_time": "2023-06-08T16:43:00.000Z",
-      "last_edited_time": "2023-08-06T03:54:00.000Z",
+      "last_edited_time": "2023-08-17T03:12:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -2774,10 +3400,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/425143dd-f155-4b9d-9b79-cd0c94785fd5/shopi-store_s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213037Z&X-Amz-Expires=3600&X-Amz-Signature=5064c1ff49984d389d0e72b20c07886d7a7f84e3b885642a1186aadcc2be0a4b&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.497Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692241922/portfolio/shopistore.png"
         }
       },
       "icon": null,
@@ -2816,6 +3441,11 @@
           "id": "XWCz",
           "type": "url",
           "url": "https://github.com/cavera/react-store"
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -2902,7 +3532,7 @@
       "object": "page",
       "id": "3462cdb2-208f-4637-8233-943ac47294ca",
       "created_time": "2023-06-08T16:41:00.000Z",
-      "last_edited_time": "2023-08-01T03:42:00.000Z",
+      "last_edited_time": "2023-08-17T02:52:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -2912,10 +3542,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4990aac7-73b8-499c-b211-2d8e0f6ac0bd/cav-movie.netlify_s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=1cf5b3b798eb91f81872b794031a2f9e6a2e18b24af3fa676e72eae904a75d52&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.505Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692240684/portfolio/mymovies_bg.png"
         }
       },
       "icon": null,
@@ -2954,6 +3583,11 @@
           "id": "XWCz",
           "type": "url",
           "url": "https://github.com/cavera/myMovies"
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": true
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -3038,96 +3672,9 @@
     },
     {
       "object": "page",
-      "id": "589488bb-1f9a-4951-8770-a92543cbdd1e",
-      "created_time": "2022-11-19T18:28:00.000Z",
-      "last_edited_time": "2023-06-08T16:41:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "cover": null,
-      "icon": null,
-      "parent": {
-        "type": "database_id",
-        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
-      },
-      "archived": false,
-      "properties": {
-        "progress": {
-          "id": "ERxJ",
-          "type": "status",
-          "status": {
-            "id": "6b79314f-2398-471c-a049-6a17d0612fe6",
-            "name": "Not started",
-            "color": "default"
-          }
-        },
-        "public": {
-          "id": "NF%40%3F",
-          "type": "checkbox",
-          "checkbox": false
-        },
-        "origin": {
-          "id": "Poi%3E",
-          "type": "multi_select",
-          "multi_select": []
-        },
-        "source": {
-          "id": "XWCz",
-          "type": "url",
-          "url": null
-        },
-        "subtitle": {
-          "id": "_%5DnB",
-          "type": "rich_text",
-          "rich_text": []
-        },
-        "skills": {
-          "id": "d%5ETj",
-          "type": "multi_select",
-          "multi_select": []
-        },
-        "live_link": {
-          "id": "opPF",
-          "type": "url",
-          "url": null
-        },
-        "title": {
-          "id": "title",
-          "type": "title",
-          "title": [
-            {
-              "type": "text",
-              "text": {
-                "content": "Watchfaces",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "Watchfaces",
-              "href": null
-            }
-          ]
-        }
-      },
-      "url": "https://www.notion.so/Watchfaces-589488bb1f9a49518770a92543cbdd1e",
-      "public_url": "https://cavera.notion.site/Watchfaces-589488bb1f9a49518770a92543cbdd1e"
-    },
-    {
-      "object": "page",
       "id": "8b767151-0c12-4f26-a004-77cf8e582966",
       "created_time": "2022-11-18T00:11:00.000Z",
-      "last_edited_time": "2023-08-01T03:42:00.000Z",
+      "last_edited_time": "2023-08-13T16:09:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -3139,8 +3686,8 @@
       "cover": {
         "type": "file",
         "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/09bc910e-90ee-4bd9-8f3f-50c08501f372/bubblecolors_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213037Z&X-Amz-Expires=3600&X-Amz-Signature=6d20e242c06f1069a27c85bf12fee085ae13e1832ae492c1d8ec06e6c0e9df43&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.501Z"
+          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/09bc910e-90ee-4bd9-8f3f-50c08501f372/bubblecolors_s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230817%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230817T212402Z&X-Amz-Expires=3600&X-Amz-Signature=85a907a5437f4040df053b983761c6a5b57727e8ce519bb384f6c1fd189d53ca&X-Amz-SignedHeaders=host&x-id=GetObject",
+          "expiry_time": "2023-08-17T22:24:02.709Z"
         }
       },
       "icon": null,
@@ -3179,6 +3726,11 @@
           "id": "XWCz",
           "type": "url",
           "url": "https://www.behance.net/gallery/157335133/Bubble-Colors-Watch-Face"
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": true
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -3250,7 +3802,7 @@
       "object": "page",
       "id": "b6ab6ea3-f59b-4b91-8daa-88b6eae97ea7",
       "created_time": "2022-08-29T15:01:00.000Z",
-      "last_edited_time": "2023-08-08T18:48:00.000Z",
+      "last_edited_time": "2023-08-17T20:58:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -3260,10 +3812,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/319956a3-328b-48e4-abe4-a5723be4e98f/onboard.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=e63995a90f96bf7fe5247170700d1b00e459cd48aeb0b7ccf24f20010b1874c1&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.507Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692305916/portfolio/onboarding.png"
         }
       },
       "icon": null,
@@ -3302,6 +3853,11 @@
           "id": "XWCz",
           "type": "url",
           "url": "https://www.behance.net/gallery/151225343/Bank-Onboarding"
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": true
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -3425,6 +3981,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -3524,6 +4085,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -3596,7 +4162,7 @@
       "object": "page",
       "id": "0ffaac67-5d7e-419b-bf62-778561391375",
       "created_time": "2022-08-16T20:01:00.000Z",
-      "last_edited_time": "2023-08-01T03:46:00.000Z",
+      "last_edited_time": "2023-08-17T20:49:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -3606,10 +4172,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e7fbe7b6-d412-4074-91f5-692e2289a680/dailyui.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213038Z&X-Amz-Expires=3600&X-Amz-Signature=87ec11d3815a7aa5e32b90e8d847098c0753a1146570401c2ebfb0c68ae41a51&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.501Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692305377/portfolio/dailyui.png"
         }
       },
       "icon": null,
@@ -3653,6 +4218,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -3729,7 +4299,7 @@
       "object": "page",
       "id": "3917ed7a-01b3-4eef-ad5a-955d86187908",
       "created_time": "2022-08-16T19:55:00.000Z",
-      "last_edited_time": "2023-08-08T04:22:00.000Z",
+      "last_edited_time": "2023-08-17T16:13:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -3776,10 +4346,33 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
-          "rich_text": []
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Page Landing",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Page Landing",
+              "href": null
+            }
+          ]
         },
         "skills": {
           "id": "d%5ETj",
@@ -3892,6 +4485,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -3990,6 +4588,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -4100,6 +4703,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -4204,6 +4812,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -4256,7 +4869,7 @@
       "object": "page",
       "id": "4978de9c-c580-49a1-81e3-a47cd9b0c889",
       "created_time": "2022-08-16T16:05:00.000Z",
-      "last_edited_time": "2022-08-16T19:58:00.000Z",
+      "last_edited_time": "2023-08-17T16:07:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -4303,10 +4916,33 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
-          "rich_text": []
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Interaction",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Interaction",
+              "href": null
+            }
+          ]
         },
         "skills": {
           "id": "d%5ETj",
@@ -4411,6 +5047,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -4521,6 +5162,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -4630,6 +5276,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -4738,6 +5389,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -4853,6 +5509,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -4962,6 +5623,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -5065,6 +5731,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -5175,6 +5846,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -5279,6 +5955,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -5325,7 +6006,7 @@
       "object": "page",
       "id": "54d5a350-7c1f-472b-885c-f46a3684b1d9",
       "created_time": "2022-08-10T22:26:00.000Z",
-      "last_edited_time": "2022-08-16T20:01:00.000Z",
+      "last_edited_time": "2023-08-17T17:01:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -5372,6 +6053,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -5381,11 +6067,6 @@
           "id": "d%5ETj",
           "type": "multi_select",
           "multi_select": [
-            {
-              "id": "be8f81d1-3fe4-493b-849f-c6d9b83aea21",
-              "name": "Web Design",
-              "color": "pink"
-            },
             {
               "id": "aa4c3409-fe6d-41b6-acd0-9053980ef3d5",
               "name": "HTML",
@@ -5485,6 +6166,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -5600,6 +6286,11 @@
           "type": "url",
           "url": null
         },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
+        },
         "subtitle": {
           "id": "_%5DnB",
           "type": "rich_text",
@@ -5660,110 +6351,6 @@
     },
     {
       "object": "page",
-      "id": "09ca74ab-a0f9-4d47-a229-a73069e9e777",
-      "created_time": "2022-08-10T15:48:00.000Z",
-      "last_edited_time": "2023-08-08T04:22:00.000Z",
-      "created_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "last_edited_by": {
-        "object": "user",
-        "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
-      },
-      "cover": null,
-      "icon": null,
-      "parent": {
-        "type": "database_id",
-        "database_id": "dd48d35c-0dfc-4ba3-8b23-92f28c16fd08"
-      },
-      "archived": false,
-      "properties": {
-        "progress": {
-          "id": "ERxJ",
-          "type": "status",
-          "status": {
-            "id": "fARj",
-            "name": "Sin personalizar",
-            "color": "gray"
-          }
-        },
-        "public": {
-          "id": "NF%40%3F",
-          "type": "checkbox",
-          "checkbox": false
-        },
-        "origin": {
-          "id": "Poi%3E",
-          "type": "multi_select",
-          "multi_select": [
-            {
-              "id": "4345126f-f581-4bbb-9fac-45a17b6c9887",
-              "name": "JavaScript30",
-              "color": "yellow"
-            }
-          ]
-        },
-        "source": {
-          "id": "XWCz",
-          "type": "url",
-          "url": null
-        },
-        "subtitle": {
-          "id": "_%5DnB",
-          "type": "rich_text",
-          "rich_text": []
-        },
-        "skills": {
-          "id": "d%5ETj",
-          "type": "multi_select",
-          "multi_select": [
-            {
-              "id": "1307bb77-11ca-4e91-be6e-25104584f5ec",
-              "name": "CSS",
-              "color": "blue"
-            },
-            {
-              "id": "55fd719d-478c-49a2-bed3-d71055dce6e7",
-              "name": "JS",
-              "color": "yellow"
-            }
-          ]
-        },
-        "live_link": {
-          "id": "opPF",
-          "type": "url",
-          "url": null
-        },
-        "title": {
-          "id": "title",
-          "type": "title",
-          "title": [
-            {
-              "type": "text",
-              "text": {
-                "content": "Modificar CSS variables",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "Modificar CSS variables",
-              "href": null
-            }
-          ]
-        }
-      },
-      "url": "https://www.notion.so/Modificar-CSS-variables-09ca74aba0f94d47a229a73069e9e777",
-      "public_url": "https://cavera.notion.site/Modificar-CSS-variables-09ca74aba0f94d47a229a73069e9e777"
-    },
-    {
-      "object": "page",
       "id": "13843b19-5b1b-4508-b6a3-41734cee8ea7",
       "created_time": "2022-08-10T14:41:00.000Z",
       "last_edited_time": "2023-08-08T04:22:00.000Z",
@@ -5812,6 +6399,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -5875,7 +6467,7 @@
       "object": "page",
       "id": "5da824c2-fee1-4428-837f-cd2553ba3883",
       "created_time": "2022-08-10T14:41:00.000Z",
-      "last_edited_time": "2023-08-08T04:18:00.000Z",
+      "last_edited_time": "2023-08-17T02:39:00.000Z",
       "created_by": {
         "object": "user",
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
@@ -5885,10 +6477,9 @@
         "id": "3437b294-7bf2-470d-a61a-f6606f164f8d"
       },
       "cover": {
-        "type": "file",
-        "file": {
-          "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f8c84b37-ff9e-4f5a-ab81-f403f52db0c7/cavera.github.io_drag-and-drop-interaction_.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230809%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230809T213037Z&X-Amz-Expires=3600&X-Amz-Signature=0f316ca1f8381d52fc0e02ccc7601ed3a01040d461002d7167a871406fd8adb9&X-Amz-SignedHeaders=host&x-id=GetObject",
-          "expiry_time": "2023-08-09T22:30:37.502Z"
+        "type": "external",
+        "external": {
+          "url": "https://res.cloudinary.com/dwrxp5sqk/image/upload/v1692239932/portfolio/complete_sentencebg.png"
         }
       },
       "icon": null,
@@ -5927,6 +6518,11 @@
           "id": "XWCz",
           "type": "url",
           "url": "https://github.com/cavera/drag-and-drop-interaction"
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": true
         },
         "subtitle": {
           "id": "_%5DnB",
@@ -6059,6 +6655,11 @@
           "id": "XWCz",
           "type": "url",
           "url": null
+        },
+        "featured": {
+          "id": "%5D%3BGx",
+          "type": "checkbox",
+          "checkbox": false
         },
         "subtitle": {
           "id": "_%5DnB",

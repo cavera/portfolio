@@ -31,12 +31,9 @@
 	--_tag-color: var(--basics-primary-light);
 	font-size: 14px;
 	font-weight: 400;
-	color: rgba(255, 255, 255, 0.9);
-	// background: var(--basics-primary-50);
+	color: var(--basics-text);
 	padding: var(--o5x) var(--2x);
 	border-radius: var(--4x);
-	transition: all 0.3s ease-in-out;
-	overflow: 0;
 	position: relative;
 
 	&:before,
