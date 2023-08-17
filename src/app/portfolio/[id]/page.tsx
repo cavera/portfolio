@@ -38,6 +38,7 @@ async function Page({ params }: { params: { id: string } }) {
 			{blocks?.map((block: any) => {
 				if (block.type === 'paragraph') return null
 				const Component = blockMap[block.type]
+
 				return (
 					<Component
 						{...block}

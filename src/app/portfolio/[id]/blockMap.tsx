@@ -8,6 +8,7 @@ export interface Block {
 	text?: string
 	url?: string
 	code?: string
+	caption: string
 }
 
 export type BlockComponent = (block: Block) => JSX.Element
@@ -42,13 +43,16 @@ export const blockMap: { [key: string]: BlockComponent } = {
 	heading_3: (block: Block) => <h3>{block.text}</h3>,
 
 	image: (block: Block) => (
-		<ImageFrame
-			src={block.url as string}
-			alt={(block.text as string) || 'snapshoot'}
-			quality={100}
-			width={600}
-			height={400}
-		/>
+		<>
+			<ImageFrame
+				src={block.url as string}
+				alt={(block.text as string) || 'snapshoot'}
+				quality={100}
+				width={600}
+				height={400}
+				caption={block.caption}
+			/>
+		</>
 	),
 
 	bulleted_list_item: (block: Block) => <li>{block.text}</li>,
@@ -74,15 +78,27 @@ export const blockMap: { [key: string]: BlockComponent } = {
 		/>
 	),
 
-	video: (block: Block) => (
-		<video controls>
-			<source
-				src={block.url}
-				type='video/mp4'
-			/>
-		</video>
-	),
-
+	video: (block: Block) => {
+		if (block?.url?.includes('youtu')) {
+			return (
+				<iframe
+					src={block.url}
+					height={'300'}
+					title='YouTube video player'
+					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+				/>
+			)
+		} else {
+			return (
+				<video controls>
+					<source
+						src={block?.url}
+						type='video/mp4'
+					/>
+				</video>
+			)
+		}
+	},
 	audio: (block: Block) => (
 		<audio controls>
 			<source
