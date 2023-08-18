@@ -1,5 +1,6 @@
 import { getElements, getPageContent, getPageInfo } from '../data/notion'
 import { DEFAULT_PROJECT_BG } from './consts'
+import { ParsedBlock } from '@/types/Types'
 
 export const revalidate = 60
 
@@ -32,17 +33,9 @@ export async function mapPageContent(id: string) {
 	return data
 }
 
-interface ParsedBlock {
-	type: string
-	text?: string
-	url?: string
-	caption?: string
-}
-
 export async function mapPageInfo(id: string) {
 	const data = await getPageInfo(id)
 	const pageBlocks = await mapPageContent(id)
-	// console.log(pageBlocks.results)
 
 	const { cover, properties } = data
 	const { title, subtitle, live_link, source, skills } = properties
@@ -82,8 +75,6 @@ export async function mapPageInfo(id: string) {
 	}
 
 	const blocks = pageBlocks?.results?.map((block: any) => {
-		// console.log(block.type)
-
 		const parser = blockParsers[block.type]
 		if (parser) {
 			return parser(block)
@@ -93,7 +84,6 @@ export async function mapPageInfo(id: string) {
 			type: block.type,
 		}
 	})
-	// console.log(blocks)
 
 	const isCoverExternal = cover?.type === 'external'
 	const coverSource = isCoverExternal ? cover?.external?.url : cover?.file?.url

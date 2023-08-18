@@ -12,3 +12,18 @@ export type TProject = {
 	id?: string
 	featured?: boolean
 }
+
+export interface Block {
+	type: string
+	text?: string
+	url?: string
+	code?: string
+	caption: string
+}
+
+export interface ParsedBlock {
+	type: string
+	text?: string
+	url?: string
+	caption?: string
+}
