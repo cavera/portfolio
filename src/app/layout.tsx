@@ -4,7 +4,7 @@ import { TopBar } from '@/components/TopBar'
 import { Footer } from '@/components/Footer'
 import { metadata as allMetadata } from './metadata'
 import '../styles/globals.scss'
-
+import { Analytics } from '@vercel/analytics/react'
 export const metadata: Metadata = allMetadata
 
 const montserrat = Montserrat({
@@ -19,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<TopBar />
 				<main>{children}</main>
 				<Footer />
+				<Analytics />
 			</body>
 		</html>
 	)
