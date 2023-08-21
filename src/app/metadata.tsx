@@ -4,7 +4,7 @@ import { CAVERA, siteLanguage, siteType, siteKeywords, siteColorScheme } from '@
 export const metadata: Metadata = {
 	title: CAVERA.portfolio.name,
 	description: CAVERA.portfolio.description,
-
+	metadataBase: new URL(CAVERA.portfolio.url),
 	generator: 'Next.js',
 	applicationName: CAVERA.portfolio.description,
 	referrer: 'origin-when-cross-origin',
