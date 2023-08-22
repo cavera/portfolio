@@ -9,10 +9,18 @@
 	align-items: center;
 	@extend .custom-bevel;
 
-	span {
-		font-size: var(--p);
-	}
 	@include mobile {
 		display: none;
 	}
+}
+
+.footer_info {
+	display: grid;
+	grid-auto-rows: auto;
+	gap: var(--1x);
+	opacity: 0.8;
+}
+
+.made_with {
+	font-size: var(--3x);
 }
