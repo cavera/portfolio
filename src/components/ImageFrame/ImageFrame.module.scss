@@ -1,7 +1,7 @@
 @import '../../styles/utilities', '../../styles/mixins.scss';
 
 .image_frame {
-	min-height: auto;
+	min-height: 200px;
 	@extend .custom-bevel;
 	display: flex;
 	flex-direction: column;
