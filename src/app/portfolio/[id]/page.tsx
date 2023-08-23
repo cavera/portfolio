@@ -6,19 +6,42 @@ import Tags from '@/components/Tags'
 import EndOfSection from './EndOfSection'
 import { CAVERA, TITLES } from '@/data/consts'
 import { Metadata, ResolvingMetadata } from 'next'
+import { mapPageInfo } from '@/data/mapData'
+import { groupBlocks } from './blockMap'
 
 import styles from './project.module.scss'
-import { useMappedData } from './useMappedData'
+// import { useMappedData } from './useMappedData'
 
-type Props = {
+type IdMetadataProps = {
 	params: { id: string }
 	searchParams: { [key: string]: string | string[] | undefined }
 }
 
-export async function generateMetadata({ params, searchParams }: Props, parent?: ResolvingMetadata): Promise<Metadata> {
+const mappingData = async (id: string) => {
+	const mappedData = await mapPageInfo(id)
+	const groupOfBlocks = groupBlocks(mappedData.blocks)
+
+	const { blocks, cover, title, subtitle, live_link, source, skills } = mappedData
+	const { paragraph, image, embed } = groupOfBlocks
+
+	return {
+		blocks,
+		cover,
+		title,
+		subtitle,
+		live_link,
+		source,
+		skills,
+		paragraph,
+		image,
+		embed,
+	}
+}
+
+export async function generateMetadata({ params, searchParams }: IdMetadataProps): Promise<Metadata> {
 	const id = params.id
 
-	const { cover, title, subtitle } = await useMappedData(id)
+	const { cover, title, subtitle } = await mappingData(id)
 
 	return {
 		title: `${CAVERA.nick}: ${TITLES.PORTFOLIO} | ${title}`,
@@ -33,7 +56,7 @@ export async function generateMetadata({ params, searchParams }: Props, parent?:
 async function Page({ params }: { params: { id: string } }) {
 	const { id } = params
 
-	const { blocks, cover, title, subtitle, live_link, source, skills, paragraph } = await useMappedData(id)
+	const { blocks, cover, title, subtitle, live_link, source, skills, paragraph } = await mappingData(id)
 
 	const renderParagraphs = () => (
 		<div className={styles.project_texts}>
