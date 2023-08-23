@@ -1,22 +1,39 @@
+import { blockMap } from './blockMap'
 import { SectionTitle } from '@/components/SectionTitle'
-import { mapPageInfo } from '@/data/mapData'
-import { blockMap, groupBlocks } from './blockMap'
 import ImageFrame from '@/components/ImageFrame'
 import CTAs from '@/components/CTAs'
 import Tags from '@/components/Tags'
-
 import EndOfSection from './EndOfSection'
+import { CAVERA, TITLES } from '@/data/consts'
+import { Metadata, ResolvingMetadata } from 'next'
 
 import styles from './project.module.scss'
+import { useMappedData } from './useMappedData'
+
+type Props = {
+	params: { id: string }
+	searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export async function generateMetadata({ params, searchParams }: Props, parent?: ResolvingMetadata): Promise<Metadata> {
+	const id = params.id
+
+	const { cover, title, subtitle } = await useMappedData(id)
+
+	return {
+		title: `${CAVERA.nick}: ${TITLES.PORTFOLIO} | ${title}`,
+		openGraph: {
+			title: `${CAVERA.nick}: ${TITLES.PORTFOLIO} | ${title}`,
+			description: `${subtitle}`,
+			images: [`${cover}`],
+		},
+	}
+}
 
 async function Page({ params }: { params: { id: string } }) {
 	const { id } = params
 
-	const mappedData = await mapPageInfo(id)
-	const groupOfBlocks = groupBlocks(mappedData.blocks)
-
-	const { blocks, cover, title, subtitle, live_link, source, skills } = mappedData
-	const { paragraph, image, embed } = groupOfBlocks
+	const { blocks, cover, title, subtitle, live_link, source, skills, paragraph } = await useMappedData(id)
 
 	const renderParagraphs = () => (
 		<div className={styles.project_texts}>

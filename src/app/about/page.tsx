@@ -1,20 +1,36 @@
 import { SectionTitle } from '@/components/SectionTitle'
 import ImageFrame from '@/components/ImageFrame'
 
-import { getPageContent } from '@/data/notion'
 import Button from '@/components/Button'
-import { CV_URL } from '@/data/consts'
+import { CV_URL, TITLES, CAVERA } from '@/data/consts'
+
+export const metadata = {
+	title: `${CAVERA.name}: ${TITLES.ABOUT}`,
+	openGraph: {
+		title: `${CAVERA.name}: ${TITLES.ABOUT}`,
+		url: CAVERA.portfolio.url + '/about',
+		images: [
+			{
+				url: `${CAVERA.about_image}`,
+				width: 481,
+				height: 555,
+			},
+		],
+		siteName: `${CAVERA.name}: ${TITLES.ABOUT}`,
+		description: 'What sets me apart from other UI designers and Front-end developers is my ability to combine both design and development skills to create a seamless user experience.',
+	},
+}
 
 async function About() {
 	const cvurl = CV_URL
 
 	return (
 		<section className='only-content'>
-			<SectionTitle>About</SectionTitle>
+			<SectionTitle>{TITLES.ABOUT}</SectionTitle>
 			<div className='section-content'>
 				<div className='section-content-image'>
 					<ImageFrame
-						src='https://res.cloudinary.com/dwrxp5sqk/image/upload/v1691806331/cavera/profile_about.jpg'
+						src={CAVERA.about_image}
 						alt='about'
 						width={500}
 						height={500}

@@ -1,9 +1,15 @@
 import { SectionTitle } from '@/components/SectionTitle'
 import SocialBar from '@/components/SocialBar'
+import { TITLES, CAVERA } from '@/data/consts'
+
+export const metadata = {
+	title: `${CAVERA.name}: ${TITLES.CONTACT}`,
+}
+
 function Contact() {
 	return (
 		<section className='only-content'>
-			<SectionTitle>Contact</SectionTitle>
+			<SectionTitle>{TITLES.CONTACT}</SectionTitle>
 			<div className='section-content'>
 				<div className='section-content-image'></div>
 
