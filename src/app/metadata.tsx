@@ -26,14 +26,6 @@ export const metadata: Metadata = {
 		images: [
 			{
 				url: 'og.jpg',
-				width: 640,
-				height: 480,
-			},
-			{
-				url: 'og-alt.jpg',
-				width: 1024,
-				height: 768,
-				alt: 'My custom alt',
 			},
 		],
 		locale: siteLanguage,
