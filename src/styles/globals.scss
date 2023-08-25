@@ -3,25 +3,30 @@
 :root {
 	/* Colors */
 
-	--yellow-yellow09: hsl(42, 66%, 8%);
-	--yellow-yellow08: hsl(42, 68%, 21%);
-	--yellow-yellow07: hsl(42, 67%, 33%);
-	--yellow-yellow06: hsl(42, 67%, 46%);
-	--yellow-yellow05: hsl(42, 94%, 58%);
-	--yellow-yellow04: hsl(42, 93%, 68%);
-	--yellow-yellow03: hsl(42, 95%, 78%);
-	--yellow-yellow02: hsl(42, 94%, 88%);
-	--yellow-yellow01: hsl(42, 100%, 98%);
+	--yellow-yellow09: hsl(44, 100%, 8%);
+	--yellow-yellow08: hsl(44, 100%, 21%);
+	--yellow-yellow07: hsl(44, 100%, 33%);
+	--yellow-yellow06: hsl(44, 100%, 46%);
+	--yellow-yellow05: hsl(44, 100%, 58%);
+	--yellow-yellow04: hsl(44, 100%, 68%);
+	--yellow-yellow03: hsl(44, 100%, 78%);
+	--yellow-yellow02: hsl(44, 100%, 88%);
+	--yellow-yellow01: hsl(44, 100%, 98%);
 
-	--blue-blue09: hsl(195, 80%, 8%);
-	--blue-blue08: hsl(195, 41%, 25%);
-	--blue-blue07: hsl(195, 33%, 42%);
-	--blue-blue06: hsl(195, 42%, 58%);
-	--blue-blue05: hsl(195, 84%, 75%);
-	--blue-blue04: hsl(195, 84%, 81%);
-	--blue-blue03: hsl(195, 84%, 87%);
-	--blue-blue02: hsl(195, 84%, 93%);
-	--blue-blue01: hsl(195, 84%, 98%);
+	// --yellow-light:lighten(var(var(--yellow-yellow05)), 50%)
+
+	--blue-blue09: hsl(195, 100%, 8%);
+	--blue-blue08: hsl(195, 100%, 25%);
+	--blue-blue07: hsl(195, 100%, 42%);
+	--blue-blue06: hsl(195, 100%, 58%);
+	--blue-blue05: hsl(195, 100%, 61%);
+	--blue-blue04: hsl(195, 100%, 81%);
+	--blue-blue03: hsl(195, 100%, 87%);
+	--blue-blue02: hsl(195, 100%, 93%);
+	--blue-blue01: hsl(195, 100%, 98%);
+
+	--tertiary-01: hsl(259, 88%, 37%);
+	--tertiary-02: hsl(259, 100%, 55%);
 
 	/* Spaces */
 
@@ -41,14 +46,14 @@
 	--basics-primary: var(--blue-blue05);
 	--basics-primary-light: var(--blue-blue03);
 	--basics-secondary: var(--yellow-yellow05);
-	--basics-secondary-light: var(--yellow-yellow02);
+	--basics-secondary-hover: var(--yellow-yellow02);
 
 	--basics-bg: var(--blue-blue09);
-	--basics-text: var(--blue-blue01);
+	--basics-text: var(--blue-blue02);
 
-	--basics-primary-90: hsla(195, 80%, 8%, 0.9);
-	--basics-primary-80: hsla(195, 80%, 8%, 0.8);
-	--basics-primary-50: hsla(195, 80%, 8%, 0.5);
+	--basics-primary-90: hsla(195, 100%, 8%, 0.9);
+	--basics-primary-80: hsla(195, 100%, 8%, 0.8);
+	--basics-primary-50: hsla(195, 100%, 8%, 0.5);
 
 	/* Spaces */
 
@@ -62,11 +67,12 @@
 	--tag-text: 14px;
 
 	/* Effect styles */
-	--glass: 0px 11px 7px hsla(195, 80%, 8%, 0.5);
+	--glass: 0px 11px 7px var(--basics-primary-50);
 
 	--color-stroke-glow: radial-gradient(rgba(4, 29, 37, 0.016) 0%, rgba(4, 29, 37, 0.016) 100%);
 	color: var(--basics-text);
 }
+
 @media (prefers-color-scheme: dark) {
 	html {
 		color-scheme: dark;
@@ -77,8 +83,8 @@
 	:root {
 		--basics-primary: var(--blue-blue08);
 		--basics-primary-light: var(--blue-blue05);
-		--basics-secondary: var(--blue-blue07);
-		--basics-secondary-light: var(--blue-blue03);
+		--basics-secondary: var(--tertiary-01);
+		--basics-secondary-hover: var(--tertiary-02);
 
 		--basics-bg: var(--blue-blue01);
 		--basics-text: var(--blue-blue09);
@@ -145,7 +151,7 @@ a {
 }
 
 body {
-	--gra-rad: 64%;
+	--gra-rad: 34%;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	// grid-template-rows: 0 0.9fr 80px;
@@ -162,7 +168,9 @@ body {
 		content: '';
 		position: fixed;
 		inset: 0;
-		background: radial-gradient(var(--gra-rad) var(--gra-rad) at 100% 50%, var(--basics-primary), transparent), radial-gradient(var(--gra-rad) var(--gra-rad) at 0% 100%, var(--basics-secondary), transparent), radial-gradient(var(--gra-rad) var(--gra-rad) at 0% 0%, var(--basics-text), transparent);
+		background: radial-gradient(var(--gra-rad) var(--gra-rad) at 100% 50%, var(--basics-primary), transparent),
+			// radial-gradient(var(--gra-rad) var(--gra-rad) at 0% 100%, var(--basics-secondary), transparent),
+			radial-gradient(var(--gra-rad) var(--gra-rad) at 0% 0%, var(--basics-text), transparent);
 		opacity: 0.05;
 		z-index: -1;
 	}

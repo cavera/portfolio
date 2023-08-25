@@ -28,13 +28,13 @@
 	color: var(--basics-bg);
 	background: var(--basics-secondary);
 	&:hover {
-		background: var(--basics-secondary-light);
+		background: var(--basics-secondary-hover);
 	}
 }
 .secondary {
 	color: var(--basics-secondary);
 	background: var(--basics-primary-80);
 	&:hover {
-		color: var(--basics-secondary-light);
+		color: var(--basics-secondary-hover);
 	}
 }
