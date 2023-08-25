@@ -8,6 +8,7 @@ import gsap from 'gsap'
 import styles from './Hero.module.scss'
 
 const Hero = () => {
+	const sectionRef = useRef<HTMLDivElement>(null)
 	const logoRef = useRef<HTMLDivElement>(null)
 	const contentRef = useRef<HTMLDivElement>(null)
 	const socialRef = useRef<HTMLDivElement>(null)
@@ -23,11 +24,17 @@ const Hero = () => {
 			},
 		})
 
-		tl.from(logoRef.current, {
-			autoAlpha: 0,
-			x: '-=30',
-			duration: speed,
+		tl.to(sectionRef.current, {
+			css: {
+				visibility: 'visible',
+			},
+			duration: 0,
 		})
+			.from(logoRef.current, {
+				autoAlpha: 0,
+				x: '-=30',
+				duration: speed,
+			})
 			.from(contentRef.current, {
 				autoAlpha: 0,
 				x: '+=30',
@@ -63,7 +70,10 @@ const Hero = () => {
 			)
 	}, [])
 	return (
-		<section className={styles.hero}>
+		<section
+			className={styles.hero}
+			style={{ visibility: 'hidden' }}
+			ref={sectionRef}>
 			<article
 				className={styles.hero_logo}
 				ref={logoRef}>
