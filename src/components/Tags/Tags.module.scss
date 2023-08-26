@@ -31,10 +31,16 @@
 	--_tag-color: var(--basics-primary-light);
 	font-size: 14px;
 	font-weight: 400;
-	color: var(--basics-text);
+	// color: var(--basics-text);
 	padding: var(--o5x) var(--2x);
 	border-radius: var(--4x);
 	position: relative;
+
+	span {
+		// color: var(--basics-text);
+		color: var(--white);
+		// mix-blend-mode: overlay;
+	}
 
 	&:before,
 	&:after {
@@ -45,12 +51,12 @@
 		border-radius: var(--4x);
 	}
 	&:before {
-		opacity: 0.25;
+		opacity: 0.6;
 		background-color: var(--_tag-color);
 	}
 	&:after {
 		border: 1px solid var(--_tag-color);
-		opacity: 0.5;
+		opacity: 0.2;
 	}
 }
 .html {

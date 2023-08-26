@@ -4,15 +4,22 @@ import styles from './Tags.module.scss'
 const Tags = ({ skills }: { skills: TProject['skills'] }) => {
 	// console.log(skills)
 	return (
-		<div className={styles.tags_container}>
+		<article className={styles.tags_container}>
 			{skills?.map((skill, index) => (
-				<span
+				<Tag
 					key={index}
-					className={`${styles.tag} ${styles[skill.toLowerCase().replaceAll(' ', '_')]}`}>
-					{skill}
-				</span>
+					skill={skill}
+				/>
 			))}
-		</div>
+		</article>
+	)
+}
+
+const Tag = ({ skill }: { skill: string }) => {
+	return (
+		<p className={`${styles.tag} ${styles[skill.toLowerCase().replaceAll(' ', '_')]}`}>
+			<span>{skill}</span>
+		</p>
 	)
 }
 
