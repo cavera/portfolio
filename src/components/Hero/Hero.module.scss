@@ -5,6 +5,7 @@
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	grid-template-rows: 1fr auto auto auto 1fr;
+	gap: var(--2x);
 
 	padding-top: 0;
 	min-height: calc(100vh);

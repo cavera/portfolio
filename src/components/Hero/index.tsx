@@ -14,13 +14,14 @@ const Hero = () => {
 	const logoRef = useRef<HTMLDivElement>(null)
 	const contentRef = useRef<HTMLDivElement>(null)
 	const socialRef = useRef<HTMLDivElement>(null)
+	const cvRef = useRef<HTMLDivElement>(null)
 	const scrollRef = useRef<HTMLDivElement>(null)
 
 	const cvurl = CV_URL
 
 	// gsap animations
 	useLayoutEffect(() => {
-		const speed = 0.5
+		const speed = 0.3
 		const tl = gsap.timeline({
 			defaults: {
 				ease: 'power3.out',
@@ -59,11 +60,15 @@ const Hero = () => {
 				},
 				{
 					autoAlpha: 1,
-					duration: 0.2,
-					stagger: 0.15,
+					duration: 0.15,
+					stagger: 0.1,
 				},
 				'social+=0.2'
 			)
+			.from(cvRef.current, {
+				autoAlpha: 0,
+				y: '+=20',
+			})
 			.from(
 				scrollRef.current,
 				{
@@ -93,7 +98,9 @@ const Hero = () => {
 				ref={socialRef}>
 				<SocialBar size={32} />
 			</aside>
-			<div className={styles.CTA}>
+			<div
+				className={styles.CTA}
+				ref={cvRef}>
 				<Button
 					link={cvurl}
 					type='primary'
