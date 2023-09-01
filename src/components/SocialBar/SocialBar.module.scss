@@ -6,8 +6,7 @@
 
 	a {
 		position: relative;
-
-		// font-size: var(--icon-size);
+		display: block;
 		color: var(--basics-primary);
 		transition: all 0.3s ease-in-out;
 
@@ -30,19 +29,35 @@
 	position: absolute;
 	left: 0;
 	top: 0;
+	opacity: 0;
+	display: none;
+}
+
+.tooltip_container_active {
+	transition: all 0.2s ease-in-out;
+	opacity: 1;
+	display: block;
 }
 
 .tooltip {
-	// position: absolute;
-	// left: 0;
-	// top: 0;
-	transform: translate(-50%, calc(-1 * (100% + 10px)));
+	position: relative;
+	transform: translate(-50%, 0);
 	width: max-content;
+	min-width: 4ch;
 	background: var(--basics-bg);
 	color: var(--basics-text);
 	opacity: 1;
 	font-size: 0.5em;
 	padding: var(--2x);
 	border-radius: var(--2x);
-	transition: all 0.2s ease-in-out;
+	filter: drop-shadow(0 0 2px var(--basics-primary));
+	// &:after {
+	// 	position: absolute;
+	// 	content: '';
+	// 	border: 10px solid transparent;
+	// 	border-top-color: var(--basics-bg);
+	// 	top: 100%;
+	// 	left: 50%;
+	// 	margin-left: -10px;
+	// }
 }

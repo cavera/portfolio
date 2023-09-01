@@ -1,5 +1,4 @@
 import React from 'react'
-import SocialBar from '../SocialBar'
 import styles from './Footer.module.scss'
 
 export const Footer = () => {
@@ -20,10 +19,6 @@ export const Footer = () => {
 					{' as CMS.'}
 				</p>
 			</article>
-
-			<div className={styles.social}>
-				<SocialBar size={24} />
-			</div>
 		</footer>
 	)
 }
