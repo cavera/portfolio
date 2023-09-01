@@ -238,10 +238,12 @@ section {
 			padding-top: var(--20x);
 			justify-content: flex-start;
 		}
+
 		@include mobile {
-			padding: 0 0 var(--2x);
+			padding: 0 var(--6x) var(--6x);
 		}
 	}
+
 	@include mobile {
 		padding: var(--2x) var(--6x);
 		// padding-top: var(--8x);
