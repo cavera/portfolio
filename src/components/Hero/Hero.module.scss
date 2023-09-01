@@ -4,7 +4,7 @@
 	align-items: center;
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: 1fr auto auto 1fr;
+	grid-template-rows: 1fr auto auto auto 1fr;
 
 	padding-top: 0;
 	min-height: calc(100vh);
@@ -42,6 +42,10 @@
 .social {
 	grid-column: 5 / -1;
 	grid-row: 3 / 4;
+}
+.CTA {
+	grid-column: 5 / -1;
+	grid-row: 4 / 5;
 }
 .scroll_icon {
 	padding: var(--6x);

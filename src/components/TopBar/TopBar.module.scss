@@ -10,12 +10,12 @@
 	inset: 0 0 auto;
 	z-index: 20;
 
-	@include desktopLG {
-		padding: var(--2x) 0;
-	}
-	@include desktop {
-		padding: var(--2x) var(--6x);
-	}
+	// @include desktopLG {
+	// 	padding: var(--2x) 0;
+	// }
+	// @include desktop {
+	// 	padding: var(--2x) var(--6x);
+	// }
 
 	@include mobile {
 		display: grid;
@@ -89,7 +89,7 @@
 }
 
 .h2 {
-	font-size: 24px;
+	font-size: var(--4x);
 	font-weight: 300;
 	line-height: normal;
 	@include tablet {

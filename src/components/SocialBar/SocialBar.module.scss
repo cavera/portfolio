@@ -18,22 +18,29 @@
 
 		&:hover {
 			color: var(--basics-secondary);
-			.tooltip {
+
+			& + .tooltip_container .tooltip {
 				opacity: 1;
 			}
 		}
 	}
 }
 
-.tooltip {
+.tooltip_container {
 	position: absolute;
-	left: 50%;
-	top: 105%;
-	transform: translateX(-50%);
+	left: 0;
+	top: 0;
+}
+
+.tooltip {
+	// position: absolute;
+	// left: 0;
+	// top: 0;
+	transform: translate(-50%, calc(-1 * (100% + 10px)));
 	width: max-content;
 	background: var(--basics-bg);
 	color: var(--basics-text);
-	opacity: 0;
+	opacity: 1;
 	font-size: 0.5em;
 	padding: var(--2x);
 	border-radius: var(--2x);

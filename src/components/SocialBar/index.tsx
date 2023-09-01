@@ -1,5 +1,5 @@
 'use client'
-
+import { useEffect, useRef } from 'react'
 import { Mail } from 'iconoir-react'
 import { Brands } from '../Icons/Brands'
 import { Icon } from './Icon'
@@ -33,6 +33,17 @@ const links = [
 ]
 
 const SocialBar = ({ size }: { size: number }) => {
+	const tooltipRef = useRef<HTMLDivElement>(null)
+
+	useEffect(() => {
+		//follow mouse
+		// document.addEventListener('mousemove', e => {
+		// 	if (tooltipRef.current) {
+		// 		tooltipRef.current.style.left = `${e.clientX}px`
+		// 		tooltipRef.current.style.top = `${e.clientY}px`
+		// 	}
+		// })
+	}, [])
 	return (
 		<div
 			className={styles.socialbar}
@@ -44,8 +55,20 @@ const SocialBar = ({ size }: { size: number }) => {
 					icon={link.icon}
 				/>
 			))}
+			{/* <div
+				ref={tooltipRef}
+				className={styles.tooltip_container}>
+				<Tooltip content='tooltip' />
+			</div> */}
 		</div>
 	)
+}
+
+const Tooltip = ({ content }: { content: string }) => {
+	const urlPrefix = content.includes('mailto') ? 'mailto:' : 'https://'
+
+	const tooltipContent = content.split(urlPrefix)[1]
+	return <div className={styles.tooltip}>{tooltipContent}</div>
 }
 
 export default SocialBar

@@ -6,6 +6,8 @@ import SocialBar from '../SocialBar'
 import { MouseScrollWheel } from 'iconoir-react'
 import gsap from 'gsap'
 import styles from './Hero.module.scss'
+import Button from '../Button'
+import { CV_URL } from '@/data/consts'
 
 const Hero = () => {
 	const sectionRef = useRef<HTMLDivElement>(null)
@@ -13,6 +15,8 @@ const Hero = () => {
 	const contentRef = useRef<HTMLDivElement>(null)
 	const socialRef = useRef<HTMLDivElement>(null)
 	const scrollRef = useRef<HTMLDivElement>(null)
+
+	const cvurl = CV_URL
 
 	// gsap animations
 	useLayoutEffect(() => {
@@ -89,6 +93,13 @@ const Hero = () => {
 				ref={socialRef}>
 				<SocialBar size={32} />
 			</aside>
+			<div className={styles.CTA}>
+				<Button
+					link={cvurl}
+					type='primary'
+					text='Download CV'
+				/>
+			</div>
 			<div
 				className={styles.scroll_icon}
 				ref={scrollRef}>

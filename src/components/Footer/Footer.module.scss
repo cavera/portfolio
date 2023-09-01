@@ -15,6 +15,7 @@
 }
 
 .footer_info {
+	flex-shrink: 1;
 	display: grid;
 	grid-auto-rows: auto;
 	gap: var(--1x);
@@ -27,4 +28,8 @@
 
 .footer_link {
 	text-decoration: underline;
+}
+
+.social {
+	flex-shrink: 0;
 }
