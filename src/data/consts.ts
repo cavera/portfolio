@@ -1,13 +1,42 @@
+import { Brands } from '@/components/Icons/Brands'
+import { Mail } from 'iconoir-react'
+
 export const CAVERA = {
-	name: 'Leonardo Fonseca',
-	nick: 'cavera',
-	about_image: 'https://res.cloudinary.com/dwrxp5sqk/image/upload/v1691806331/cavera/profile_about.jpg',
-	twitter: '@cavera_de',
-	portfolio: {
-		url: 'https://portfolio-cavera.vercel.app/',
-		name: 'UI Designer (Front-end dev too)',
-		description: "Leonardo Fonseca's Portfolio",
-	},
+  name: 'Leonardo Fonseca',
+  nick: 'cavera',
+  about_image: 'https://res.cloudinary.com/dwrxp5sqk/image/upload/v1691806331/cavera/profile_about.jpg',
+  twitter: '@cavera_de',
+  portfolio: {
+    url: 'https://portfolio-cavera.vercel.app/',
+    name: 'UI Designer (Front-end dev too)',
+    description: "Leonardo Fonseca's Portfolio",
+  },
+  links: [
+    {
+      icon: Brands.github,
+      link: 'https://github.com/cavera',
+    },
+    {
+      icon: Brands.behance,
+      link: 'https://behance.net/cavera',
+    },
+    {
+      icon: Brands.linkedin,
+      link: 'https://linkedin.com/in/leonardo-ui/',
+    },
+    {
+      icon: Brands.codepen,
+      link: 'https://codepen.io/cavera',
+    },
+    {
+      icon: Brands['500px'],
+      link: 'https://500px.com/p/LeonardoFonseca',
+    },
+    {
+      icon: Mail,
+      link: 'mailto:cavera.de@gmail.com',
+    },
+  ],
 }
 
 export const siteLanguage = 'en_US'
@@ -22,7 +51,7 @@ export const DEFAULT_PROJECT_BG = '/images/default_bg.jpg'
 export const CV_URL = CAVERA.portfolio.url + 'cv/UI_Designer_FrontEnd_Leonardo_Fonseca.pdf'
 
 export const TITLES = {
-	ABOUT: 'About',
-	CONTACT: 'Contact',
-	PORTFOLIO: 'Projects',
+  ABOUT: 'About',
+  CONTACT: 'Contact',
+  PORTFOLIO: 'Projects',
 }
