@@ -9,21 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.5.0",
-    "@types/react": "18.2.20",
+    "@types/node": "20.5.9",
+    "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "@vercel/analytics": "^1.0.2",
-    "eslint": "8.47.0",
-    "eslint-config-next": "13.4.13",
+    "eslint": "8.48.0",
+    "eslint-config-next": "13.4.19",
     "gsap": "^3.12.2",
     "iconoir-react": "^6.11.0",
-    "next": "13.4.13",
+    "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sharp": "^0.32.4",
-    "typescript": "5.1.6"
+    "sharp": "^0.32.5",
+    "typescript": "5.2.2"
   },
   "devDependencies": {
-    "sass": "^1.65.1"
+    "sass": "^1.66.1"
   }
 }

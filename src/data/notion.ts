@@ -40,7 +40,7 @@ export async function getElements() {
       body: bodyContent,
       // cache: 'no-cache',
       next: {
-        revalidate: 1800,
+        revalidate: 60,
       },
     })
 
