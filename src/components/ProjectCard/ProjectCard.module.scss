@@ -1,116 +1,125 @@
 @import '../../styles/mixins', '../../styles/utilities';
 
 .card {
-	--transition-speed: 0.2s;
-	flex: 2 0 auto;
-	height: 290px;
+  --transition-speed: 0.2s;
+  flex: 2 0 auto;
+  height: 290px;
 
-	background-image: url('/images/default_bg.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-clip: content-box;
+  background-image: url('/images/default_bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-clip: content-box;
 
-	min-width: 290px;
-	border-radius: var(--8x);
-	box-shadow: 0 0 10px var(--basics-primary-80);
-	padding: 1px;
-	overflow: hidden;
-	position: relative;
-	z-index: 0;
-	transition: all var(--transition-speed) ease-in-out;
-	@extend .custom-bevel;
+  min-width: 290px;
+  border-radius: var(--8x);
+  box-shadow: 0 0 10px var(--basics-primary-80);
+  padding: 1px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  transition: all var(--transition-speed) ease-in-out;
+  @extend .custom-bevel;
 
-	h1 {
-		font-size: 2rem;
-		font-weight: 700;
-		color: var(--basics-primary);
-	}
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--basics-primary);
+  }
 
-	h2 {
-		font-size: 1rem;
-		font-weight: 500;
-	}
+  h2 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 
-	img {
-		position: absolute;
-		inset: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		z-index: -2;
-		transition: all var(--transition-speed) ease-in-out;
-		transform: scale(1.05);
-	}
+  .img_container {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
 
-	&:before {
-		content: '';
-		position: absolute;
-		inset: -1px;
-		background: linear-gradient(170deg, var(--basics-primary-90) 15%, transparent 60%);
-		z-index: -1;
-		border-radius: inherit;
-	}
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all var(--transition-speed) ease-in-out;
+    transform: scale(1.05);
+  }
 
-	&:hover {
-		transform: scale(1.05);
+  &:before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: linear-gradient(170deg, var(--basics-primary-90) 15%, transparent 60%);
+    z-index: -1;
+    border-radius: inherit;
+    transform: scale(1.05);
+  }
 
-		.project_cta {
-			opacity: 1;
-		}
+  &:hover {
+    transform: scale(1.05);
 
-		.project_info {
-			& > div {
-				opacity: 0;
-			}
-		}
+    .project_cta {
+      opacity: 1;
+    }
 
-		img {
-			transform: scale(1);
-		}
-	}
+    .project_info {
+      & > div {
+        opacity: 0;
+      }
+    }
 
-	@include tablet {
-		max-width: 100%;
-	}
-	@include mobile {
-		width: 100%;
-	}
+    img {
+      transform: scale(1);
+    }
+    &:before {
+      transform: scale(1);
+    }
+  }
+
+  @include tablet {
+    max-width: 100%;
+  }
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .card_link {
-	position: absolute;
-	inset: 0;
-	z-index: 2;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
 
-	display: grid;
-	place-items: center;
-	font-size: 4em;
-	transition: opacity var(--transition-speed);
-	opacity: 0;
+  display: grid;
+  place-items: center;
+  font-size: 4em;
+  transition: opacity var(--transition-speed);
+  opacity: 0;
 
-	&:hover {
-		opacity: 1;
-	}
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .project_info {
-	display: flex;
-	flex-direction: column;
-	z-index: 0;
-	margin: var(--5x) var(--5x) 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  margin: var(--5x) var(--5x) 0;
 }
 
 .project_cta {
-	position: absolute;
-	inset: auto var(--5x) var(--5x) auto;
-	z-index: 3;
+  position: absolute;
+  inset: auto var(--5x) var(--5x) auto;
+  z-index: 3;
 
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	gap: var(--4x);
-	align-self: stretch;
-	transition: all var(--transition-speed) ease-in-out;
-	opacity: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--4x);
+  align-self: stretch;
+  transition: all var(--transition-speed) ease-in-out;
+  opacity: 0;
 }
