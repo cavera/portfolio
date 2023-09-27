@@ -1,6 +1,9 @@
 import { Brands } from '@/components/Icons/Brands'
 import { Mail } from 'iconoir-react'
 
+export const ROL = 'Front-end developer'
+export const ALSO = 'UI designer'
+
 export const CAVERA = {
   name: 'Leonardo Fonseca',
   nick: 'cavera',
@@ -8,7 +11,7 @@ export const CAVERA = {
   twitter: '@cavera_de',
   portfolio: {
     url: 'https://portfolio-cavera.vercel.app/',
-    name: 'UI Designer (Front-end dev too)',
+    name: `${ROL} (${ALSO} too)`,
     description: "Leonardo Fonseca's Portfolio",
   },
   links: [
@@ -48,7 +51,7 @@ export const CV_BLOCK_ID = '53f20ffa-1d72-4bf9-b9f6-81efbe1f8aa3'
 
 export const DEFAULT_PROJECT_BG = '/images/default_bg.jpg'
 
-export const CV_URL = CAVERA.portfolio.url + 'cv/UI_Designer_FrontEnd_Leonardo_Fonseca.pdf'
+export const CV_URL = CAVERA.portfolio.url + 'cv/FrontEnd_Leonardo_Fonseca.pdf'
 
 export const TITLES = {
   ABOUT: 'About',
