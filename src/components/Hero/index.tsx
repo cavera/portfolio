@@ -35,16 +35,30 @@ const Hero = () => {
       },
       duration: 0,
     })
-      .from(logoRef.current, {
-        autoAlpha: 0,
-        x: '-=30',
-        duration: speed,
-      })
-      .from(contentRef.current, {
-        autoAlpha: 0,
-        x: '+=30',
-        duration: speed,
-      })
+      .fromTo(
+        logoRef.current,
+        {
+          autoAlpha: 0,
+          x: '-=30',
+          duration: speed,
+        },
+        {
+          autoAlpha: 1,
+          x: 0,
+        }
+      )
+      .fromTo(
+        contentRef.current,
+        {
+          autoAlpha: 0,
+          x: '+=30',
+          duration: speed,
+        },
+        {
+          autoAlpha: 1,
+          x: 0,
+        }
+      )
       .add('social')
       .call(
         () => {

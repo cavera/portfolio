@@ -17,6 +17,7 @@ This is a portfolio project built with Next.js, React.js, GSAP, and SASS. It sho
 ## Getting Started
 
 1. Prerequisites
+
    - Node.js (version 14.0.0 or above)
    - npm or yarn
 
@@ -38,7 +39,6 @@ pnpm install
 pnpm dev
 ```
 
-
 5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Usage
@@ -51,10 +51,10 @@ The project follows a standard Next.js structure with additional directories for
 
 ## Dependencies
 
-- Next.js (version 13.4.19)
+- Next.js (version 13.5.4)
 - React.js (version 18.2.0)
 - GSAP (version 3.12.2)
-- SASS (version 1.66.1)
+- SASS (version 1.69.0)
 - iconoir-react (version 6.11.0)
 
 Please ensure that all tests pass and the code follows the existing style conventions before submitting a pull request.
