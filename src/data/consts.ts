@@ -7,7 +7,7 @@ export const ALSO = 'UI designer'
 export const CAVERA = {
   name: 'Leonardo Fonseca',
   nick: 'cavera',
-  about_image: 'https://res.cloudinary.com/dwrxp5sqk/image/upload/v1691806331/cavera/profile_about.jpg',
+  about_image: 'https://res.cloudinary.com/dwrxp5sqk/image/upload/v1715440642/cavera/profile_rm.jpg',
   twitter: '@cavera_de',
   portfolio: {
     url: 'https://portfolio-cavera.vercel.app/',

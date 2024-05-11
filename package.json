@@ -10,20 +10,20 @@
   },
   "dependencies": {
     "@types/node": "20.12.11",
-    "@types/react": "18.3.1",
+    "@types/react": "18.3.2",
     "@types/react-dom": "18.3.0",
     "@vercel/analytics": "^1.2.2",
     "eslint": "9.2.0",
     "eslint-config-next": "14.2.3",
-    "gsap": "^3.12.2",
-    "iconoir-react": "^7.0.2",
+    "gsap": "^3.12.5",
+    "iconoir-react": "^7.7.0",
     "next": "14.2.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.2.2"
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "5.4.5"
   },
   "devDependencies": {
-    "sass": "^1.69.5"
+    "sass": "^1.77.1"
   },
   "repository": {
     "url": "https://github.com/cavera/portfolio"
