@@ -36,3 +36,9 @@ yarn-error.log*
 next-env.d.ts
 
 .cursorignore
+# pnpm
+pnpm-lock.yaml
+.pnpm-store/
+
+# session notes
+SESSION_NOTES.md

@@ -1,7 +1,7 @@
-import styles from './ImageFrame.module.scss'
+import styles from "./ImageFrame.module.scss"
 
 const ImageFrame = (props: any) => {
-  const { src, alt, caption = '' } = props
+  const { src = "", alt = "", caption = "" } = props
   return (
     <div className={styles.image_frame}>
       <img
@@ -9,7 +9,7 @@ const ImageFrame = (props: any) => {
         alt={alt}
       />
 
-      {caption.length < 1 ? <p>{caption}</p> : null}
+      {caption.length > 0 && <p>{caption}</p>}
     </div>
   )
 }

@@ -12,8 +12,8 @@
     "@types/node": "20.12.11",
     "@types/react": "18.3.2",
     "@types/react-dom": "18.3.0",
-    "@vercel/analytics": "^1.2.2",
-    "eslint": "9.2.0",
+    "@vercel/analytics": "^1.5.0",
+    "eslint": "^8.56.0",
     "eslint-config-next": "14.2.3",
     "gsap": "^3.12.5",
     "iconoir-react": "^7.7.0",
@@ -23,7 +23,7 @@
     "typescript": "5.4.5"
   },
   "devDependencies": {
-    "sass": "^1.77.1"
+    "sass": "^1.89.2"
   },
   "repository": {
     "url": "https://github.com/cavera/portfolio"
