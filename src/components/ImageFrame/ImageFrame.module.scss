@@ -1,4 +1,5 @@
-@import '../../styles/utilities', '../../styles/mixins.scss';
+@use '../../styles/utilities' as *;
+@use '../../styles/mixins.scss' as *;
 
 .image_frame {
 	min-height: 200px;

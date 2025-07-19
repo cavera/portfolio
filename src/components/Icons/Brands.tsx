@@ -1,9 +1,9 @@
-import { SVGProps } from 'react'
+import React, { SVGProps } from 'react'
 
 // https://github.com/FortAwesome/Font-Awesome
 // https://icones.js.org/collection/fa6-brands
 
-type IconComponent = (props: SVGProps<SVGSVGElement>) => JSX.Element
+type IconComponent = (props: SVGProps<SVGSVGElement>) => React.ReactElement
 
 type TBrands = {
 	[key: string]: IconComponent

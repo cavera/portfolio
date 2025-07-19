@@ -1,4 +1,4 @@
-@import '../../styles/mixins';
+@use '../../styles/mixins' as *;
 
 .logo_container {
 	--speed: 0.5s;

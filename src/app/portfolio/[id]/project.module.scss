@@ -1,4 +1,4 @@
-@import '../../../styles/mixins.scss';
+@use '../../../styles/mixins' as *;
 
 .project {
   width: 100%;
@@ -101,17 +101,13 @@
   border-radius: var(--8x);
   background: var(--basics-primary-80);
 
-  position: sticky;
-  top: var(--20x);
-  z-index: 6;
-
-  @include mobile {
-    top: var(--4x);
-  }
-
   /* Glass */
   box-shadow: 0px 11px 7px 0px var(--basics-primary-50);
   backdrop-filter: blur(10px);
+
+  position: sticky;
+  top: var(--20x);
+  z-index: 6;
 }
 
 .other_content {
@@ -135,7 +131,6 @@
     grid-column: 5/-1;
     width: 100%;
   }
-
   & > div {
     &:hover {
       z-index: 10;

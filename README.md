@@ -51,11 +51,15 @@ The project follows a standard Next.js structure with additional directories for
 
 ## Dependencies
 
-- Next.js (version 13.5.4)
-- React.js (version 18.2.0)
-- GSAP (version 3.12.2)
-- SASS (version 1.69.0)
-- iconoir-react (version 6.11.0)
+- Next.js (version 14.2.3)
+- React.js (version 19.1.0)
+- React-DOM (version 19.1.0)
+- GSAP (version 3.13.0)
+- SASS (version 1.89.2)
+- iconoir-react (version 7.11.0)
+- ESLint (version 8.57.0)
+- ESLint-config-next (version 14.2.3)
+- TypeScript (version 5.8.3)
 
 Please ensure that all tests pass and the code follows the existing style conventions before submitting a pull request.
 

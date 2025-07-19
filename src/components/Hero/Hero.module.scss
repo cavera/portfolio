@@ -1,4 +1,5 @@
-@import '../../styles/utilities', '../../styles/mixins';
+@use '../../styles/utilities' as *;
+@use '../../styles/mixins' as *;
 
 .hero {
   align-items: center;

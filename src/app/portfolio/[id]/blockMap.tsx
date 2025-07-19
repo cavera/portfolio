@@ -1,8 +1,11 @@
 import ImageFrame from '@/components/ImageFrame'
 import { Block } from '@/types/Types'
 import Link from 'next/link'
+import React from 'react'
 
-export type BlockComponent = (block: Block) => JSX.Element
+import { JSX } from 'react';
+
+export type BlockComponent = (block: Block) => React.ReactElement
 export type BlockGroup = (blocks: Block[]) => any
 
 export const groupBlocks: BlockGroup = blocks => {
