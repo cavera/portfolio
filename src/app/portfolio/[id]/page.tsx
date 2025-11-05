@@ -40,7 +40,7 @@ const mappingData = async (id: string) => {
 }
 
 export async function generateMetadata({ params, searchParams }: IdMetadataProps): Promise<Metadata> {
-  const id = params.id
+  const { id } = await params
 
   const { cover, title, subtitle } = await mappingData(id)
 
@@ -55,7 +55,7 @@ export async function generateMetadata({ params, searchParams }: IdMetadataProps
 }
 
 async function Page({ params }: { params: { id: string } }) {
-  const { id } = params
+  const { id } = await params
 
   const { blocks, cover, title, subtitle, live_link, source, skills, paragraph } = await mappingData(id)
 

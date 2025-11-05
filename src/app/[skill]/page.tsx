@@ -13,7 +13,7 @@ type IdMetadataProps = {
 }
 
 export async function generateMetadata({ params, searchParams }: IdMetadataProps): Promise<Metadata> {
-	const skill = params.skill
+	const { skill } = await params
 
 	return {
 		title: `${CAVERA.nick}: ${TITLES.PORTFOLIO} | ${skill}`,
@@ -25,7 +25,7 @@ export async function generateMetadata({ params, searchParams }: IdMetadataProps
 }
 
 async function Page({ params }: { params: { skill: string } }) {
-	const { skill } = params
+	const { skill } = await params
 	const filtered = false
 
 	const mappedData = await mapElementsData()
