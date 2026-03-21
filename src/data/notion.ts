@@ -4,10 +4,18 @@ import mockCardContent from '../data/mocks/mockCardContent.json'
 
 const databaseId = process.env.NEXT_PUBLIC_DATABASE_ID
 
+// NOTE: NOTION_TOKEN should NEVER be prefixed with NEXT_PUBLIC_
+// It must be a server-side only environment variable
+const notionToken = process.env.NOTION_TOKEN
+
+if (!notionToken && process.env.NODE_ENV === 'production') {
+  console.warn('NOTION_TOKEN is not set. Using fallback mock data.')
+}
+
 const headersList = {
   Accept: '*/*',
   'Notion-Version': '2022-06-28',
-  Authorization: `Bearer ${process.env.NEXT_PUBLIC_NOTION_TOKEN}`,
+  Authorization: `Bearer ${notionToken || ''}`,
   'Content-Type': 'application/json',
 }
 
@@ -47,8 +55,8 @@ export async function getElements() {
     const data = await response.json()
     return data.results
   } catch (error) {
+    console.error('Error retrieving notion data:', error)
     return mockData.results
-    throw new Error('error retreiving notion data')
   }
 }
 export async function getPageInfo(pageId: string) {
@@ -62,8 +70,8 @@ export async function getPageInfo(pageId: string) {
     const data = await response.json()
     return data
   } catch (error) {
+    console.error('Error retrieving page info:', error)
     return mockCard
-    throw new Error('error retreiving Page data')
   }
 }
 export async function getPageContent(pageId: string) {

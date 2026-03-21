@@ -7,21 +7,25 @@ export const revalidate = 60
 export async function mapElementsData() {
   const data = await getElements()
 
+  if (!data || !Array.isArray(data)) {
+    return []
+  }
+
   return data.map((page: { id: string; properties: any; cover: any }) => {
     const { id, properties, cover } = page
-    const { title, subtitle, source, live_link, skills, featured } = properties
+    const { title, subtitle, source, live_link, skills, featured } = properties || {}
     const isCoverExternal = cover?.type === 'external'
     const coverSource = isCoverExternal ? cover?.external?.url : cover?.file?.url
 
     const mappedInfo = {
       cover: coverSource || DEFAULT_PROJECT_BG,
-      title: title?.title[0].plain_text,
-      subtitle: subtitle?.rich_text[0]?.plain_text,
-      source: source?.url,
-      live_link: live_link?.url,
-      skills: skills?.multi_select.map((skill: { name: string }) => skill.name),
+      title: title?.title?.[0]?.plain_text || '',
+      subtitle: subtitle?.rich_text?.[0]?.plain_text || '',
+      source: source?.url || '',
+      live_link: live_link?.url || '',
+      skills: skills?.multi_select?.map((skill: { name: string }) => skill.name) || [],
       id,
-      featured: featured?.checkbox,
+      featured: featured?.checkbox || false,
     }
     // console.log(mappedInfo)
     return mappedInfo
@@ -82,19 +86,19 @@ export async function mapPageInfo(id: string) {
     return {
       type: block.type,
     }
-  })
+  }) || []
 
   const isCoverExternal = cover?.type === 'external'
   const coverSource = isCoverExternal ? cover?.external?.url : cover?.file?.url
 
   const mappedInfo = {
     cover: coverSource || DEFAULT_PROJECT_BG,
-    title: properties?.title?.title[0]?.plain_text,
-    subtitle: properties?.subtitle?.rich_text[0]?.plain_text,
-    live_link: properties?.live_link?.url,
-    source: properties?.source?.url,
+    title: properties?.title?.title?.[0]?.plain_text || '',
+    subtitle: properties?.subtitle?.rich_text?.[0]?.plain_text || '',
+    live_link: properties?.live_link?.url || '',
+    source: properties?.source?.url || '',
     blocks: blocks,
-    skills: properties?.skills?.multi_select.map((skill: { name: string }) => skill.name),
+    skills: properties?.skills?.multi_select?.map((skill: { name: string }) => skill.name) || [],
   }
 
   return mappedInfo

@@ -32,9 +32,10 @@
 	}
 }
 .secondary {
-	color: var(--basics-secondary);
+	color: var(--basics-primary);
 	background: var(--basics-primary-80);
 	&:hover {
-		color: var(--basics-secondary-hover);
+		background: var(--basics-primary-60);
+		color: var(--basics-bg);
 	}
 }
