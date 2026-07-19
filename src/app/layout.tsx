@@ -1,24 +1,55 @@
-import { Metadata } from 'next'
-import { TopBar } from '@/components/TopBar'
-import { Footer } from '@/components/Footer'
+import { Metadata, Viewport } from 'next'
+import { Space_Grotesk, JetBrains_Mono } from 'next/font/google'
+import { Nav } from '@/components/Nav'
+import { LangProvider } from '@/i18n/LangProvider'
+import { ThemeProvider, themeInitScript } from '@/theme/ThemeProvider'
 import { metadata as allMetadata } from './metadata'
+import { siteColorScheme } from '@/data/consts'
 import '../styles/globals.scss'
+import '../styles/views.scss'
 import { Analytics } from '@vercel/analytics/react'
+
 export const metadata: Metadata = allMetadata
+
+export const viewport: Viewport = {
+	themeColor: siteColorScheme,
+	colorScheme: siteColorScheme,
+	width: 'device-width',
+	initialScale: 1,
+	maximumScale: 5,
+}
+
+const spaceGrotesk = Space_Grotesk({
+	subsets: ['latin'],
+	weight: ['400', '500', '600', '700'],
+	variable: '--font-sans',
+	display: 'swap',
+})
+
+const jetbrainsMono = JetBrains_Mono({
+	subsets: ['latin'],
+	weight: ['400', '500'],
+	variable: '--font-mono',
+	display: 'swap',
+})
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang='en'>
+		<html
+			lang='en'
+			className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
+			suppressHydrationWarning>
 			<head>
-				<link
-					href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
-					rel="stylesheet"
-				/>
+				{/* eslint-disable-next-line @next/next/no-sync-scripts */}
+				<script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
 			</head>
-			<body style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
-				<TopBar />
-				<main>{children}</main>
-				<Footer />
+			<body>
+				<LangProvider>
+					<ThemeProvider>
+						<Nav />
+						<main id='view'>{children}</main>
+					</ThemeProvider>
+				</LangProvider>
 				<Analytics />
 			</body>
 		</html>

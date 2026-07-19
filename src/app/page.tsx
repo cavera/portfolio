@@ -1,16 +1,5 @@
-import { Suspense } from 'react'
-import Projects from '../components/projects'
-import Hero from '../components/Hero'
+import { HomeView } from '@/components/views/HomeView'
 
-async function Home() {
-	return (
-		<>
-			<Hero />
-			<Suspense fallback={<div>Loading...</div>}>
-				<Projects filtered={true} />
-			</Suspense>
-		</>
-	)
+export default function Home() {
+	return <HomeView />
 }
-
-export default Home
