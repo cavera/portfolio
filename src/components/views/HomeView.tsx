@@ -14,9 +14,16 @@ export const HomeView = () => {
 	useLayoutEffect(() => {
 		const el = rootRef.current
 		if (!el || matchMedia('(prefers-reduced-motion: reduce)').matches) return
-		gsap.from(el.querySelectorAll('.bline i'), { yPercent: 110, duration: 0.8, stagger: 0.09, ease: 'power3.out' })
-		gsap.from(el.querySelectorAll('.btop, .bsub'), { opacity: 0, y: 14, duration: 0.5, delay: 0.35, ease: 'power2.out', clearProps: 'all' })
-		gsap.from(el.querySelectorAll('.bgrid > *'), { opacity: 0, y: 18, duration: 0.38, stagger: 0.06, delay: 0.45, ease: 'power2.out', clearProps: 'all' })
+		// Scoped so cleanup can kill+revert these tweens. Without it, React's
+		// dev-only Strict Mode double-invoke (mount, cleanup, mount again) fires
+		// gsap.from() twice on the same elements with nothing killing the first
+		// tween, which can leave the hero permanently stuck mid-animation.
+		const ctx = gsap.context(() => {
+			gsap.from(el.querySelectorAll('.bline i'), { yPercent: 110, duration: 0.8, stagger: 0.09, ease: 'power3.out' })
+			gsap.from(el.querySelectorAll('.btop, .bsub'), { opacity: 0, y: 14, duration: 0.5, delay: 0.35, ease: 'power2.out', clearProps: 'all' })
+			gsap.from(el.querySelectorAll('.bgrid > *'), { opacity: 0, y: 18, duration: 0.38, stagger: 0.06, delay: 0.45, ease: 'power2.out', clearProps: 'all' })
+		}, el)
+		return () => ctx.revert()
 	}, [])
 
 	return (
