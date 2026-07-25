@@ -40,7 +40,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
 			suppressHydrationWarning>
 			<head>
-				{/* eslint-disable-next-line @next/next/no-sync-scripts */}
 				<script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
 			</head>
 			<body>
