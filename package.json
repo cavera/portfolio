@@ -24,6 +24,13 @@
   "devDependencies": {
     "sass": "^1.94.2"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "sharp",
+      "unrs-resolver"
+    ]
+  },
   "repository": {
     "url": "https://github.com/cavera/portfolio"
   },
