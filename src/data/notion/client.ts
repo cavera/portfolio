@@ -1,11 +1,11 @@
-import mockData from '../data/mocks/mockList.json'
-import mockCard from '../data/mocks/mockCard.json'
-import mockCardContent from '../data/mocks/mockCardContent.json'
+import mockData from './fixtures/mockList.json'
+import mockCard from './fixtures/mockCard.json'
+import mockCardContent from './fixtures/mockCardContent.json'
 
-const databaseId = process.env.NEXT_PUBLIC_DATABASE_ID
+// Both of these are read server-side only — neither is NEXT_PUBLIC_.
+// The database id was previously exposed to the browser for no reason.
+const databaseId = process.env.NOTION_DATABASE_ID
 
-// NOTE: NOTION_TOKEN should NEVER be prefixed with NEXT_PUBLIC_
-// It must be a server-side only environment variable
 const notionToken = process.env.NOTION_TOKEN
 
 if (!notionToken && process.env.NODE_ENV === 'production') {
