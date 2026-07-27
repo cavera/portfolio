@@ -281,7 +281,8 @@ button:focus-visible,
 	font-family: var(--font-mono), monospace;
 	font-size: 12px;
 }
-.langtog button {
+/* Anchors, not buttons: switching language is navigation to a real URL. */
+.langtog a {
 	appearance: none;
 	border: none;
 	background: transparent;
@@ -289,8 +290,10 @@ button:focus-visible,
 	cursor: pointer;
 	padding: 7px 11px;
 	transition: 0.15s;
+	text-decoration: none;
+	display: block;
 }
-.langtog button[aria-selected='true'] {
+.langtog a.on {
 	background: var(--acc);
 	color: var(--acc-ink);
 }

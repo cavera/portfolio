@@ -1,35 +1,24 @@
 'use client'
-import { createContext, ReactNode, useContext, useEffect, useState } from 'react'
+import { createContext, ReactNode, useContext } from 'react'
 import { Lang, strings, StringKey } from './strings'
 
 interface LangContextValue {
 	lang: Lang
-	setLang: (lang: Lang) => void
 	t: (key: StringKey) => string
 }
 
 const LangContext = createContext<LangContextValue | null>(null)
 
-export function LangProvider({ children }: { children: ReactNode }) {
-	const [lang, setLangState] = useState<Lang>('en')
-
-	useEffect(() => {
-		try {
-			const saved = localStorage.getItem('pf_lang')
-			if (saved === 'en' || saved === 'es') setLangState(saved)
-		} catch {}
-	}, [])
-
-	const setLang = (next: Lang) => {
-		setLangState(next)
-		try {
-			localStorage.setItem('pf_lang', next)
-		} catch {}
-	}
-
+/**
+ * The URL is the single source of truth for language — `lang` comes from the
+ * `[lang]` route segment, not from state or localStorage. Switching language is
+ * navigation (see Nav), which is what makes each language a real, indexable URL
+ * with its own `hreflang`.
+ */
+export function LangProvider({ lang, children }: { lang: Lang; children: ReactNode }) {
 	const t = (key: StringKey) => strings[lang][key] ?? key
 
-	return <LangContext.Provider value={{ lang, setLang, t }}>{children}</LangContext.Provider>
+	return <LangContext.Provider value={{ lang, t }}>{children}</LangContext.Provider>
 }
 
 export function useLang() {
