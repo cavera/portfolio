@@ -70,7 +70,7 @@ export const experience: AuthoredExperience[] = [
 
 export const projects: AuthoredProject[] = [
 	{
-		id: 'reserva',
+		id: 'reserva-tu-campo',
 		title: 'Reserva tu campo',
 		img: `${CIMG}/v1699389800/portfolio/reserva_tu_campo.webp`,
 		kind: { en: 'Case study · Product & front-end', es: 'Caso de estudio · Producto & front-end' },
@@ -115,7 +115,7 @@ export const projects: AuthoredProject[] = [
 		},
 	},
 	{
-		id: 'shopi',
+		id: 'shopi-store',
 		title: 'Shopi Store',
 		img: `${CIMG}/v1692241922/portfolio/shopistore.png`,
 		kind: { en: 'E-commerce · Front-end', es: 'E-commerce · Front-end' },
@@ -199,7 +199,7 @@ export const projects: AuthoredProject[] = [
 		},
 	},
 	{
-		id: 'complete',
+		id: 'complete-the-sentence',
 		title: 'Complete the sentence',
 		img: `${CIMG}/v1692239932/portfolio/complete_sentencebg.png`,
 		kind: { en: 'E-learning · Interaction', es: 'E-learning · Interacción' },
