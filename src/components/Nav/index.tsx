@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useLang } from '@/i18n/LangProvider'
 import { useTheme } from '@/theme/ThemeProvider'
-import { email } from '@/data/portfolio'
 
 const NAV = [
 	{ href: '/work', key: 'nav_work' },
@@ -11,7 +10,7 @@ const NAV = [
 	{ href: '/about', key: 'nav_about' },
 ] as const
 
-export const Nav = () => {
+export const Nav = ({ email }: { email: string }) => {
 	const pathname = usePathname()
 	const { lang, setLang, t } = useLang()
 	const { theme, toggleTheme } = useTheme()

@@ -3,9 +3,13 @@ import { useEffect, useRef } from 'react'
 import { useSearchParams } from 'next/navigation'
 import gsap from 'gsap'
 import { useLang } from '@/i18n/LangProvider'
-import { projects } from '@/data/portfolio'
+import type { Project } from '@/types/project'
 
-export const WorkView = () => {
+interface WorkViewProps {
+	projects: Project[]
+}
+
+export const WorkView = ({ projects }: WorkViewProps) => {
 	const rootRef = useRef<HTMLDivElement>(null)
 	const { t, lang } = useLang()
 	const initialId = useSearchParams().get('case')
@@ -153,6 +157,8 @@ export const WorkView = () => {
 		}
 		// Structural setup runs once on mount; lang/t changes are read live via
 		// liveRef so the filmstrip position isn't reset by a language toggle.
+		// `projects` is captured deliberately too — it arrives from a server
+		// component and is fixed for the life of the page.
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 

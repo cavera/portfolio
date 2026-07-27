@@ -5,6 +5,7 @@ import { LangProvider } from '@/i18n/LangProvider'
 import { ThemeProvider, themeInitScript } from '@/theme/ThemeProvider'
 import { metadata as allMetadata } from './metadata'
 import { siteColorScheme } from '@/data/consts'
+import { getProfile } from '@/data/source'
 import '../styles/globals.scss'
 import '../styles/views.scss'
 import { Analytics } from '@vercel/analytics/react'
@@ -33,7 +34,9 @@ const jetbrainsMono = JetBrains_Mono({
 	display: 'swap',
 })
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+	const profile = await getProfile()
+
 	return (
 		<html
 			lang='en'
@@ -45,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body>
 				<LangProvider>
 					<ThemeProvider>
-						<Nav />
+						<Nav email={profile.email} />
 						<main id='view'>{children}</main>
 					</ThemeProvider>
 				</LangProvider>

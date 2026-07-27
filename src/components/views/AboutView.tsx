@@ -1,8 +1,17 @@
 'use client'
 import { useLang } from '@/i18n/LangProvider'
-import { aboutPortrait, certs, email, experience, skills, socials } from '@/data/portfolio'
+import type { Experience, SocialLink } from '@/types/project'
 
-export const AboutView = () => {
+interface AboutViewProps {
+	experience: Experience[]
+	skills: string[]
+	certs: string[]
+	socials: SocialLink[]
+	email: string
+	aboutPortrait: string
+}
+
+export const AboutView = ({ experience, skills, certs, socials, email, aboutPortrait }: AboutViewProps) => {
 	const { t, lang } = useLang()
 
 	return (

@@ -1,9 +1,14 @@
 'use client'
 import { useEffect, useRef } from 'react'
 import { useLang } from '@/i18n/LangProvider'
-import { photoProfile, photos } from '@/data/portfolio'
+import type { Photo } from '@/types/project'
 
-export const PhotoView = () => {
+interface PhotoViewProps {
+	photos: Photo[]
+	photoProfile: string
+}
+
+export const PhotoView = ({ photos, photoProfile }: PhotoViewProps) => {
 	const rootRef = useRef<HTMLDivElement>(null)
 	const { t } = useLang()
 	const panelCount = photos.length + 2 // intro + photo frames + outro

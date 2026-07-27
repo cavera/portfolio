@@ -3,9 +3,16 @@ import { useLayoutEffect, useRef } from 'react'
 import Link from 'next/link'
 import gsap from 'gsap'
 import { useLang } from '@/i18n/LangProvider'
-import { email, photos, projects, skills } from '@/data/portfolio'
+import type { Photo, Project } from '@/types/project'
 
-export const HomeView = () => {
+interface HomeViewProps {
+	projects: Project[]
+	photos: Photo[]
+	skills: string[]
+	email: string
+}
+
+export const HomeView = ({ projects, photos, skills, email }: HomeViewProps) => {
 	const rootRef = useRef<HTMLDivElement>(null)
 	const { t, lang } = useLang()
 	const feat = projects[0]
@@ -91,21 +98,25 @@ export const HomeView = () => {
 			</div>
 
 			<div className='bwrap bgrid'>
-				<Link
-					className='bfeat'
-					href={`/work?case=${feat.id}`}>
-					<img
-						src={feat.img}
-						alt={feat.title}
-					/>
-					<div className='ov'>
-						<div className='k'>
-							{feat.kind[lang]} — {lang === 'es' ? 'Caso de estudio' : 'Case study'}
+				{/* Guarded because projects now arrives as data: an empty CMS result
+				    must not crash the home page. */}
+				{feat ? (
+					<Link
+						className='bfeat'
+						href={`/work?case=${feat.id}`}>
+						<img
+							src={feat.img}
+							alt={feat.title}
+						/>
+						<div className='ov'>
+							<div className='k'>
+								{feat.kind[lang]} — {lang === 'es' ? 'Caso de estudio' : 'Case study'}
+							</div>
+							<h3>{feat.title}</h3>
 						</div>
-						<h3>{feat.title}</h3>
-					</div>
-					<span className='go'>↗</span>
-				</Link>
+						<span className='go'>↗</span>
+					</Link>
+				) : null}
 
 				<div className='bcol'>
 					<div className='tile b-stats'>
