@@ -84,7 +84,13 @@ async function notionProjects(lang: Lang): Promise<Project[]> {
 			const translation = translations.get(page.id.replace(/-/g, ''))
 			const source = translation ?? page
 			const project = mapProject(source, lang, Boolean(translation))
-			return { project: await withCase(source, project), order: sortOrder(page) }
+			// The id is the URL segment, and both locales must share it — the
+			// alternates helper builds /en/work/<id> and /es/work/<id> from one
+			// path. Always take it from the default-locale page so a translation
+			// with a different slug cannot split the pair into two URLs, one of
+			// which would not exist.
+			const withId = { ...project, id: mapProject(page, lang, false).id }
+			return { project: await withCase(source, withId), order: sortOrder(page) }
 		})
 	)
 

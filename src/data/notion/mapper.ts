@@ -36,15 +36,33 @@ function cover(page: NotionPage): string {
  *   ## Context   ## Role   ## Process   ## Outcome
  *
  * Process collects list items; the others collect paragraphs.
+ *
+ * Spanish headings are accepted too. A Spanish page written by someone typing
+ * "## Contexto" should work — expecting an author to write English headings on
+ * a Spanish page is the kind of hidden rule that quietly produces empty pages.
  */
+const HEADINGS: Record<string, string> = {
+	context: 'context',
+	contexto: 'context',
+	role: 'role',
+	rol: 'role',
+	papel: 'role',
+	process: 'process',
+	proceso: 'process',
+	outcome: 'outcome',
+	resultado: 'outcome',
+	resultados: 'outcome',
+}
+
 export function mapCase(blocks: any[]): CaseStudy | undefined {
 	const sections: Record<string, string[]> = {}
 	let current = ''
 
 	for (const block of blocks) {
 		if (block.type === 'heading_2') {
-			current = (block.heading_2?.rich_text?.[0]?.plain_text ?? '').trim().toLowerCase()
-			sections[current] ||= []
+			const raw = (block.heading_2?.rich_text?.[0]?.plain_text ?? '').trim().toLowerCase()
+			current = HEADINGS[raw] ?? ''
+			if (current) sections[current] ||= []
 			continue
 		}
 		if (!current) continue
