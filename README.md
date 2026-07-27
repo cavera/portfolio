@@ -18,8 +18,8 @@ This is a portfolio project built with Next.js, React.js, GSAP, and SASS. It sho
 
 1. Prerequisites
 
-   - Node.js (version 14.0.0 or above)
-   - npm or yarn
+   - Node.js 20.9 or above (required by Next.js 16)
+   - pnpm
 
 2. Clone the repository:
 
@@ -51,15 +51,23 @@ The project follows a standard Next.js structure with additional directories for
 
 ## Dependencies
 
-- Next.js (version 14.2.3)
-- React.js (version 19.1.0)
-- React-DOM (version 19.1.0)
-- GSAP (version 3.13.0)
-- SASS (version 1.89.2)
-- iconoir-react (version 7.11.0)
-- ESLint (version 8.57.0)
-- ESLint-config-next (version 14.2.3)
-- TypeScript (version 5.8.3)
+Runtime:
+
+- Next.js 16.2
+- React / React-DOM 19.2
+- GSAP 3.13
+- @vercel/analytics 1.6
+
+Build and tooling:
+
+- SASS 1.94
+- TypeScript 5.9
+- ESLint 9 with eslint-config-next 16.2
+
+`package.json` is the source of truth — the list above is a summary and will
+drift. See [docs/DEPENDENCIES.md](docs/DEPENDENCIES.md) for how this project
+handles security advisories, including one known advisory that is deliberately
+dismissed and must not be "fixed" by the remediation GitHub suggests.
 
 Please ensure that all tests pass and the code follows the existing style conventions before submitting a pull request.
 
