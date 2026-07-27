@@ -1,4 +1,4 @@
-import { Experience, Photo, Project, SocialLink } from '@/types/project'
+import { AuthoredExperience, AuthoredProject, Photo, SocialLink } from '@/types/project'
 
 const CIMG = 'https://res.cloudinary.com/dwrxp5sqk/image/upload'
 
@@ -36,7 +36,7 @@ export const skills = [
 
 export const certs = ['LXD LATAM Summit 2023', 'Software Engineering Fundamentals', 'REST APIs with JavaScript']
 
-export const experience: Experience[] = [
+export const experience: AuthoredExperience[] = [
 	{
 		when: 'Aug 2024 — Present',
 		role: 'Solutions Architect',
@@ -68,7 +68,7 @@ export const experience: Experience[] = [
 	},
 ]
 
-export const projects: Project[] = [
+export const projects: AuthoredProject[] = [
 	{
 		id: 'reserva',
 		title: 'Reserva tu campo',

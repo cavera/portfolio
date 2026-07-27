@@ -98,23 +98,23 @@ export const WorkView = ({ projects }: WorkViewProps) => {
 			const p = projects.find((x) => x.id === id)
 			if (!p || !p.case) return
 			const c = p.case
-			const steps = c.process.map((s, i) => `<div class="step"><div class="num">0${i + 1}</div><p>${s[lang]}</p></div>`).join('')
+			const steps = c.process.map((s, i) => `<div class="step"><div class="num">0${i + 1}</div><p>${s}</p></div>`).join('')
 			csov.innerHTML = `
         <div class="sheet">
           <button class="close" aria-label="${t('back')}">×</button>
           <div class="hero"><img src="${p.img}" alt="${p.title}"/><div class="grad"></div></div>
           <div class="body">
-            <div class="k">${p.kind[lang]}</div>
+            <div class="k">${p.kind}</div>
             <h2>${p.title}</h2>
             <div class="meta">
-              <div><span class="lab">${t('cs_role')}</span><span class="v">${p.role[lang]}</span></div>
+              <div><span class="lab">${t('cs_role')}</span><span class="v">${p.role}</span></div>
               <div><span class="lab">Year</span><span class="v">${p.year}</span></div>
               <div><span class="lab">${t('cs_stack')}</span><span class="v">${p.stack.join(' · ')}</span></div>
             </div>
-            <section><h3>${t('cs_context')}</h3><p>${c.context[lang]}</p></section>
-            <section><h3>${t('cs_role')}</h3><p>${c.role[lang]}</p></section>
+            <section><h3>${t('cs_context')}</h3><p>${c.context}</p></section>
+            <section><h3>${t('cs_role')}</h3><p>${c.role}</p></section>
             <section><h3>${t('cs_process')}</h3><div class="steps">${steps}</div></section>
-            <section><h3>${t('cs_outcome')}</h3><div class="outcome"><p>${c.outcome[lang]}</p></div></section>
+            <section><h3>${t('cs_outcome')}</h3><div class="outcome"><p>${c.outcome}</p></div></section>
             <div class="links">
               <a class="btn fill sm" href="${p.live}" target="_blank" rel="noopener">Live ↗</a>
               <a class="btn ghost sm" href="${p.code}" target="_blank" rel="noopener">Code ↗</a>
@@ -194,13 +194,13 @@ export const WorkView = ({ projects }: WorkViewProps) => {
 							<div className='idx'>
 								0{i + 1} / 0{n}
 							</div>
-							<div className='k'>{p.kind[lang]}</div>
+							<div className='k'>{p.kind}</div>
 							<h2>{p.title}</h2>
-							<p>{p.desc[lang]}</p>
+							<p>{p.desc}</p>
 							<div className='rolerow'>
 								<div>
 									<span className='lab'>{t('cs_role')}</span>
-									<span className='v'>{p.role[lang]}</span>
+									<span className='v'>{p.role}</span>
 								</div>
 								<div>
 									<span className='lab'>Year</span>

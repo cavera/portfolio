@@ -9,8 +9,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Lan
 	return { alternates: alternates(lang) }
 }
 
-export default async function Home() {
-	const [projects, photos, profile] = await Promise.all([getProjects(), getPhotos(), getProfile()])
+export default async function Home({ params }: { params: Promise<{ lang: Lang }> }) {
+	const { lang } = await params
+	const [projects, photos, profile] = await Promise.all([getProjects(lang), getPhotos(), getProfile()])
 
 	return (
 		<HomeView

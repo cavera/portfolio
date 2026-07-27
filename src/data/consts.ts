@@ -19,3 +19,8 @@ export const siteColorScheme = 'normal'
 export const TITLES = {
 	ABOUT: 'About',
 }
+
+// Fallback cover for CMS entries with no external cover image. Notion-hosted
+// covers are signed URLs that expire in about an hour, so they can never be
+// baked into a static page — see src/data/notion/mapper.ts.
+export const DEFAULT_PROJECT_BG = '/images/default_bg.jpg'

@@ -3,6 +3,7 @@ import { useLayoutEffect, useRef } from 'react'
 import Link from 'next/link'
 import gsap from 'gsap'
 import { useLang } from '@/i18n/LangProvider'
+import { localePath } from '@/i18n/routing'
 import type { Photo, Project } from '@/types/project'
 
 interface HomeViewProps {
@@ -103,14 +104,14 @@ export const HomeView = ({ projects, photos, skills, email }: HomeViewProps) => 
 				{feat ? (
 					<Link
 						className='bfeat'
-						href={`/work?case=${feat.id}`}>
+						href={`${localePath(lang, '/work')}?case=${feat.id}`}>
 						<img
 							src={feat.img}
 							alt={feat.title}
 						/>
 						<div className='ov'>
 							<div className='k'>
-								{feat.kind[lang]} — {lang === 'es' ? 'Caso de estudio' : 'Case study'}
+								{feat.kind} — {lang === 'es' ? 'Caso de estudio' : 'Case study'}
 							</div>
 							<h3>{feat.title}</h3>
 						</div>
@@ -133,7 +134,7 @@ export const HomeView = ({ projects, photos, skills, email }: HomeViewProps) => 
 					</div>
 					<Link
 						className='tile t-about b-about'
-						href='/about'>
+						href={localePath(lang, '/about')}>
 						<div className='lab'>{t('t_about')}</div>
 						<h3>CrearMedia → RebelMouse</h3>
 						<span className='go'>↗</span>
@@ -149,7 +150,7 @@ export const HomeView = ({ projects, photos, skills, email }: HomeViewProps) => 
 
 				<Link
 					className='tile t-photo b-photo'
-					href='/photography'>
+					href={localePath(lang, '/photography')}>
 					<div className='row'>
 						{photoCells.map((p) => (
 							<div
@@ -169,7 +170,7 @@ export const HomeView = ({ projects, photos, skills, email }: HomeViewProps) => 
 				</Link>
 				<Link
 					className='tile b-work'
-					href='/work'>
+					href={localePath(lang, '/work')}>
 					<div className='lab'>{t('nav_work')}</div>
 					<h3>
 						{projects.length} {t('projects').toLowerCase()}

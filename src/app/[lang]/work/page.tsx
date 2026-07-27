@@ -10,8 +10,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Lan
 	return { alternates: alternates(lang, '/work') }
 }
 
-export default async function WorkPage() {
-	const projects = await getProjects()
+export default async function WorkPage({ params }: { params: Promise<{ lang: Lang }> }) {
+	const { lang } = await params
+	const projects = await getProjects(lang)
 
 	return (
 		<Suspense fallback={null}>

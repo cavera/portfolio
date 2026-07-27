@@ -43,7 +43,7 @@ export const AboutView = ({ experience, skills, certs, socials, email, aboutPort
 						<div>
 							<h3>{e.role}</h3>
 							<div className='co'>{e.co}</div>
-							<p>{e[lang]}</p>
+							<p>{e.summary}</p>
 						</div>
 						{e.badge ? <div className='badge'>{lang === 'es' ? 'Actual' : 'Current'}</div> : <div></div>}
 					</div>

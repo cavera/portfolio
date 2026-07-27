@@ -4,7 +4,27 @@ Goal: edit the site from Notion instead of from `src/data/portfolio.ts`, write a
 full case study for every project, and add a blog later without rebuilding the
 data layer a second time.
 
-This document is the plan. Nothing here is implemented yet.
+## Status
+
+The code is built. The content is not.
+
+| Piece | State |
+| --- | --- |
+| Notion schema (`lang`, `slug`, `desc`, `role`, `year`, `has_case`, `stack`, `sort_order`, `translation_of`) | done |
+| `lang: en` + `slug` on all 31 published pages | done |
+| Localized routes, `hreflang` alternates, generated sitemap | done |
+| Server-side fetching, views take props | done |
+| `src/data/notion/{client,mapper}.ts` + `source.ts` switch | done |
+| `desc`, `role`, `year`, `stack`, `has_case` values | **empty on all 31** |
+| Spanish pages | **none exist** |
+| Case-study bodies | **none written** |
+
+**The switch is off, deliberately.** `source.ts` uses Notion only when both
+`NOTION_TOKEN` and `NOTION_DATABASE_ID` are set, and Vercel has neither. Turning
+it on today would swap 4 richly written projects for 31 entries with blank
+descriptions, no years, no stacks and no case studies — a worse site.
+
+Set the env vars once the fields above are filled. Nothing else needs changing.
 
 ## Where things stand
 

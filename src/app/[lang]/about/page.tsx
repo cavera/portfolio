@@ -13,8 +13,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Lan
 	}
 }
 
-export default async function AboutPage() {
-	const [experience, profile] = await Promise.all([getExperience(), getProfile()])
+export default async function AboutPage({ params }: { params: Promise<{ lang: Lang }> }) {
+	const { lang } = await params
+	const [experience, profile] = await Promise.all([getExperience(lang), getProfile()])
 
 	return (
 		<AboutView
