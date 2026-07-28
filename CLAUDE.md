@@ -19,8 +19,8 @@ with real data.
 
 - `main` — deployed. Still the **old** design, reading Notion through
   `src/data/notion.ts` + `src/data/mapData.ts`.
-- `claude/redesign-notion-sync-jcjk31` — the redesign plus all CMS work. Not
-  merged, deliberately: the owner wants it separate until happy with it.
+- `redesign-merge` — the redesign plus all CMS work. Not merged,
+  deliberately: the owner wants it separate until happy with it.
 
 The two branches have separate dependency-fix commits, so `package.json` and
 `pnpm-lock.yaml` will conflict whenever they finally merge. Resolve by taking
