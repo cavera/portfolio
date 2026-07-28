@@ -35,10 +35,8 @@ export const CaseView = ({ project, lang }: { project: Project; lang: Lang }) =>
 					<div className='k'>{project.kind}</div>
 					<h1>{project.title}</h1>
 
-					{!project.translated && (
-						<p className='translation-note'>
-							{lang === 'es' ? 'Este caso todavía no está traducido — se muestra en inglés.' : 'This case study is shown in English.'}
-						</p>
+					{lang === 'es' && !project.translated && (
+						<p className='translation-note'>Este caso todavía no está traducido — se muestra en inglés.</p>
 					)}
 
 					<div className='meta'>

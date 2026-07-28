@@ -70,19 +70,19 @@ async function withCase(page: NotionPage, project: Project): Promise<Project> {
 async function notionProjects(lang: Lang): Promise<Project[]> {
 	const base = await queryProjects(defaultLocale)
 
-	// Non-default locales resolve per project: a real translation when one
-	// exists, otherwise the default-locale page marked `translated: false` so
-	// callers know not to advertise an hreflang alternate for it.
-	let translations = new Map<string, NotionPage>()
-	if (lang !== defaultLocale) {
-		const localized = await queryProjects(lang)
-		translations = new Map(localized.flatMap((page) => translationOf(page).map((id) => [id.replace(/-/g, ''), page])))
-	}
+	// Whether a real Spanish translation exists is needed regardless of which
+	// locale is being rendered: the English page has to know it too, so it can
+	// advertise (or withhold) the hreflang alternate that points at it.
+	const localized = lang === defaultLocale ? await queryProjects('es') : await queryProjects(lang)
+	const translations = new Map(localized.flatMap((page) => translationOf(page).map((id) => [id.replace(/-/g, ''), page])))
 
 	const mapped = await Promise.all(
 		base.map(async (page) => {
 			const translation = translations.get(page.id.replace(/-/g, ''))
-			const source = translation ?? page
+			// Only the Spanish request swaps in the translation's own content —
+			// the English page always reads from `page` even when a translation
+			// exists, since English is never itself a fallback.
+			const source = lang !== defaultLocale ? (translation ?? page) : page
 			const project = mapProject(source, lang, Boolean(translation))
 			// The id is the URL segment, and both locales must share it — the
 			// alternates helper builds /en/work/<id> and /es/work/<id> from one
