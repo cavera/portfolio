@@ -68,7 +68,7 @@ export const HomeView = ({ projects, photos, skills, email }: HomeViewProps) => 
 						</a>
 						<a
 							className='btn ghost'
-							href='/cv/FrontEnd_Leonardo_Fonseca.pdf'
+							href={localePath(lang, '/cv')}
 							target='_blank'
 							rel='noopener'>
 							{t('cta_cv')}
@@ -104,7 +104,7 @@ export const HomeView = ({ projects, photos, skills, email }: HomeViewProps) => 
 				{feat ? (
 					<Link
 						className='bfeat'
-						href={`${localePath(lang, '/work')}?case=${feat.id}`}>
+						href={feat.hasCase ? localePath(lang, `/work/${feat.id}`) : `${localePath(lang, '/work')}?case=${feat.id}`}>
 						<img
 							src={feat.img}
 							alt={feat.title}

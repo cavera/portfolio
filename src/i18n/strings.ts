@@ -17,6 +17,7 @@ export const strings = {
 		offer:
 			'I lead the technical side of client delivery — scoping solutions and bridging product needs with engineering — backed by 15 years building interfaces across Latin America.',
 		t_work: 'Selected work',
+		t_archive: 'Full archive',
 		t_photo: 'Through the lens',
 		t_exp: 'Experience',
 		t_skills: 'Skills & tools',
@@ -37,7 +38,7 @@ export const strings = {
 		cs_stack: 'Stack',
 		cta_foot: 'Have a project?',
 		cta_foot2: "Let's build it.",
-		photo_sub: 'Selected frames from 500px — drag your exports onto a slot to fill it.',
+		photo_sub: 'Selected frames from 500px.',
 		view_500: 'View on 500px',
 		photo_outro: 'More frames, unedited, on 500px.',
 		photo_cta: 'See the full profile',
@@ -60,6 +61,7 @@ export const strings = {
 		offer:
 			'Lidero el lado técnico de la entrega a clientes — definiendo soluciones y conectando las necesidades de producto con ingeniería — con 15 años construyendo interfaces en Latinoamérica.',
 		t_work: 'Trabajo seleccionado',
+		t_archive: 'Archivo completo',
 		t_photo: 'A través del lente',
 		t_exp: 'Experiencia',
 		t_skills: 'Skills & herramientas',
@@ -80,7 +82,7 @@ export const strings = {
 		cs_stack: 'Stack',
 		cta_foot: '¿Tienes un proyecto?',
 		cta_foot2: 'Construyámoslo.',
-		photo_sub: 'Fotos seleccionadas de 500px — arrastra tus exportaciones a un espacio para llenarlo.',
+		photo_sub: 'Fotos seleccionadas de 500px.',
 		view_500: 'Ver en 500px',
 		photo_outro: 'Más fotos, sin editar, en 500px.',
 		photo_cta: 'Ver el perfil completo',

@@ -355,7 +355,15 @@ a.t-cta:hover .go {
 /* ===================== EXHIBITION (WORK) ===================== */
 .exh {
 	height: 100%;
+	overflow-y: auto;
+}
+.exh .carousel {
+	height: 100%;
 	position: relative;
+}
+.exh .carousel:focus-visible {
+	outline: 2px solid var(--acc);
+	outline-offset: -2px;
 }
 .exh .track {
 	display: flex;
@@ -497,6 +505,75 @@ a.t-cta:hover .go {
 		padding: 24px;
 		min-width: 0;
 	}
+}
+
+.exh .archive {
+	max-width: var(--maxw);
+	margin: 0 auto;
+	padding: 64px 40px 90px;
+}
+.exh .archive h2 {
+	font-family: var(--font-mono), monospace;
+	font-size: 12px;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--soft);
+	margin: 0 0 24px;
+}
+.exh .archive-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	gap: 20px;
+}
+.exh .acard {
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.exh .acard .ath {
+	aspect-ratio: 4 / 3;
+	overflow: hidden;
+	background: var(--surface2);
+}
+.exh .acard .ath img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.exh .acard .ab {
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	flex: 1;
+}
+.exh .acard .ak {
+	font-family: var(--font-mono), monospace;
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--soft);
+}
+.exh .acard h3 {
+	font-size: 17px;
+	font-weight: 600;
+	margin: 0;
+}
+.exh .acard .tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin: 2px 0 4px;
+}
+.exh .acard .actions {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	margin-top: auto;
+	padding-top: 6px;
 }
 
 /* ===================== CASE STUDY OVERLAY ===================== */
@@ -1135,4 +1212,161 @@ a.t-cta:hover .go {
 	border-left: 2px solid var(--acc);
 	padding-left: 10px;
 	margin: 10px 0 0;
+}
+
+/* ===================== CV ===================== */
+.cv {
+	height: 100%;
+	overflow-y: auto;
+	padding: 40px 20px 90px;
+}
+.cv-actions {
+	max-width: 900px;
+	margin: 0 auto 20px;
+	display: flex;
+	justify-content: flex-end;
+}
+.cv-sheet {
+	max-width: 900px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 240px;
+	gap: 40px;
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-radius: 12px;
+	padding: 48px;
+}
+.cv-main h1 {
+	margin: 0;
+	font-size: 32px;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}
+.cv-role {
+	font-family: var(--font-mono), monospace;
+	color: var(--acc);
+	font-weight: 600;
+	margin-top: 6px;
+}
+.cv-role-sub {
+	color: var(--soft);
+	font-size: 14px;
+	margin-top: 2px;
+}
+.cv-main h2 {
+	font-family: var(--font-mono), monospace;
+	font-size: 12px;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--soft);
+	border-top: 1px solid var(--line);
+	padding-top: 20px;
+	margin: 32px 0 14px;
+}
+.cv-profile {
+	max-width: 62ch;
+	line-height: 1.6;
+	color: var(--ink);
+}
+.cv-job {
+	margin-bottom: 18px;
+}
+.cv-job-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	gap: 12px;
+}
+.cv-job-title {
+	font-weight: 600;
+	font-size: 15px;
+}
+.cv-job-when {
+	font-family: var(--font-mono), monospace;
+	font-size: 12px;
+	color: var(--soft);
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+}
+.cv-job-co {
+	font-family: var(--font-mono), monospace;
+	font-size: 12.5px;
+	color: var(--soft);
+	margin: 3px 0 6px;
+}
+.cv-job p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.55;
+	color: var(--ink);
+	max-width: 60ch;
+}
+.cv-side h3 {
+	font-family: var(--font-mono), monospace;
+	font-size: 11px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--soft);
+	margin: 24px 0 10px;
+}
+.cv-side h3:first-of-type {
+	margin-top: 0;
+}
+.cv-side ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+}
+.cv-side li {
+	margin-bottom: 6px;
+}
+.cv-contact div {
+	font-size: 12.5px;
+	margin-bottom: 5px;
+	word-break: break-word;
+}
+.cv-contact a {
+	color: var(--ink);
+}
+@media (max-width: 720px) {
+	.cv-sheet {
+		grid-template-columns: 1fr;
+		padding: 28px;
+	}
+}
+@media print {
+	.pfnav {
+		display: none;
+	}
+	.cv-actions {
+		display: none;
+	}
+	.cv {
+		padding: 0;
+		overflow: visible;
+	}
+	.cv-sheet {
+		max-width: 7.5in;
+		border: none;
+		border-radius: 0;
+		background: #fff;
+		color: #111;
+		padding: 0;
+	}
+	.cv-main h1,
+	.cv-job-title,
+	.cv-profile,
+	.cv-job p {
+		color: #111;
+	}
+	.cv-role,
+	.cv-role-sub,
+	.cv-job-when,
+	.cv-job-co,
+	.cv-side h3,
+	.cv-contact a {
+		color: #2f6b4f;
+	}
 }

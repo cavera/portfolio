@@ -1,17 +1,13 @@
-export const ROL = 'Front-end developer'
-export const ALSO = 'UI designer'
-
 export const CAVERA = {
 	name: 'Leonardo Fonseca',
 	twitter: '@cavera_de',
 	portfolio: {
 		url: 'https://portfolio-cavera.vercel.app/',
-		name: `${ROL} (${ALSO} too)`,
-		description: "Leonardo Fonseca's Portfolio",
+		name: 'Leonardo Fonseca — Solutions Architect & Front-end Developer',
+		description: 'Solutions Architect and front-end developer scoping and shipping web products across Latin America.',
 	},
 }
 
-export const siteLanguage = 'en_US'
 export const siteType = 'website'
 export const siteKeywords = ['Next.js', 'React', 'JavaScript', 'Figma', 'UI Design', 'Front-end', 'Frontend', 'Graphic Design', 'e-learning', 'CSS', 'Portfolio', 'TypeScript', 'GSAP', 'Photography']
 export const siteColorScheme = 'normal'

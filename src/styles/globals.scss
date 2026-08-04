@@ -406,3 +406,15 @@ body {
 	min-height: 100vh;
 	padding: 0;
 }
+
+/* #view is fixed + clipped for the single-viewport site shell, which cuts off
+   or mis-paginates anything printed that's taller than one screen (the CV). */
+@media print {
+	body {
+		background: #fff;
+	}
+	#view {
+		position: static;
+		overflow: visible;
+	}
+}

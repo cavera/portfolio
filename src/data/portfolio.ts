@@ -1,4 +1,5 @@
 import { AuthoredExperience, AuthoredProject, Photo, SocialLink } from '@/types/project'
+import { DEFAULT_PROJECT_BG } from '@/data/consts'
 
 const CIMG = 'https://res.cloudinary.com/dwrxp5sqk/image/upload'
 
@@ -34,7 +35,7 @@ export const skills = [
 	'Notion CMS',
 ]
 
-export const certs = ['LXD LATAM Summit 2023', 'Software Engineering Fundamentals', 'REST APIs with JavaScript']
+export const certs = ['LXD LATAM Summit 2023']
 
 export const experience: AuthoredExperience[] = [
 	{
@@ -109,8 +110,8 @@ export const projects: AuthoredProject[] = [
 				},
 			],
 			outcome: {
-				en: 'Shipped a working, live product within the bootcamp timeline, coordinating a remote multidisciplinary team. [Add your metrics here — team size, fields listed, bookings.]',
-				es: 'Entregamos un producto funcional y en vivo dentro del cronograma del bootcamp, coordinando un equipo remoto multidisciplinario. [Agrega tus métricas aquí — tamaño del equipo, canchas listadas, reservas.]',
+				en: 'Shipped a working, live product within the bootcamp timeline, coordinating a remote multidisciplinary team from first wireframe to a deployed booking flow players could actually use.',
+				es: 'Entregamos un producto funcional y en vivo dentro del cronograma del bootcamp, coordinando un equipo remoto multidisciplinario desde el primer wireframe hasta un flujo de reserva desplegado que los jugadores podían usar de verdad.',
 			},
 		},
 	},
@@ -237,6 +238,94 @@ export const projects: AuthoredProject[] = [
 			outcome: {
 				en: 'A clean, reusable e-learning interaction built without authoring tools. The key learning: the discipline of migrating a legacy jQuery implementation to modern vanilla JS — understanding what every line actually does, rather than inheriting patterns blindly.',
 				es: 'Una interacción de e-learning limpia y reutilizable, construida sin herramientas de autor. El aprendizaje clave: la disciplina de migrar una implementación legacy de jQuery a JS moderno — entendiendo qué hace cada línea, en vez de heredar patrones a ciegas.',
+			},
+		},
+	},
+	{
+		id: 'portfolio-architecture',
+		title: "This portfolio's CMS",
+		img: DEFAULT_PROJECT_BG,
+		kind: { en: 'Case study · Solutions architecture', es: 'Caso de estudio · Arquitectura de soluciones' },
+		desc: {
+			en: 'A content pipeline that reads from Notion or falls back to static data with zero code changes — the decision that keeps this site editable and deployable at the same time.',
+			es: 'Un pipeline de contenido que lee de Notion o recae en datos estáticos sin cambiar código — la decisión que mantiene este sitio editable y desplegable a la vez.',
+		},
+		tags: ['Solutions architecture', 'Next.js', 'TypeScript', 'Notion API', 'i18n'],
+		year: '2026',
+		live: 'https://portfolio-cavera.vercel.app/',
+		code: 'https://github.com/cavera/portfolio',
+		hasCase: true,
+		role: { en: 'Solutions architect + builder', es: 'Arquitecto de soluciones + desarrollador' },
+		stack: ['Next.js', 'TypeScript', 'Notion API', 'SASS'],
+		case: {
+			context: {
+				en: "This site needed to move from hand-edited TypeScript to a real CMS without a rebuild — Notion already held 31 projects, but the redesign only recognized four hardcoded ones. The constraint: every page had to keep working, in two languages, whether or not Notion was reachable.",
+				es: 'Este sitio necesitaba pasar de TypeScript editado a mano a un CMS real sin una reconstrucción — Notion ya tenía 31 proyectos, pero el rediseño solo reconocía cuatro fijos en el código. La restricción: cada página tenía que seguir funcionando, en dos idiomas, sin importar si Notion respondía o no.',
+			},
+			role: {
+				en: 'I scoped and built the content boundary myself: one module every route asks for content, a resolved type that a Notion mapper and a static file both satisfy, and the localization rules that decide what gets to claim a translation.',
+				es: 'Definí y construí yo mismo la frontera de contenido: un único módulo al que cada ruta le pide contenido, un tipo resuelto que un mapeador de Notion y un archivo estático satisfacen por igual, y las reglas de localización que deciden qué puede reclamar una traducción.',
+			},
+			process: [
+				{
+					en: 'Scoped the contract first — defined a single `Project` shape every route depends on, independent of whether the data comes from Notion or a static file, so swapping the source later touches one module, not the views.',
+					es: 'Primero definí el contrato — un único tipo `Project` del que depende cada ruta, sin importar si el dato viene de Notion o de un archivo estático, para que cambiar la fuente después toque un solo módulo, no las vistas.',
+				},
+				{
+					en: "Designed for partial failure — a Notion query failing, or the environment variables simply not being set, falls back to static content instead of a broken build. The fallback isn't a stopgap; it's how local dev and every preview deploy already run.",
+					es: 'Diseñé para la falla parcial — si una consulta a Notion falla, o si las variables de entorno no están configuradas, el sitio recae en contenido estático en vez de romper el build. El fallback no es un parche; es como corren hoy el desarrollo local y cada preview.',
+				},
+				{
+					en: "Wrote the i18n rules as invariants, not conventions — a project's URL id always comes from the default-locale page so /en/work/x and /es/work/x can't split into two different pages, and a translation only gets an hreflang tag when it's real prose, not English standing in for Spanish.",
+					es: 'Escribí las reglas de i18n como invariantes, no como convenciones — el id de URL de un proyecto siempre viene de la página en el idioma por defecto, para que /en/work/x y /es/work/x no puedan separarse en dos páginas distintas, y una traducción solo recibe una etiqueta hreflang cuando es prosa real, no inglés supliendo al español.',
+				},
+			],
+			outcome: {
+				en: "A site that can be handed a working Notion database and switch content sources with one environment variable — no code change, and no risk of a half-translated page announcing itself as translated. The Notion path hasn't gone live yet: four projects have full bilingual content ready, and the other 27 need their fields filled — which is the honest state to show. The architecture is done; the content is the remaining work.",
+				es: 'Un sitio al que se le puede entregar una base de Notion funcional y cambiar la fuente de contenido con una sola variable de entorno — sin cambiar código, y sin riesgo de que una página a medio traducir se anuncie como traducida. La ruta de Notion todavía no está activa: cuatro proyectos tienen contenido bilingüe completo, y los otros 27 necesitan sus campos llenos — que es el estado honesto para mostrar. La arquitectura está lista; el contenido es el trabajo que falta.',
+			},
+		},
+	},
+	{
+		id: 'rebelmouse-translations',
+		title: 'Translation ownership for a global publisher',
+		img: DEFAULT_PROJECT_BG,
+		kind: { en: 'Case study · Solutions architecture', es: 'Caso de estudio · Arquitectura de soluciones' },
+		desc: {
+			en: 'Replaced a third-party translation proxy with native, editor-owned translation control on RebelMouse for a multi-million-article multilingual site — and the SEO risk of switching it off.',
+			es: 'Reemplacé un proxy de traducción de terceros por control de traducción nativo y a cargo del equipo editorial en RebelMouse, para un sitio multilingüe con millones de artículos — y el riesgo SEO de apagarlo.',
+		},
+		tags: ['Solutions architecture', 'RebelMouse CMS', 'i18n', 'SEO'],
+		year: '2026',
+		hasCase: true,
+		role: { en: 'Solutions architect', es: 'Arquitecto de soluciones' },
+		stack: ['RebelMouse CMS', 'i18n workflow', 'hreflang / alternate links'],
+		case: {
+			context: {
+				en: "A large publisher, whose primary content is in a language other than English, used GTranslate — a third-party proxy — to auto-generate translated versions of every article into six other languages. That gave them no editorial control over the translated content, and they wanted a native, CMS-managed multilingual setup instead. Two platform constraints shaped the work: RebelMouse's translation tooling assumed English as the source language, and the client's source language wasn't yet supported at all. On top of that, there was no alternate-links strategy in place, so decommissioning the third-party proxy without a plan meant every indexed translated URL — over a million of them — was a candidate to 404.",
+				es: 'Un editor grande, cuyo contenido principal está en un idioma distinto al inglés, usaba GTranslate — un proxy de terceros — para generar automáticamente versiones traducidas de cada artículo en otros seis idiomas. Eso no les daba ningún control editorial sobre el contenido traducido, y querían pasar a una configuración multilingüe nativa gestionada desde el CMS. Dos restricciones de la plataforma definieron el trabajo: las herramientas de traducción de RebelMouse asumían el inglés como idioma de origen, y el idioma de origen del cliente todavía no estaba soportado. Además, no existía una estrategia de enlaces alternos, así que dar de baja el proxy de terceros sin un plan significaba que cada URL traducida indexada — más de un millón de ellas — era candidata a devolver 404.',
+			},
+			role: {
+				en: "As solutions architect, I scoped what a native replacement needed to support: strict `/[lang]/[slug]` URLs, automatic hreflang generation across every language version, full independent editorial control per language, and an opt-in translation trigger so publishing in the source language didn't force an automatic translation. I wrote the implementation plan a platform engineer and product developer built from, and flagged the SEO risk to the client after consulting with the strategy team.",
+				es: 'Como arquitecto de soluciones, definí qué debía soportar un reemplazo nativo: URLs estrictas con estructura `/[idioma]/[slug]`, generación automática de hreflang en cada versión de idioma, control editorial independiente y completo por idioma, y un disparador de traducción opcional para que publicar en el idioma de origen no forzara una traducción automática. Escribí el plan de implementación que un ingeniero de plataforma y un desarrollador de producto construyeron, y advertí el riesgo SEO al cliente después de consultarlo con el equipo de estrategia.',
+			},
+			process: [
+				{
+					en: "Mapped the gap between what RebelMouse's translation model assumed — English as the source language — and what this client actually needed: their own language as the source, with English one of several target languages. Getting that source language added took a collaboration with the product team, not just a configuration change.",
+					es: 'Mapeé la brecha entre lo que el modelo de traducción de RebelMouse asumía — inglés como idioma de origen — y lo que este cliente realmente necesitaba: su propio idioma como origen, con inglés como uno de varios idiomas destino. Lograr que ese idioma de origen se agregara requirió trabajar con el equipo de producto, no solo un cambio de configuración.',
+				},
+				{
+					en: "Consulted the strategy team on the SEO risk, then flagged it to the client before anything went live: a canonical/hreflang mismatch, or dropping the GTranslate proxy before redirects existed, both risked losing the site's translated search visibility entirely. Redirect mapping and execution were scoped as the client's and RebelMouse's SSE team's responsibility, since it depended on which of the old GTranslate URLs were still actually indexed.",
+					es: 'Consulté el riesgo SEO con el equipo de estrategia y luego lo advertí al cliente antes de que algo saliera a producción: un desajuste entre canonical y hreflang, o apagar el proxy de GTranslate antes de tener redirecciones, arriesgaban perder por completo la visibilidad de búsqueda del sitio traducido. El mapeo y ejecución de redirecciones quedó bajo responsabilidad del cliente y del equipo SSE de RebelMouse, ya que dependía de cuáles URLs viejas de GTranslate seguían indexadas.',
+				},
+				{
+					en: 'Defined the URL and linking rules as requirements, not guidelines: a strict `/[lang]/[post-slug]` structure, hreflang tags that link every language version to every other version and to itself, and canonical tags that stay consistent with the hreflang cluster — the exact things that break silently if nobody writes them down as rules.',
+					es: 'Definí las reglas de URL y enlazado como requisitos, no como sugerencias: una estructura estricta `/[idioma]/[post-slug]`, etiquetas hreflang que enlazan cada versión de idioma con todas las demás y consigo misma, y etiquetas canonical que se mantienen consistentes con el clúster de hreflang — justo lo que se rompe en silencio si nadie lo escribe como regla.',
+				},
+			],
+			outcome: {
+				en: "The client's editorial team now manages translations natively inside RebelMouse, with full editorial control per language instead of an automated third-party pass. The redirect side never got resolved before launch: the client shut down GTranslate before the mapping between old and new URLs was complete, and those 404s — well over a million of them — are still outstanding on their end.",
+				es: 'El equipo editorial del cliente ahora gestiona traducciones de forma nativa dentro de RebelMouse, con control editorial completo por idioma en vez de un proceso automático de terceros. El lado de las redirecciones nunca se resolvió antes del lanzamiento: el cliente apagó GTranslate antes de completar el mapeo entre URLs viejas y nuevas, y esos 404 — muy por encima del millón — siguen pendientes de su lado.',
 			},
 		},
 	},

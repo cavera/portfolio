@@ -41,3 +41,7 @@ next-env.d.ts
 
 # session notes
 SESSION_NOTES.md
+.env*
+
+# playwright mcp scratch output
+.playwright-mcp/

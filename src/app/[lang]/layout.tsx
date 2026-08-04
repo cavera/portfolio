@@ -5,14 +5,17 @@ import { Nav } from '@/components/Nav'
 import { LangProvider } from '@/i18n/LangProvider'
 import { isLocale, locales } from '@/i18n/routing'
 import { ThemeProvider, themeInitScript } from '@/theme/ThemeProvider'
-import { metadata as allMetadata } from '../metadata'
+import { getMetadata } from '../metadata'
 import { siteColorScheme } from '@/data/consts'
 import { getProfile } from '@/data/source'
 import '../../styles/globals.scss'
 import '../../styles/views.scss'
 import { Analytics } from '@vercel/analytics/react'
 
-export const metadata: Metadata = allMetadata
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+	const { lang } = await params
+	return getMetadata(isLocale(lang) ? lang : 'en')
+}
 
 export const viewport: Viewport = {
 	themeColor: siteColorScheme,
