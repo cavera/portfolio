@@ -44,6 +44,10 @@ export const strings = {
 		photo_cta: 'See the full profile',
 		scroll_explore: 'Scroll to explore',
 		bio: 'Solutions Architect with 15 years designing and building interfaces — from Flash-era e-learning to modern React products. I work between clients and engineers: scoping, planning and shipping. Off the clock I shoot photography and dig into the craft of moviemaking.',
+		nf_title: "Page not found",
+		nf_sub: "That page doesn't exist, or moved.",
+		copy_email: 'Copy email',
+		copied: 'Copied!',
 	},
 	es: {
 		nav_home: 'Inicio',
@@ -88,6 +92,10 @@ export const strings = {
 		photo_cta: 'Ver el perfil completo',
 		scroll_explore: 'Desplázate para explorar',
 		bio: 'Solutions Architect con 15 años diseñando y construyendo interfaces — del e-learning en Flash a productos modernos en React. Trabajo entre clientes e ingeniería: definiendo, planeando y entregando. Fuera del trabajo, hago fotografía y exploro el oficio del cine.',
+		nf_title: 'Página no encontrada',
+		nf_sub: 'Esa página no existe, o se movió.',
+		copy_email: 'Copiar email',
+		copied: '¡Copiado!',
 	},
 } as const
 

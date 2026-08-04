@@ -1,9 +1,10 @@
 'use client'
-import { useLayoutEffect, useRef } from 'react'
+import { useLayoutEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import gsap from 'gsap'
 import { useLang } from '@/i18n/LangProvider'
 import { localePath } from '@/i18n/routing'
+import { stats } from '@/data/portfolio'
 import type { Photo, Project } from '@/types/project'
 
 interface HomeViewProps {
@@ -18,6 +19,14 @@ export const HomeView = ({ projects, photos, skills, email }: HomeViewProps) => 
 	const { t, lang } = useLang()
 	const feat = projects[0]
 	const photoCells = photos.slice(0, 3)
+	const [copied, setCopied] = useState(false)
+
+	const copyEmail = () => {
+		navigator.clipboard.writeText(email).then(() => {
+			setCopied(true)
+			setTimeout(() => setCopied(false), 1800)
+		})
+	}
 
 	useLayoutEffect(() => {
 		const el = rootRef.current
@@ -121,16 +130,16 @@ export const HomeView = ({ projects, photos, skills, email }: HomeViewProps) => 
 
 				<div className='bcol'>
 					<div className='tile b-stats'>
-						<div>
-							<div className='n'>
-								<b>15+</b>
+						{stats.map((s) => (
+							<div key={s.key}>
+								<div className='n'>
+									{/* Live project count, not the authored figure — the two can
+									    never quietly diverge again once this is the single source. */}
+									{'acc' in s && s.acc ? <b>{s.n}</b> : s.key === 'projects' ? projects.length : s.n}
+								</div>
+								<div className='l'>{t(s.key)}</div>
 							</div>
-							<div className='l'>{t('years')}</div>
-						</div>
-						<div>
-							<div className='n'>40+</div>
-							<div className='l'>{t('projects')}</div>
-						</div>
+						))}
 					</div>
 					<Link
 						className='tile t-about b-about'
@@ -139,13 +148,25 @@ export const HomeView = ({ projects, photos, skills, email }: HomeViewProps) => 
 						<h3>CrearMedia → RebelMouse</h3>
 						<span className='go'>↗</span>
 					</Link>
-					<a
-						className='tile t-cta b-cta'
-						href={`mailto:${email}`}>
-						<h3>{t('cta_foot')}</h3>
-						<div className='m'>{email} →</div>
-						<span className='go'>↗</span>
-					</a>
+					<div className='tile t-cta b-cta'>
+						<a
+							className='cta-link'
+							href={`mailto:${email}`}>
+							<h3>{t('cta_foot')}</h3>
+							<div className='m'>{email} →</div>
+						</a>
+						{/* Sibling, not nested inside the <a> — a <button> inside an
+						    anchor is invalid HTML and behaves inconsistently across
+						    browsers. Also the actual fallback for mailto: silently
+						    doing nothing when no mail client is configured. */}
+						<button
+							type='button'
+							className='go copybtn'
+							aria-label={copied ? t('copied') : t('copy_email')}
+							onClick={copyEmail}>
+							{copied ? '✓' : '⧉'}
+						</button>
+					</div>
 				</div>
 
 				<Link
@@ -159,6 +180,11 @@ export const HomeView = ({ projects, photos, skills, email }: HomeViewProps) => 
 								<img
 									src={p.src}
 									alt={p.title}
+									// 500px signed URLs expire/rotate — degrade quietly
+									// instead of a broken-image icon if one dies.
+									onError={(e) => {
+										e.currentTarget.style.display = 'none'
+									}}
 								/>
 							</div>
 						))}

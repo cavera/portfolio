@@ -18,7 +18,7 @@ export const stats = [
 	{ n: '15+', key: 'years', acc: true },
 	{ n: '40+', key: 'projects' },
 	{ n: 'EN/ES', key: 'langs' },
-]
+] as const
 
 export const skills = [
 	'Solutions architecture',

@@ -104,17 +104,18 @@ NOTION_DATABASE_ID=dd48d35c0dfc4ba38b2392f28c16fd08
 
 ## Known lint state
 
-`pnpm lint` exits non-zero with 6 problems, all pre-existing and deliberate:
+`pnpm lint` exits non-zero with 7 problems, all pre-existing and deliberate:
 
 - 1 error, `react-hooks/set-state-in-effect` in `ThemeProvider` — the effect
   adopts a `data-theme` attribute set by a pre-paint script to avoid a
   light/dark flash. Unfixed, not unnoticed.
-- 5 warnings, `@next/next/no-img-element` — the owner declined `next/image`.
+- 6 warnings, `@next/next/no-img-element` — the owner declined `next/image`.
   Every image is an external Cloudinary or Notion URL, so it would need
-  `remotePatterns` and would bill through Vercel image optimization.
+  `remotePatterns` and would bill through Vercel image optimization. (Was 5;
+  the work-page archive grid added a second `<img>` to `WorkView.tsx`.)
 
 Do not "fix" these without asking. A new problem appearing means the count
-should change from 6.
+should change from 7.
 
 ## Further reading
 

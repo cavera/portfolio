@@ -94,7 +94,7 @@
 	color: var(--acc-ink);
 	opacity: 0.85;
 }
-a.t-cta:hover .go {
+.t-cta:hover .go {
 	background: var(--acc-ink);
 	color: var(--acc);
 	opacity: 1;
@@ -105,6 +105,34 @@ a.t-cta:hover .go {
 	letter-spacing: -0.02em;
 	margin: 0;
 	color: var(--acc-ink);
+}
+/* .b-cta is a <div> (not an <a>, so a sibling copy <button> can sit next to
+   the mailto link without nesting interactive content) — it doesn't pick up
+   the shared a.tile/button.tile hover treatment, so restated here. */
+.b-cta:hover {
+	border-color: var(--line2);
+	transform: translateY(-3px);
+	box-shadow: 0 20px 48px rgba(0, 0, 0, 0.38);
+}
+.b-cta .cta-link {
+	display: block;
+	color: inherit;
+	cursor: pointer;
+}
+.copybtn {
+	cursor: pointer;
+	font-family: inherit;
+}
+.copybtn:hover,
+.copybtn:focus-visible {
+	background: var(--acc-ink);
+	color: var(--acc);
+	opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+	.b-cta:hover {
+		transform: none;
+	}
 }
 .t-cta .m {
 	font-family: var(--font-mono), monospace;
@@ -1369,4 +1397,34 @@ a.t-cta:hover .go {
 	.cv-contact a {
 		color: #2f6b4f;
 	}
+}
+
+/* ===================== 404 ===================== */
+.notfound {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 10px;
+	padding: 0 24px;
+}
+.notfound h1 {
+	font-family: var(--font-mono), monospace;
+	font-size: clamp(48px, 10vh, 96px);
+	font-weight: 600;
+	color: var(--acc);
+	line-height: 1;
+}
+.notfound h2 {
+	font-size: clamp(20px, 3vh, 28px);
+	font-weight: 600;
+	letter-spacing: -0.01em;
+}
+.notfound p {
+	color: var(--soft);
+	max-width: 40ch;
+}
+.notfound .btn {
+	margin-top: 14px;
 }

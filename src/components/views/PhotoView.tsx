@@ -28,6 +28,8 @@ export const PhotoView = ({ photos, photoProfile }: PhotoViewProps) => {
 		const panels = Array.from(rail.children) as HTMLElement[]
 		const ticks = Array.from(ruler.querySelectorAll<HTMLElement>('.tick'))
 		const navBtnsEls = Array.from(el.querySelectorAll<HTMLButtonElement>('.navbtns button'))
+		const live = el.querySelector<HTMLElement>('.plive')!
+		const panelLabels = panels.map((p) => p.querySelector('h3')?.textContent || p.querySelector('h2')?.textContent || '')
 
 		let stageW = 0
 		let travel = 0
@@ -86,6 +88,12 @@ export const PhotoView = ({ photos, photoProfile }: PhotoViewProps) => {
 			})
 			ticks.forEach((tk, i) => tk.classList.toggle('on', i === nearest))
 			setBackdrop(nearest)
+			// Only announce on an actual slide change — updating an aria-live
+			// region every rAF tick would spam a screen reader mid-scroll.
+			if (nearest !== curNearest) {
+				const label = panelLabels[nearest]
+				live.textContent = `${nearest + 1} / ${panelCount}${label ? `: ${label}` : ''}`
+			}
 			curNearest = nearest
 			const atStart = y <= 1
 			const atEnd = y >= travel - 1
@@ -144,6 +152,8 @@ export const PhotoView = ({ photos, photoProfile }: PhotoViewProps) => {
 		const onTickClick = (i: number) => () => scrollToPanel(i)
 		ticks.forEach((tk, i) => tk.addEventListener('click', onTickClick(i)))
 
+		// Scoped to the scroller so arrow keys don't hijack the whole page —
+		// only fires while the gallery itself (or a child) has focus.
 		const onKey = (e: KeyboardEvent) => {
 			if (e.key === 'ArrowRight') {
 				e.preventDefault()
@@ -153,7 +163,7 @@ export const PhotoView = ({ photos, photoProfile }: PhotoViewProps) => {
 				step(-1)
 			}
 		}
-		window.addEventListener('keydown', onKey)
+		scroller.addEventListener('keydown', onKey)
 		scroller.addEventListener('scroll', onScroll, { passive: true })
 
 		const ro = new ResizeObserver(layout)
@@ -164,7 +174,7 @@ export const PhotoView = ({ photos, photoProfile }: PhotoViewProps) => {
 		const relayoutTimer = window.setTimeout(layout, 300)
 
 		return () => {
-			window.removeEventListener('keydown', onKey)
+			scroller.removeEventListener('keydown', onKey)
 			scroller.removeEventListener('scroll', onScroll)
 			navBtnsEls.forEach((b) => b.removeEventListener('click', onNavClick(b)))
 			ro.disconnect()
@@ -172,6 +182,10 @@ export const PhotoView = ({ photos, photoProfile }: PhotoViewProps) => {
 			if (raf) cancelAnimationFrame(raf)
 			if (tween) cancelAnimationFrame(tween)
 		}
+		// Structural setup runs once on mount. `panelCount` is derived from
+		// `photos`, which arrives from a server component and is fixed for the
+		// life of the page — same reasoning as WorkView's identical disable.
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	return (
@@ -182,10 +196,24 @@ export const PhotoView = ({ photos, photoProfile }: PhotoViewProps) => {
 				<div className='pbg on' />
 				<div className='pbg' />
 			</div>
-			<div className='pscroll'>
+			<div
+				className='pscroll'
+				role='region'
+				aria-roledescription='carousel'
+				aria-label={t('t_photo')}
+				tabIndex={0}>
+				<div
+					className='plive sr-only'
+					aria-live='polite'
+					aria-atomic='true'
+				/>
 				<div className='pstage'>
 					<div className='prail'>
-						<section className='frame intro'>
+						<section
+							className='frame intro'
+							role='group'
+							aria-roledescription='slide'
+							aria-label={t('t_photo')}>
 							<div className='lab'>500px · @LeonardoFonseca</div>
 							<h2>{t('t_photo')}</h2>
 							<p>{t('photo_sub')}</p>
@@ -199,12 +227,20 @@ export const PhotoView = ({ photos, photoProfile }: PhotoViewProps) => {
 							<section
 								className='frame pframe'
 								data-bg={p.src || ''}
+								role='group'
+								aria-roledescription='slide'
+								aria-label={p.title}
 								key={p.id}>
 								<div className='frame-in'>
 									<img
 										src={p.src}
 										alt={p.title}
 										style={{ aspectRatio: p.aspect || '3/2' }}
+										// 500px signed URLs expire/rotate — degrade to a blank
+										// frame instead of a broken-image icon if one dies.
+										onError={(e) => {
+											e.currentTarget.style.display = 'none'
+										}}
 									/>
 								</div>
 								<div className='cap'>
@@ -220,7 +256,11 @@ export const PhotoView = ({ photos, photoProfile }: PhotoViewProps) => {
 							</section>
 						))}
 
-						<section className='frame outro'>
+						<section
+							className='frame outro'
+							role='group'
+							aria-roledescription='slide'
+							aria-label={t('photo_outro')}>
 							<div className='lab'>
 								{String(photos.length + 1).padStart(2, '0')} / {String(photos.length + 1).padStart(2, '0')}
 							</div>

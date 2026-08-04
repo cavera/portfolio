@@ -218,6 +218,19 @@ button:focus-visible,
 	color: var(--acc);
 	border-color: var(--acc);
 }
+/* Visually hidden but announced by screen readers — for live regions and
+   labels that shouldn't add visible chrome. */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
 .pfnav .logo {
 	font-family: var(--font-mono), monospace;
 	font-size: 16px;
