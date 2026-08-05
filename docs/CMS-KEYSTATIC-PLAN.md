@@ -46,26 +46,48 @@ Admin file layout (verified against official template):
   app has no root layout (`[lang]/layout.tsx` is the root of its subtree) and
   `/keystatic` sits outside `[lang]`
 - `src/app/keystatic/[[...params]]/page.tsx`
-- `src/app/api/keystatic/[...params]/route.ts` — `makeRouteHandler({ config })`
+- `src/app/api/keystatic/[...params]/route.ts` — `makeRouteHandler({ config })` from
+  `@keystatic/next/route-handler` (**verified**: not `@keystatic/next/api`, which
+  is the Pages Router variant taking `NextApiRequest`/`NextApiResponse` — the
+  App Router one lives at the `route-handler` subpath and returns
+  `{ GET, POST }` handlers that take a `Request`)
 
-Storage: `NODE_ENV === 'development' ? { kind: 'local' } : { kind: 'github', repo: 'cavera/portfolio' }`
-so local dev needs no auth. GitHub mode setup is a guided flow on first visit to
-the deployed `/keystatic`; it produces 4 env vars (`KEYSTATIC_GITHUB_CLIENT_ID`,
-`KEYSTATIC_GITHUB_CLIENT_SECRET`, `KEYSTATIC_SECRET`,
-`NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG`) to set in Vercel.
+Storage: `process.env.KEYSTATIC_GITHUB_CLIENT_ID ? { kind: 'github', repo: 'cavera/portfolio' } : { kind: 'local' }`
+— **verified deviation:** the original plan said branch on `NODE_ENV ===
+'development'`, but `next build` always sets `NODE_ENV=production`, even
+locally, so that check sent every local `pnpm build` down the GitHub path and
+failed on missing credentials before a single page even rendered. Branching on
+whether the credential actually exists means local dev, local build
+verification, and any preview deploy before step 5 sets up the GitHub App all
+safely fall back to local storage. GitHub mode setup is a guided flow on first
+visit to the deployed `/keystatic`; it produces 4 env vars
+(`KEYSTATIC_GITHUB_CLIENT_ID`, `KEYSTATIC_GITHUB_CLIENT_SECRET`,
+`KEYSTATIC_SECRET`, `NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG`) to set in Vercel.
 
 ## Content model
 
 ```
 content/
-  projects/<slug>/index.yaml       # data fields
-  projects/<slug>/caseEn.mdoc      # free-form EN case body
-  projects/<slug>/caseEs.mdoc      # free-form ES case body
+  projects/<slug>/index.yaml       # data fields + caseEs (inline, see note below)
+  projects/<slug>/caseEn.mdoc      # free-form EN case body — the one real content field
   profile.yaml                     # singleton: email, portrait, socials, skills, certs, stats
   experience.yaml                  # singleton: items[]
   photos.yaml                      # singleton: items[]
 public/images/work/                # images uploaded via the editor (committed → never expire)
 ```
+
+**Verified deviation from the original plan:** `format.contentField` only accepts one
+field (a single name, or an array that's a *path* into a nested object — not a
+list of independent fields). Tried `contentField: ['caseEn', 'caseEs']`
+expecting two sibling `.mdoc` files; Keystatic rejected it at runtime with
+"Path specified in contentField does not point to a content field." Fix:
+`caseEn` is the sole `contentField` (→ `caseEn.mdoc`); `caseEs` stays a regular
+`fields.markdoc()` field, which Keystatic stores inline inside `index.yaml`
+instead of as its own file. Confirmed in the admin UI: both fields render as
+full rich Markdoc editors (toolbar, image upload, etc.) with zero difference
+in editing experience — the only loss is `caseEs` not being its own
+clean-diffable file on disk, which doesn't matter since hand-editing files was
+never a goal (the UI is the only intended editing surface).
 
 **`projects` collection** — one entry per project, both locales in one entry
 (shared fields can't drift; one entry to open on the phone):
