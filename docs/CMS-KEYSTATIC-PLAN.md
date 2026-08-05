@@ -8,6 +8,13 @@ screenshots), and rewiring are all live and verified locally. Only step 5
 real deployment, since the GitHub App OAuth flow has to run against a public
 URL. See "Ordered migration steps" below for exactly what's done.
 
+**Resume here next session:** step 5 is the entire remaining scope. Nothing
+else in this branch needs revisiting — everything local is done and
+verified. Start by deciding a deploy target (see the branch caveat at the
+end of "Ordered migration steps": this branch isn't `redesign-merge`, and
+`redesign-merge` isn't `main`, so "deploy" doesn't mean "go live" the way it
+did for the earlier Notion switch).
+
 ## Context
 
 The portfolio (Next.js 16 App Router, fully static, bilingual en/es, Vercel) was
