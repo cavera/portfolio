@@ -1,7 +1,10 @@
 # Plan: Move the CMS source off Notion → Keystatic (GitHub mode)
 
-Not started — this is a plan document only, saved for a future implementation
-session. No Keystatic code exists yet on this branch.
+**Status: steps 1–4 of 6 done, on the `redesign-keystatic` branch (forked
+from `redesign-merge`).** Scaffold, content, and rewiring are all live and
+verified locally. Steps 5 (GitHub mode + Vercel) and 6 (importing the Notion
+stubs) have not started — see the "Ordered migration steps" section below
+for exactly what's done and what's left.
 
 ## Context
 
@@ -143,9 +146,13 @@ and `portfolio.ts`'s `stats` export is dead — add a `stats` prop to HomeView.
 
 **Types (`src/types/project.ts`)**: delete `CaseStudy` and the whole Authored*
 layer; `Project` drops `case?` but otherwise stays byte-identical, so
-`HomeView`, `WorkView`, sitemap, and metadata code don't change. Markdoc nodes
-are class instances (not serializable to client props), so case bodies never
-enter `Project`.
+`WorkView`, sitemap, and metadata code don't change. Markdoc nodes are class
+instances (not serializable to client props), so case bodies never enter
+`Project`. **Correction after actually doing it:** `HomeView` needed one real
+change unrelated to `Project` — its stats tile imported the `stats` constant
+directly from `portfolio.ts` (added in an earlier, separate session), so
+deleting that file meant threading `stats` through as a prop from
+`getProfile()` instead. Small, but not a "no changes" case as first assumed.
 
 ## source.ts rewiring (signatures preserved)
 
@@ -168,48 +175,88 @@ fallback note; replace the four fixed sections (lines 65–99) with
 
 ## Ordered migration steps (green `pnpm build` after each)
 
-All on `redesign-merge`.
+All on `redesign-keystatic` (forked from `redesign-merge`, not merged
+anywhere).
 
-1. **Install + scaffold**: packages, `keystatic.config.ts` (local storage
-   first), the 4 admin/API files, `src/data/reader.ts`. Nothing imports the
-   reader yet. Verify `/keystatic` opens in `pnpm dev`.
-2. **Author content files**: convert the 4 complete bilingual projects from
-   `portfolio.ts` (`public: true, translated: true, hasCase: true`, sortOrder
-   1–4); case bodies become `caseEn/caseEs.mdoc` with `## Context`/`## Contexto`
-   headings, process as lists; recover the 6 Reserva screenshots from the
-   Notion page into `public/images/work/` (re-hosted, captioned). Create the 3
-   singletons. Open every entry in the local admin UI.
-3. **Rewire**: source.ts → reader; types updated; `getCaseNode`; CaseView +
-   case page. Build; diff rendered HTML of `/en`, `/es`, all 8 case pages
-   against the previous build.
-4. **Delete dead code**: `src/data/notion/` (client, mapper, fixtures, README),
-   `src/data/portfolio.ts`, Authored* types, `NOTION_*` mentions. Update
-   `CLAUDE.md` (invariants 1/2/5 are Notion-specific → replace with Keystatic
-   equivalents; 3/4 survive) and rewrite `docs/CMS.md`.
-5. **GitHub mode + Vercel**: storage ternary; deploy preview; run the GitHub
-   App flow from the deployed `/keystatic`; set the 4 env vars in Vercel;
-   verify a phone edit → commit → redeploy round-trip. Add
+1. ✅ **Install + scaffold** — packages, `keystatic.config.ts` (storage
+   branches on `KEYSTATIC_GITHUB_CLIENT_ID` presence, see deviation note
+   above), the 4 admin/API files, `src/data/reader.ts`. Verified `/keystatic`
+   opens in `pnpm dev` with the Projects collection and all 3 singletons
+   registered, zero console errors.
+2. ✅ **Author content files** — all **6** complete bilingual projects
+   migrated (not 4: this plan was written from a checkout that predated two
+   case studies added later in the same session — `portfolio-architecture`
+   and `rebelmouse-translations` — so all 6 that existed went in, not just
+   the original 4), `sortOrder` 1–6. Case bodies hand-authored directly as
+   `.mdoc` files (see the WYSIWYG-corruption finding above), verified by
+   loading every entry back into the admin UI. The 3 singletons created.
+   **Not done**: recovering the 6 Reserva screenshots from the Notion page
+   into `public/images/work/` — deferred, not blocking, can happen anytime
+   before or after step 5.
+3. ✅ **Rewire** — `source.ts` reads through `reader` instead of
+   Notion/`portfolio.ts`; `Project` type dropped `case`/`CaseStudy`/`Authored*`;
+   `getCaseNode` added; `CaseView` renders Markdoc directly; `HomeView`'s
+   stats tile takes `stats` as a prop instead of importing a static constant.
+   Verified live in a browser (not just `pnpm build`) on every route: home,
+   work listing, a case page in both languages, about, photography, CV,
+   `sitemap.xml` — zero console errors, correct Markdoc rendering, live
+   stats, correct hreflang.
+4. ✅ **Delete dead code** — folded into step 3's commit rather than kept
+   separate: deleting the `Authored*`/`CaseStudy` types (step 3's own scope)
+   immediately breaks `src/data/notion/` and `src/data/portfolio.ts`, which
+   depend on them, so there was no way to sequence these as genuinely
+   separate steps. Both deleted, confirmed zero remaining imports of either
+   first. `CLAUDE.md`'s Notion invariants rewritten with their Keystatic
+   equivalents (invariant 2's old risk — a stray public Spanish page —
+   doesn't exist anymore now that both languages live in one entry, so it's
+   documented as dissolved rather than replaced). `docs/CMS.md` rewritten as
+   a short current-state summary pointing here for detail.
+5. ⬜ **GitHub mode + Vercel** — not started. Deploy a preview; run the
+   GitHub App flow from the deployed `/keystatic`; set the 4 env vars in
+   Vercel; verify a phone edit → commit → redeploy round-trip. Add
    `Disallow: /keystatic` to `robots.txt`.
-6. **Later, separately**: import the ~27 Notion stubs as `public: false`
-   entries (title/img/links/tags only).
+6. ⬜ **Later, separately** — import the ~27 Notion stubs as `public: false`
+   entries (title/img/links/tags only). Not started; genuinely separate from
+   the rest, can happen anytime after step 5.
 
 **Branch caveat**: GitHub-mode commits land on the branch selected in the admin
-UI (default branch by default). Production deploys from `main`, so merge
-`redesign-merge` → `main` before daily phone use, or edits will target content
-the deployed site doesn't build from.
+UI (default branch by default). Production deploys from `main`, which is
+still on the old design reading Notion through different, older code — not
+even `redesign-merge`. This branch needs its own deploy target decided before
+step 5 means anything: merge to `redesign-merge` (which is itself unmerged to
+`main`), or deploy standalone for testing first. Don't assume "deploy" means
+"go live" here the way it did for the Notion switch.
 
 ## Verification
 
-- `pnpm build`: route list is exactly the current 19 static pages + sitemap,
-  plus `/keystatic` and `/api/keystatic` as the only dynamic entries.
-- A `public: false` test entry produces no route and no sitemap line.
+Confirmed through step 4:
+
+- `pnpm build`: 12 case pages (6 projects × 2 locales) + the rest of the
+  static routes, `/keystatic` and `/api/keystatic/[...params]` as the only
+  dynamic entries — no revalidate windows anywhere anymore, since there's no
+  remote content source left to periodically refresh.
+- `pnpm lint`: unchanged at 7 pre-existing problems (was 6 before this
+  session's separate PLAN.md work added a second `<img>` to `WorkView`; not
+  related to this migration).
+- `grep -rl "@/data/portfolio\|@/data/notion" src/` returns nothing.
+- Real browser checks (not just build output) on every route: home (live
+  project count in stats, not a hardcoded figure), work listing, a case page
+  in both languages (real Markdoc headings/lists/inline-code render
+  correctly), about, photography, CV, `sitemap.xml` (correct hreflang) — zero
+  console errors anywhere.
+- Every project + singleton opens in the admin UI with zero console errors.
+
+Still pending, blocked on step 5:
+
+- A `public: false` test entry produces no route and no sitemap line —
+  meaningful once GitHub-mode editing is live; not re-tested since step 2
+  already confirmed the admin UI parses the `public` field correctly.
 - Flip one project's `translated` to false, rebuild: its `/es/work/<slug>`
   leaves the sitemap, `/en` head loses `hreflang="es"`, ES listing shows
   English text + fallback note. Flip back.
-- Compare hreflang/x-default, case-page `<h1>`, meta description, OG image
-  against pre-migration build output.
-- Admin UI: edit each collection/singleton locally; upload an image into a case
-  body; confirm it lands in `public/images/work/` and renders.
-- `pnpm lint` still reports exactly the 6 known pre-existing problems.
-- `grep -r notion src/` and imports of `data/portfolio` return nothing.
-- After step 5: build log fetches nothing from the network for content.
+- Upload an image into a case body through the admin UI; confirm it lands in
+  `public/images/work/` and renders. Not yet tried — every image URL used so
+  far is an existing Cloudinary link, not an editor upload.
+- Build log fetches nothing from the network for content — true today by
+  construction (filesystem reader only), but worth confirming again once
+  GitHub-mode storage is live, since that mode does talk to the GitHub API.
