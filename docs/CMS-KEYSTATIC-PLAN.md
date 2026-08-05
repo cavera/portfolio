@@ -1,10 +1,12 @@
 # Plan: Move the CMS source off Notion → Keystatic (GitHub mode)
 
-**Status: steps 1–4 of 6 done, on the `redesign-keystatic` branch (forked
-from `redesign-merge`).** Scaffold, content, and rewiring are all live and
-verified locally. Steps 5 (GitHub mode + Vercel) and 6 (importing the Notion
-stubs) have not started — see the "Ordered migration steps" section below
-for exactly what's done and what's left.
+**Status: steps 1, 2, 3, 4, and 6 done; step 5 not started.** On the
+`redesign-keystatic` branch (forked from `redesign-merge`). Scaffold,
+content (including the 27 Notion stubs and the 6 recovered Reserva
+screenshots), and rewiring are all live and verified locally. Only step 5
+(GitHub mode + Vercel) remains — it's the one piece that genuinely needs a
+real deployment, since the GitHub App OAuth flow has to run against a public
+URL. See "Ordered migration steps" below for exactly what's done.
 
 ## Context
 
@@ -190,9 +192,11 @@ anywhere).
    the original 4), `sortOrder` 1–6. Case bodies hand-authored directly as
    `.mdoc` files (see the WYSIWYG-corruption finding above), verified by
    loading every entry back into the admin UI. The 3 singletons created.
-   **Not done**: recovering the 6 Reserva screenshots from the Notion page
-   into `public/images/work/` — deferred, not blocking, can happen anytime
-   before or after step 5.
+   The 6 Reserva screenshots were initially deferred, then recovered in a
+   later pass (see step 6 below) — fetched from the live Notion page as
+   signed S3 URLs (300-second expiry; 2 of 6 expired mid-download on the
+   first attempt and needed a second fetch for fresh URLs) and committed to
+   `public/images/work/`.
 3. ✅ **Rewire** — `source.ts` reads through `reader` instead of
    Notion/`portfolio.ts`; `Project` type dropped `case`/`CaseStudy`/`Authored*`;
    `getCaseNode` added; `CaseView` renders Markdoc directly; `HomeView`'s
@@ -211,13 +215,23 @@ anywhere).
    doesn't exist anymore now that both languages live in one entry, so it's
    documented as dissolved rather than replaced). `docs/CMS.md` rewritten as
    a short current-state summary pointing here for detail.
-5. ⬜ **GitHub mode + Vercel** — not started. Deploy a preview; run the
-   GitHub App flow from the deployed `/keystatic`; set the 4 env vars in
-   Vercel; verify a phone edit → commit → redeploy round-trip. Add
-   `Disallow: /keystatic` to `robots.txt`.
-6. ⬜ **Later, separately** — import the ~27 Notion stubs as `public: false`
-   entries (title/img/links/tags only). Not started; genuinely separate from
-   the rest, can happen anytime after step 5.
+5. ⬜ **GitHub mode + Vercel** — not started, the one step that genuinely
+   needs a real deployment (the GitHub App's OAuth callback needs a public
+   URL). Deploy a preview; run the GitHub App flow from the deployed
+   `/keystatic`; set the 4 env vars in Vercel; verify a phone edit → commit
+   → redeploy round-trip. `Disallow: /keystatic` in `robots.txt` was done
+   ahead of time (see step 6) since it doesn't depend on the App itself.
+6. ✅ **Local-only pieces, done ahead of step 5** — three things that didn't
+   need a deployment: imported all **27** Notion stubs as `public: false`
+   entries (title, live/code links, skills-as-tags; no individual cover
+   fetch — 27 unpublished stubs don't render anywhere, so they fall back to
+   `DEFAULT_PROJECT_BG` until whoever publishes one fills in a real cover
+   through the admin UI at that point), added `Disallow: /keystatic` to
+   `robots.txt`, and recovered the 6 Reserva screenshots. Verified: `pnpm
+   build` still green with 12 case pages (all 27 stubs correctly excluded),
+   `pnpm lint` unchanged at 7, all 6 recovered images return 200 and render
+   with correct alt text on the live case page, and the admin UI lists all
+   33 entries with zero console errors.
 
 **Branch caveat**: GitHub-mode commits land on the branch selected in the admin
 UI (default branch by default). Production deploys from `main`, which is
@@ -245,12 +259,13 @@ Confirmed through step 4:
   correctly), about, photography, CV, `sitemap.xml` (correct hreflang) — zero
   console errors anywhere.
 - Every project + singleton opens in the admin UI with zero console errors.
+- `public: false` produces no route and no sitemap line — confirmed for
+  real with the 27 imported Notion stubs, not just a hypothetical test
+  entry: `pnpm build` still generates exactly 12 case pages after adding
+  them, all 27 excluded correctly.
 
 Still pending, blocked on step 5:
 
-- A `public: false` test entry produces no route and no sitemap line —
-  meaningful once GitHub-mode editing is live; not re-tested since step 2
-  already confirmed the admin UI parses the `public` field correctly.
 - Flip one project's `translated` to false, rebuild: its `/es/work/<slug>`
   leaves the sitemap, `/en` head loses `hreflang="es"`, ES listing shows
   English text + fallback note. Flip back.
