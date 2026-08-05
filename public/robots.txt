@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /keystatic
 
 Sitemap: https://portfolio-cavera.vercel.app/sitemap.xml
