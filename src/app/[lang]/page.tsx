@@ -25,6 +25,7 @@ export default async function Home({ params }: { params: Promise<{ lang: Lang }>
 			photos={photos}
 			skills={profile.skills}
 			email={profile.email}
+			stats={profile.stats}
 		/>
 	)
 }

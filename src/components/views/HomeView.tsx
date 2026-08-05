@@ -4,7 +4,7 @@ import Link from 'next/link'
 import gsap from 'gsap'
 import { useLang } from '@/i18n/LangProvider'
 import { localePath } from '@/i18n/routing'
-import { stats } from '@/data/portfolio'
+import type { StringKey } from '@/i18n/strings'
 import type { Photo, Project } from '@/types/project'
 
 interface HomeViewProps {
@@ -12,9 +12,10 @@ interface HomeViewProps {
 	photos: Photo[]
 	skills: string[]
 	email: string
+	stats: { n: string; key: string; acc: boolean }[]
 }
 
-export const HomeView = ({ projects, photos, skills, email }: HomeViewProps) => {
+export const HomeView = ({ projects, photos, skills, email, stats }: HomeViewProps) => {
 	const rootRef = useRef<HTMLDivElement>(null)
 	const { t, lang } = useLang()
 	const feat = projects[0]
@@ -135,9 +136,9 @@ export const HomeView = ({ projects, photos, skills, email }: HomeViewProps) => 
 								<div className='n'>
 									{/* Live project count, not the authored figure — the two can
 									    never quietly diverge again once this is the single source. */}
-									{'acc' in s && s.acc ? <b>{s.n}</b> : s.key === 'projects' ? projects.length : s.n}
+									{s.acc ? <b>{s.n}</b> : s.key === 'projects' ? projects.length : s.n}
 								</div>
-								<div className='l'>{t(s.key)}</div>
+								<div className='l'>{t(s.key as StringKey)}</div>
 							</div>
 						))}
 					</div>

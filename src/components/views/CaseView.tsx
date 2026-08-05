@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Markdoc, { type Node as MarkdocNode } from '@markdoc/markdoc'
+import React from 'react'
 import { localePath } from '@/i18n/routing'
 import { strings } from '@/i18n/strings'
 import type { Lang } from '@/i18n/strings'
@@ -14,11 +16,13 @@ import type { Project } from '@/types/project'
  * ships in the initial response.
  *
  * A server component, so it reads `strings` directly rather than through the
- * `useLang` hook.
+ * `useLang` hook, and can take a Markdoc `node` prop directly — those are
+ * class instances, fine between server components, but never serializable
+ * across a client boundary.
  */
-export const CaseView = ({ project, lang }: { project: Project; lang: Lang }) => {
+export const CaseView = ({ project, lang, node }: { project: Project; lang: Lang; node: MarkdocNode | null }) => {
 	const t = (key: keyof typeof strings.en) => strings[lang][key]
-	const c = project.case
+	const caseBody = node && Markdoc.renderers.react(Markdoc.transform(node), React)
 
 	return (
 		<div className='csov casepage open'>
@@ -62,41 +66,7 @@ export const CaseView = ({ project, lang }: { project: Project; lang: Lang }) =>
 
 					{project.desc && <p>{project.desc}</p>}
 
-					{c?.context && (
-						<section>
-							<h2>{t('cs_context')}</h2>
-							<p>{c.context}</p>
-						</section>
-					)}
-					{c?.role && (
-						<section>
-							<h2>{t('cs_role')}</h2>
-							<p>{c.role}</p>
-						</section>
-					)}
-					{c?.process && c.process.length > 0 && (
-						<section>
-							<h2>{t('cs_process')}</h2>
-							<div className='steps'>
-								{c.process.map((step, i) => (
-									<div
-										className='step'
-										key={i}>
-										<div className='num'>{String(i + 1).padStart(2, '0')}</div>
-										<p>{step}</p>
-									</div>
-								))}
-							</div>
-						</section>
-					)}
-					{c?.outcome && (
-						<section>
-							<h2>{t('cs_outcome')}</h2>
-							<div className='outcome'>
-								<p>{c.outcome}</p>
-							</div>
-						</section>
-					)}
+					{caseBody && <div className='casebody'>{caseBody}</div>}
 
 					{project.tags.length > 0 && (
 						<div className='tags'>

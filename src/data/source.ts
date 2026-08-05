@@ -1,17 +1,14 @@
-import { aboutPortrait, certs, email, experience, photoProfile, photos, projects, skills, socials } from '@/data/portfolio'
-import { getBlocks, notionConfigured, queryProjects, type NotionPage } from '@/data/notion/client'
-import { mapCase, mapProject, sortOrder, translationOf } from '@/data/notion/mapper'
+import { reader } from '@/data/reader'
+import { DEFAULT_PROJECT_BG } from '@/data/consts'
 import { defaultLocale } from '@/i18n/routing'
 import type { Lang } from '@/i18n/strings'
 import type { Experience, Photo, Project, SocialLink } from '@/types/project'
+import type { Node as MarkdocNode } from '@markdoc/markdoc'
 
 /**
- * The single place the app asks for content.
- *
- * Backed by Notion when NOTION_TOKEN and NOTION_DATABASE_ID are both set,
- * and by the hand-authored `portfolio.ts` otherwise. The static path is not a
- * stopgap: it keeps local dev and preview builds working without secrets, and
- * keeps the site deployable when the Notion API is down.
+ * The single place the app asks for content. Reads straight from the
+ * checked-out filesystem via Keystatic's reader — no network call, no
+ * expiring URLs, nothing to fall back from.
  *
  * Import from server components only.
  */
@@ -23,117 +20,98 @@ export interface SiteProfile {
 	socials: SocialLink[]
 	skills: string[]
 	certs: string[]
+	stats: { n: string; key: string; acc: boolean }[]
 }
-
-// ---- static path ------------------------------------------------------
-
-function staticProjects(lang: Lang): Project[] {
-	return projects.map((p) => ({
-		id: p.id,
-		title: p.title,
-		img: p.img,
-		kind: p.kind[lang],
-		desc: p.desc[lang],
-		tags: p.tags,
-		year: p.year,
-		live: p.live,
-		code: p.code,
-		hasCase: p.hasCase,
-		role: p.role[lang],
-		stack: p.stack,
-		case: p.case && {
-			context: p.case.context[lang],
-			role: p.case.role[lang],
-			process: p.case.process.map((s) => s[lang]),
-			outcome: p.case.outcome[lang],
-		},
-		// The authored file carries real prose in both languages, so static
-		// content is genuinely translated in either locale.
-		translated: true,
-		lang,
-	}))
-}
-
-// ---- Notion path ------------------------------------------------------
-
-async function withCase(page: NotionPage, project: Project): Promise<Project> {
-	if (!project.hasCase) return project
-	try {
-		return { ...project, case: mapCase(await getBlocks(page.id)) }
-	} catch (error) {
-		// One unreadable body must not take down the whole listing.
-		console.error(`Notion: could not read case body for "${project.title}"`, error)
-		return { ...project, hasCase: false }
-	}
-}
-
-async function notionProjects(lang: Lang): Promise<Project[]> {
-	const base = await queryProjects(defaultLocale)
-
-	// Whether a real Spanish translation exists is needed regardless of which
-	// locale is being rendered: the English page has to know it too, so it can
-	// advertise (or withhold) the hreflang alternate that points at it.
-	const localized = lang === defaultLocale ? await queryProjects('es') : await queryProjects(lang)
-	const translations = new Map(localized.flatMap((page) => translationOf(page).map((id) => [id.replace(/-/g, ''), page])))
-
-	const mapped = await Promise.all(
-		base.map(async (page) => {
-			const translation = translations.get(page.id.replace(/-/g, ''))
-			// Only the Spanish request swaps in the translation's own content —
-			// the English page always reads from `page` even when a translation
-			// exists, since English is never itself a fallback.
-			const source = lang !== defaultLocale ? (translation ?? page) : page
-			const project = mapProject(source, lang, Boolean(translation))
-			// The id is the URL segment, and both locales must share it — the
-			// alternates helper builds /en/work/<id> and /es/work/<id> from one
-			// path. Always take it from the default-locale page so a translation
-			// with a different slug cannot split the pair into two URLs, one of
-			// which would not exist.
-			const withId = { ...project, id: mapProject(page, lang, false).id }
-			return { project: await withCase(source, withId), order: sortOrder(page) }
-		})
-	)
-
-	// Explicit sort_order first, then whatever order Notion returned (newest
-	// first). Entries without an order sink below those that have one.
-	return mapped
-		.map((m, i) => ({ ...m, i }))
-		.sort((a, b) => {
-			if (a.order !== null && b.order !== null) return a.order - b.order
-			if (a.order !== null) return -1
-			if (b.order !== null) return 1
-			return a.i - b.i
-		})
-		.map((m) => m.project)
-}
-
-// ---- public API -------------------------------------------------------
 
 export async function getProjects(lang: Lang = defaultLocale): Promise<Project[]> {
-	if (!notionConfigured) return staticProjects(lang)
+	const all = await reader.collections.projects.all()
 
-	try {
-		const fromNotion = await notionProjects(lang)
-		if (fromNotion.length) return fromNotion
-		console.warn('Notion returned no published projects; falling back to static content.')
-	} catch (error) {
-		console.error('Notion project query failed; falling back to static content.', error)
-	}
-	return staticProjects(lang)
+	const mapped = all
+		.filter(({ entry }) => entry.public)
+		.map(({ slug, entry }) => {
+			// English is never itself a fallback; Spanish only claims a real
+			// translation when the author has explicitly flipped `translated`.
+			const useEs = lang === 'es' && entry.translated
+			const localized = useEs ? entry.es : entry.en
+			const translated = lang === defaultLocale ? true : entry.translated
+
+			const project: Project = {
+				id: slug,
+				title: entry.title,
+				img: entry.img || DEFAULT_PROJECT_BG,
+				kind: localized.kind,
+				desc: localized.desc,
+				tags: [...entry.tags],
+				year: entry.year === null ? '' : String(entry.year),
+				live: entry.live ?? undefined,
+				code: entry.code ?? undefined,
+				hasCase: entry.hasCase,
+				role: localized.role,
+				stack: [...entry.stack],
+				translated,
+				lang,
+			}
+			return { project, sortOrder: entry.sortOrder }
+		})
+
+	// Explicit sortOrder first; entries without one sink below those that have one.
+	return mapped
+		.sort((a, b) => {
+			if (a.sortOrder !== null && b.sortOrder !== null) return a.sortOrder - b.sortOrder
+			if (a.sortOrder !== null) return -1
+			if (b.sortOrder !== null) return 1
+			return 0
+		})
+		.map((m) => m.project)
 }
 
 export async function getProject(id: string, lang: Lang = defaultLocale): Promise<Project | null> {
 	return (await getProjects(lang)).find((p) => p.id === id) ?? null
 }
 
+/**
+ * Case bodies are Markdoc nodes — class instances, not serializable to client
+ * props — so they never enter `Project`. Fetched separately by the case page.
+ */
+export async function getCaseNode(id: string, lang: Lang = defaultLocale): Promise<MarkdocNode | null> {
+	const entry = await reader.collections.projects.read(id)
+	if (!entry) return null
+	const useEs = lang === 'es' && entry.translated
+	const { node } = useEs ? await entry.caseEs() : await entry.caseEn()
+	return node
+}
+
 export async function getPhotos(): Promise<Photo[]> {
-	return photos
+	const data = await reader.singletons.photos.read()
+	return (data?.items ?? []).map((p, i) => ({
+		id: `ph_${i}`,
+		aspect: p.aspect,
+		title: p.title,
+		link: p.link ?? '',
+		src: p.src ?? '',
+	}))
 }
 
 export async function getExperience(lang: Lang = defaultLocale): Promise<Experience[]> {
-	return experience.map((e) => ({ when: e.when, role: e.role, co: e.co, summary: e[lang], badge: e.badge }))
+	const data = await reader.singletons.experience.read()
+	return (data?.items ?? []).map((e) => ({
+		when: e.when,
+		role: e.role,
+		co: e.co,
+		summary: lang === 'es' ? e.summaryEs : e.summaryEn,
+		badge: e.badge || undefined,
+	}))
 }
 
 export async function getProfile(): Promise<SiteProfile> {
-	return { email, photoProfile, aboutPortrait, socials, skills, certs }
+	const data = await reader.singletons.profile.readOrThrow()
+	return {
+		email: data.email,
+		photoProfile: data.photoProfile ?? '',
+		aboutPortrait: data.aboutPortrait ?? '',
+		socials: data.socials.map((s) => ({ name: s.name, url: s.url ?? '' })),
+		skills: [...data.skills],
+		certs: [...data.certs],
+		stats: data.stats.map((s) => ({ n: s.n, key: s.key, acc: s.acc })),
+	}
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { CaseView } from '@/components/views/CaseView'
-import { getProject, getProjects } from '@/data/source'
+import { getCaseNode, getProject, getProjects } from '@/data/source'
 import { alternates, defaultLocale, locales } from '@/i18n/routing'
 import type { Lang } from '@/i18n/strings'
 
@@ -41,11 +41,13 @@ export default async function CasePage({ params }: Params) {
 	const { lang, slug } = await params
 	const project = await getProject(slug, lang)
 	if (!project || !project.hasCase) notFound()
+	const node = await getCaseNode(slug, lang)
 
 	return (
 		<CaseView
 			project={project}
 			lang={lang}
+			node={node}
 		/>
 	)
 }
