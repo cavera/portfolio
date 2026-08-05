@@ -1,0 +1,17 @@
+## Contexto
+
+Este sitio necesitaba pasar de TypeScript editado a mano a un CMS real sin una reconstrucción — Notion ya tenía 31 proyectos, pero el rediseño solo reconocía cuatro fijos en el código. La restricción: cada página tenía que seguir funcionando, en dos idiomas, sin importar si Notion respondía o no.
+
+## Rol
+
+Definí y construí yo mismo la frontera de contenido: un único módulo al que cada ruta le pide contenido, un tipo resuelto que un mapeador de Notion y un archivo estático satisfacen por igual, y las reglas de localización que deciden qué puede reclamar una traducción.
+
+## Proceso
+
+- Primero definí el contrato — un único tipo `Project` del que depende cada ruta, sin importar si el dato viene de Notion o de un archivo estático, para que cambiar la fuente después toque un solo módulo, no las vistas.
+- Diseñé para la falla parcial — si una consulta a Notion falla, o si las variables de entorno no están configuradas, el sitio recae en contenido estático en vez de romper el build. El fallback no es un parche; es como corren hoy el desarrollo local y cada preview.
+- Escribí las reglas de i18n como invariantes, no como convenciones — el id de URL de un proyecto siempre viene de la página en el idioma por defecto, para que /en/work/x y /es/work/x no puedan separarse en dos páginas distintas, y una traducción solo recibe una etiqueta hreflang cuando es prosa real, no inglés supliendo al español.
+
+## Resultado
+
+Un sitio al que se le puede entregar una base de Notion funcional y cambiar la fuente de contenido con una sola variable de entorno — sin cambiar código, y sin riesgo de que una página a medio traducir se anuncie como traducida. Esta misma página es la prueba: se sirve directo desde Notion, el mismo pipeline que todo lo demás aquí. Cuatro proyectos salieron primero con contenido bilingüe completo, y el resto se va completando a medida que se escriben sus casos de estudio.

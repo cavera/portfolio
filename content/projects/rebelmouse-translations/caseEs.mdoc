@@ -1,0 +1,17 @@
+## Contexto
+
+Un editor grande, cuyo contenido principal está en un idioma distinto al inglés, usaba GTranslate — un proxy de terceros — para generar automáticamente versiones traducidas de cada artículo en otros seis idiomas. Eso no les daba ningún control editorial sobre el contenido traducido, y querían pasar a una configuración multilingüe nativa gestionada desde el CMS. Dos restricciones de la plataforma definieron el trabajo: las herramientas de traducción de RebelMouse asumían el inglés como idioma de origen, y el idioma de origen del cliente todavía no estaba soportado. Además, no existía una estrategia de enlaces alternos, así que dar de baja el proxy de terceros sin un plan significaba que cada URL traducida indexada — más de un millón de ellas — era candidata a devolver 404.
+
+## Rol
+
+Como arquitecto de soluciones, definí qué debía soportar un reemplazo nativo: URLs estrictas con estructura `/[idioma]/[slug]`, generación automática de hreflang en cada versión de idioma, control editorial independiente y completo por idioma, y un disparador de traducción opcional para que publicar en el idioma de origen no forzara una traducción automática. Escribí el plan de implementación que un ingeniero de plataforma y un desarrollador de producto construyeron, y advertí el riesgo SEO al cliente después de consultarlo con el equipo de estrategia.
+
+## Proceso
+
+- Mapeé la brecha entre lo que el modelo de traducción de RebelMouse asumía — inglés como idioma de origen — y lo que este cliente realmente necesitaba: su propio idioma como origen, con inglés como uno de varios idiomas destino. Lograr que ese idioma de origen se agregara requirió trabajar con el equipo de producto, no solo un cambio de configuración.
+- Consulté el riesgo SEO con el equipo de estrategia y luego lo advertí al cliente antes de que algo saliera a producción: un desajuste entre canonical y hreflang, o apagar el proxy de GTranslate antes de tener redirecciones, arriesgaban perder por completo la visibilidad de búsqueda del sitio traducido. El mapeo y ejecución de redirecciones quedó bajo responsabilidad del cliente y del equipo SSE de RebelMouse, ya que dependía de cuáles URLs viejas de GTranslate seguían indexadas.
+- Definí las reglas de URL y enlazado como requisitos, no como sugerencias: una estructura estricta `/[idioma]/[post-slug]`, etiquetas hreflang que enlazan cada versión de idioma con todas las demás y consigo misma, y etiquetas canonical que se mantienen consistentes con el clúster de hreflang — justo lo que se rompe en silencio si nadie lo escribe como regla.
+
+## Resultado
+
+El equipo editorial del cliente ahora gestiona traducciones de forma nativa dentro de RebelMouse, con control editorial completo por idioma en vez de un proceso automático de terceros. El lado de las redirecciones nunca se resolvió antes del lanzamiento: el cliente apagó GTranslate antes de completar el mapeo entre URLs viejas y nuevas, y esos 404 — muy por encima del millón — siguen pendientes de su lado.

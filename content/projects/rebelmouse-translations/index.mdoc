@@ -1,0 +1,49 @@
+---
+title: Translation ownership for a global publisher
+public: true
+sortOrder: 6
+year: 2026
+img: /images/default_bg.jpg
+tags:
+  - Solutions architecture
+  - RebelMouse CMS
+  - i18n
+  - SEO
+stack:
+  - RebelMouse CMS
+  - i18n workflow
+  - hreflang / alternate links
+en:
+  kind: Case study · Solutions architecture
+  desc: >-
+    Replaced a third-party translation proxy with native, editor-owned
+    translation control on RebelMouse for a multi-million-article multilingual
+    site — and the SEO risk of switching it off.
+  role: Solutions architect
+es:
+  kind: Caso de estudio · Arquitectura de soluciones
+  desc: >-
+    Reemplacé un proxy de traducción de terceros por control de traducción
+    nativo y a cargo del equipo editorial en RebelMouse, para un sitio
+    multilingüe con millones de artículos — y el riesgo SEO de apagarlo.
+  role: Arquitecto de soluciones
+translated: true
+hasCase: true
+---
+## Context
+
+A large publisher, whose primary content is in a language other than English, used GTranslate — a third-party proxy — to auto-generate translated versions of every article into six other languages. That gave them no editorial control over the translated content, and they wanted a native, CMS-managed multilingual setup instead. Two platform constraints shaped the work: RebelMouse's translation tooling assumed English as the source language, and the client's source language wasn't yet supported at all. On top of that, there was no alternate-links strategy in place, so decommissioning the third-party proxy without a plan meant every indexed translated URL — over a million of them — was a candidate to 404.
+
+## Role
+
+As solutions architect, I scoped what a native replacement needed to support: strict `/[lang]/[slug]` URLs, automatic hreflang generation across every language version, full independent editorial control per language, and an opt-in translation trigger so publishing in the source language didn't force an automatic translation. I wrote the implementation plan a platform engineer and product developer built from, and flagged the SEO risk to the client after consulting with the strategy team.
+
+## Process
+
+- Mapped the gap between what RebelMouse's translation model assumed — English as the source language — and what this client actually needed: their own language as the source, with English one of several target languages. Getting that source language added took a collaboration with the product team, not just a configuration change.
+- Consulted the strategy team on the SEO risk, then flagged it to the client before anything went live: a canonical/hreflang mismatch, or dropping the GTranslate proxy before redirects existed, both risked losing the site's translated search visibility entirely. Redirect mapping and execution were scoped as the client's and RebelMouse's SSE team's responsibility, since it depended on which of the old GTranslate URLs were still actually indexed.
+- Defined the URL and linking rules as requirements, not guidelines: a strict `/[lang]/[post-slug]` structure, hreflang tags that link every language version to every other version and to itself, and canonical tags that stay consistent with the hreflang cluster — the exact things that break silently if nobody writes them down as rules.
+
+## Outcome
+
+The client's editorial team now manages translations natively inside RebelMouse, with full editorial control per language instead of an automated third-party pass. The redirect side never got resolved before launch: the client shut down GTranslate before the mapping between old and new URLs was complete, and those 404s — well over a million of them — are still outstanding on their end.

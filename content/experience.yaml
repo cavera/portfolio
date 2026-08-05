@@ -1,0 +1,41 @@
+items:
+  - when: Aug 2024 — Present
+    role: Solutions Architect
+    co: RebelMouse · Remote
+    badge: Current
+    summaryEn: >-
+      Lead the technical side of service delivery: planning solutions, scoping
+      and costing work, and bridging client requests with engineering.
+    summaryEs: >-
+      Lidero el lado técnico de la entrega: planeo soluciones, dimensiono y
+      estimo el trabajo, y conecto las solicitudes de clientes con ingeniería.
+  - when: Nov 2023 — Aug 2024
+    role: Platform Engineer
+    co: RebelMouse · Remote
+    summaryEn: >-
+      Shipped custom platform features for publishers — donation workflows for
+      Lakeville Journal & Millerton News, and translation-workflow
+      improvements.
+    summaryEs: >-
+      Entregué funcionalidades a medida para editores — flujos de donación
+      para Lakeville Journal y Millerton News, y mejoras en el flujo de
+      traducción.
+  - when: 2012 — 2023
+    role: Head of Design / Tech Advisor / Front-end
+    co: CrearMedia · Lima
+    summaryEn: >-
+      Led the design vision for e-learning across Latin America and a remote
+      team of designers; drove the Flash→HTML5 & responsive transition; built
+      onboarding & certification UIs used by thousands.
+    summaryEs: >-
+      Lideré la visión de diseño de e-learning en Latinoamérica y un equipo
+      remoto de diseñadores; impulsé la transición de Flash a HTML5 y
+      responsive; construí interfaces de onboarding y certificación usadas por
+      miles.
+  - when: 2008 — 2012
+    role: Creative / Graphic Designer
+    co: CrearMedia · Bogotá
+    summaryEn: UI and interaction design for e-learning projects — where the craft started.
+    summaryEs: >-
+      Diseño UI y de interacción para proyectos de e-learning — donde empezó
+      el oficio.

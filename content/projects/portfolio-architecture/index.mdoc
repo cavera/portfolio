@@ -1,0 +1,53 @@
+---
+title: This portfolio's CMS
+public: true
+sortOrder: 5
+year: 2026
+img: /images/default_bg.jpg
+live: https://portfolio-cavera.vercel.app/
+code: https://github.com/cavera/portfolio
+tags:
+  - Solutions architecture
+  - Next.js
+  - TypeScript
+  - Notion API
+  - i18n
+stack:
+  - Next.js
+  - TypeScript
+  - Notion API
+  - SASS
+en:
+  kind: Case study · Solutions architecture
+  desc: >-
+    A content pipeline that reads from Notion or falls back to static data with
+    zero code changes — the decision that keeps this site editable and
+    deployable at the same time.
+  role: Solutions architect + builder
+es:
+  kind: Caso de estudio · Arquitectura de soluciones
+  desc: >-
+    Un pipeline de contenido que lee de Notion o recae en datos estáticos sin
+    cambiar código — la decisión que mantiene este sitio editable y desplegable
+    a la vez.
+  role: Arquitecto de soluciones + desarrollador
+translated: true
+hasCase: true
+---
+## Context
+
+This site needed to move from hand-edited TypeScript to a real CMS without a rebuild — Notion already held 31 projects, but the redesign only recognized four hardcoded ones. The constraint: every page had to keep working, in two languages, whether or not Notion was reachable.
+
+## Role
+
+I scoped and built the content boundary myself: one module every route asks for content, a resolved type that a Notion mapper and a static file both satisfy, and the localization rules that decide what gets to claim a translation.
+
+## Process
+
+- Scoped the contract first — defined a single `Project` shape every route depends on, independent of whether the data comes from Notion or a static file, so swapping the source later touches one module, not the views.
+- Designed for partial failure — a Notion query failing, or the environment variables simply not being set, falls back to static content instead of a broken build. The fallback isn't a stopgap; it's how local dev and every preview deploy already run.
+- Wrote the i18n rules as invariants, not conventions — a project's URL id always comes from the default-locale page so /en/work/x and /es/work/x can't split into two different pages, and a translation only gets an hreflang tag when it's real prose, not English standing in for Spanish.
+
+## Outcome
+
+A site that can be handed a working Notion database and switch content sources with one environment variable — no code change, and no risk of a half-translated page announcing itself as translated. This page is itself the proof: it's served straight from Notion, the same pipeline as everything else here. Four projects shipped with full bilingual content first, and the rest are being filled in as their case studies get written.

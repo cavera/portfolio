@@ -68,26 +68,53 @@ visit to the deployed `/keystatic`; it produces 4 env vars
 
 ```
 content/
-  projects/<slug>/index.yaml       # data fields + caseEs (inline, see note below)
-  projects/<slug>/caseEn.mdoc      # free-form EN case body — the one real content field
+  projects/<slug>/index.mdoc       # YAML frontmatter (all data fields) + caseEn body
+  projects/<slug>/caseEs.mdoc      # free-form ES case body — its own clean file
   profile.yaml                     # singleton: email, portrait, socials, skills, certs, stats
   experience.yaml                  # singleton: items[]
   photos.yaml                      # singleton: items[]
 public/images/work/                # images uploaded via the editor (committed → never expire)
 ```
 
-**Verified deviation from the original plan:** `format.contentField` only accepts one
-field (a single name, or an array that's a *path* into a nested object — not a
-list of independent fields). Tried `contentField: ['caseEn', 'caseEs']`
-expecting two sibling `.mdoc` files; Keystatic rejected it at runtime with
-"Path specified in contentField does not point to a content field." Fix:
-`caseEn` is the sole `contentField` (→ `caseEn.mdoc`); `caseEs` stays a regular
-`fields.markdoc()` field, which Keystatic stores inline inside `index.yaml`
-instead of as its own file. Confirmed in the admin UI: both fields render as
-full rich Markdoc editors (toolbar, image upload, etc.) with zero difference
-in editing experience — the only loss is `caseEs` not being its own
-clean-diffable file on disk, which doesn't matter since hand-editing files was
-never a goal (the UI is the only intended editing surface).
+**Verified deviation from the original plan — corrected after actually creating
+an entry and reading the files, not just reasoning about types:**
+`format.contentField` only accepts one field (a single name, or an array
+that's a *path* into a nested object — not a list of independent fields).
+Tried `contentField: ['caseEn', 'caseEs']` expecting two sibling `.mdoc`
+files; Keystatic rejected it at runtime with "Path specified in contentField
+does not point to a content field." Fix: `caseEn` is the sole `contentField`.
+An earlier version of this note assumed that made `caseEs` collapse into an
+inline string inside a separate `index.yaml` — **that was wrong**, corrected
+by creating a real entry through the admin UI and reading what Keystatic
+actually wrote to disk:
+
+- The designated `contentField` doesn't produce its own named file — it
+  merges with the data fields into **`index.mdoc`**: YAML frontmatter (every
+  non-markdoc field) followed by `---` and then the `caseEn` body as plain
+  Markdoc text.
+- `caseEs`, despite not being the `contentField`, still gets its own clean
+  **`caseEs.mdoc`** file automatically — no config needed for that. Both
+  fields are real, standalone, human-diffable Markdoc files; the only
+  asymmetry is that the EN one is folded into `index.mdoc` and the ES one is
+  a sibling. There is no `index.yaml` at all.
+
+Confirmed in the admin UI: both fields render as full rich Markdoc editors
+(toolbar, image upload, etc.) with identical editing UX regardless of which
+one is the file that also carries the frontmatter.
+
+**Separate finding, not a Keystatic bug:** the rich-text editor's "/" slash
+menu is the only reliable way to insert headings/lists — typing literal
+`## ` or `- ` as plain text does **not** auto-convert (no Markdoc-shorthand
+input rules). Worse, driving multi-block content (heading → paragraph →
+list → heading → paragraph) through Playwright by alternating `press('/')` +
+click-menu-option + `fill(text)` + `press('Enter')` silently corrupted the
+document after ~8 steps — the final `fill()` call replaced the *entire*
+multi-block body with just its own text, wrapped in bold, nested in a
+leftover list. Actual case-body content for every project was therefore
+**hand-authored directly as `.mdoc` files** (Markdoc's whole point is being a
+plain-text format — no need to go through the WYSIWYG editor to produce
+valid output), verified only by loading the finished entries in the admin UI
+afterward to confirm Keystatic parses them without error.
 
 **`projects` collection** — one entry per project, both locales in one entry
 (shared fields can't drift; one entry to open on the phone):

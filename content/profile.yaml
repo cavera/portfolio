@@ -1,0 +1,37 @@
+email: cavera.de@gmail.com
+photoProfile: https://500px.com/p/LeonardoFonseca
+aboutPortrait: https://res.cloudinary.com/dwrxp5sqk/image/upload/v1691806331/cavera/profile_about.jpg
+socials:
+  - name: GitHub
+    url: https://github.com/cavera
+  - name: Behance
+    url: https://behance.net/cavera
+  - name: LinkedIn
+    url: https://linkedin.com/in/leonardo-ui/
+  - name: 500px
+    url: https://500px.com/p/LeonardoFonseca
+skills:
+  - Solutions architecture
+  - React
+  - Next.js
+  - GSAP
+  - TypeScript
+  - SASS
+  - HTML / CSS
+  - Figma
+  - UI & interaction design
+  - Typographic design
+  - Articulate Storyline
+  - Notion CMS
+certs:
+  - LXD LATAM Summit 2023
+stats:
+  - n: 15+
+    key: years
+    acc: true
+  - n: 40+
+    key: projects
+    acc: false
+  - n: EN/ES
+    key: langs
+    acc: false
