@@ -111,12 +111,14 @@ files, and `source.ts`/types/`CaseView` rewired to read through Keystatic's
 reader instead of Notion. `src/data/notion/` and `src/data/portfolio.ts` are
 deleted — nothing in the app reads them anymore.
 
-Step 5 (GitHub mode + Vercel) has not started: no GitHub App is wired up yet,
-so `/keystatic` only works against the local filesystem (`pnpm dev`) — there's
-no way to edit content on the deployed site yet, and this branch itself isn't
-deployed anywhere. See the plan doc for the exact remaining steps and the
-branch caveat about GitHub-mode commits landing on whichever branch the admin
-UI is pointed at.
+Step 5 (GitHub mode + Vercel) is done and verified on the Preview deployment
+(`portfolio-git-redesign-keystatic-caveras-projects.vercel.app/keystatic`): the
+GitHub App exists, the 4 env vars are set for Preview only, and the admin UI
+edits `redesign-keystatic` through commits. In the admin UI, select the
+`redesign-keystatic` branch — it defaults to `main`, which would commit to
+production. The storage switch in `keystatic.config.ts` keys on
+`NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` (the config is bundled client-side, so a
+server-only var silently gives local mode); see the plan doc for the rest.
 
 The redesign's earlier Notion rollout (schema, adapter, localized routes,
 hreflang, sitemap) is all still true of `redesign-merge`, which remains

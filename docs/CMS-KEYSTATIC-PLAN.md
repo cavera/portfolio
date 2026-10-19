@@ -1,6 +1,6 @@
 # Plan: Move the CMS source off Notion → Keystatic (GitHub mode)
 
-**Status: steps 1, 2, 3, 4, and 6 done; step 5 not started.** On the
+**Status: all steps done; step 5 verified on the preview deploy (login + branch picker + 33 entries).** On the
 `redesign-keystatic` branch (forked from `redesign-merge`). Scaffold,
 content (including the 27 Notion stubs and the 6 recovered Reserva
 screenshots), and rewiring are all live and verified locally. Only step 5
@@ -8,12 +8,10 @@ screenshots), and rewiring are all live and verified locally. Only step 5
 real deployment, since the GitHub App OAuth flow has to run against a public
 URL. See "Ordered migration steps" below for exactly what's done.
 
-**Resume here next session:** step 5 is the entire remaining scope. Nothing
-else in this branch needs revisiting — everything local is done and
-verified. Start by deciding a deploy target (see the branch caveat at the
-end of "Ordered migration steps": this branch isn't `redesign-merge`, and
-`redesign-merge` isn't `main`, so "deploy" doesn't mean "go live" the way it
-did for the earlier Notion switch).
+**Remaining:** decide whether/when to merge this branch into `redesign-merge`
+(see the branch caveat below). GitHub mode currently runs on the Preview
+deployment `portfolio-git-redesign-keystatic-caveras-projects.vercel.app`;
+Production has none of the 4 env vars on purpose.
 
 ## Context
 
@@ -222,12 +220,23 @@ anywhere).
    doesn't exist anymore now that both languages live in one entry, so it's
    documented as dissolved rather than replaced). `docs/CMS.md` rewritten as
    a short current-state summary pointing here for detail.
-5. ⬜ **GitHub mode + Vercel** — not started, the one step that genuinely
-   needs a real deployment (the GitHub App's OAuth callback needs a public
-   URL). Deploy a preview; run the GitHub App flow from the deployed
-   `/keystatic`; set the 4 env vars in Vercel; verify a phone edit → commit
-   → redeploy round-trip. `Disallow: /keystatic` in `robots.txt` was done
-   ahead of time (see step 6) since it doesn't depend on the App itself.
+5. ✅ **GitHub mode + Vercel** — done. Findings that differ from the
+   original plan:
+   - The "Create GitHub App" wizard only runs under `pnpm dev`, not on a
+     deployed site. Run it locally with storage temporarily forced to
+     `github`, plus `allowedDevOrigins: ['127.0.0.1']` in `next.config.js`
+     (Keystatic redirects to 127.0.0.1 and the page is blank without it).
+     It writes the 4 vars to `.env` (not `.env.local`).
+   - Set the 4 vars in Vercel for **Preview only** (the two secrets as
+     Secret type). Never Production.
+   - **The storage switch must key on a `NEXT_PUBLIC_` var.** `keystatic.config.ts`
+     is bundled into the browser, where `KEYSTATIC_GITHUB_CLIENT_ID` is
+     undefined — keying on it left the admin UI in local mode (empty
+     dashboard) while the API route ran in GitHub mode. It now keys on
+     `NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` and stays local in `pnpm dev`.
+   - In the admin UI the branch picker defaults to `main` (0 entries, and
+     edits there would commit to production). Pick `redesign-keystatic`.
+   - Env vars only apply to new builds — push a commit to redeploy.
 6. ✅ **Local-only pieces, done ahead of step 5** — three things that didn't
    need a deployment: imported all **27** Notion stubs as `public: false`
    entries (title, live/code links, skills-as-tags; no individual cover

@@ -1,7 +1,7 @@
 # CMS — Keystatic (GitHub mode)
 
 Content lives as files in `content/`, edited through Keystatic's admin UI at
-`/keystatic`. In GitHub mode (production, once step 5 of the migration lands)
+`/keystatic`. In GitHub mode (Preview deployment; step 5 done)
 each edit is a real commit through a GitHub App — editable from a phone
 browser, no local checkout needed. Locally (`pnpm dev`, no GitHub credentials
 set) it reads and writes the checked-out repo directly.
@@ -43,10 +43,9 @@ all 6 complete bilingual projects and the 3 singletons authored as real
 content, and `source.ts`/types/`CaseView` rewired to read through Keystatic
 instead of Notion. `src/data/notion/` and `src/data/portfolio.ts` are deleted.
 
-Step 5 (GitHub mode + Vercel) hasn't started: no GitHub App is wired up, so
-`/keystatic` only works against the local filesystem — there's no way to edit
-content on a deployed site yet. Full detail, including the branch caveat
-about which branch GitHub-mode commits land on, is in
+Step 5 (GitHub mode + Vercel) is done on the Preview deployment only. Use the
+`redesign-keystatic` branch in the admin UI (it defaults to `main`). Details and
+gotchas, including why the storage switch keys on a `NEXT_PUBLIC_` var, are in
 `docs/CMS-KEYSTATIC-PLAN.md`.
 
 ## Superseded
