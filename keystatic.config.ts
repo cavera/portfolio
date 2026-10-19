@@ -1,16 +1,19 @@
 import { config, fields, collection, singleton } from '@keystatic/core'
 
 /**
- * Branches on whether the GitHub App credentials exist, not on NODE_ENV —
- * `next build` always runs with NODE_ENV=production, even locally, so an
- * env-based check would send every local `pnpm build` down the GitHub path
- * and fail without real credentials. This way local dev, local build
- * verification, and any preview deploy before the GitHub App is wired up
- * (step 5) all safely fall back to local storage; only a deployment with the
- * 4 real env vars set uses GitHub mode.
+ * Branches on a NEXT_PUBLIC_ var, not NODE_ENV alone and not the server-only
+ * client id: this config is also bundled into the browser, where non-public
+ * env vars are undefined — keying on KEYSTATIC_GITHUB_CLIENT_ID made the admin
+ * UI silently fall back to local mode while the API route ran in GitHub mode.
+ * The slug is only set where the GitHub App exists (Vercel Preview), so local
+ * `pnpm dev` and any deploy without it stay on local storage.
  */
+const useGithub =
+	!!process.env.NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG &&
+	process.env.NODE_ENV !== 'development'
+
 export default config({
-	storage: process.env.KEYSTATIC_GITHUB_CLIENT_ID
+	storage: useGithub
 		? {
 				kind: 'github',
 				repo: 'cavera/portfolio',
