@@ -18,20 +18,21 @@ with real data.
 
 ## Branches
 
-- `main` — deployed. Still the **old** design, reading Notion through
-  `src/data/notion.ts` + `src/data/mapData.ts`.
-- `redesign-merge` — the redesign, with Notion as its CMS. Not merged,
-  deliberately: the owner wants it separate until happy with it. As of this
-  session it's live in production on the `portfolio-cavera.vercel.app`
-  deployment — the Notion switch is **on**, not a plan anymore.
-- `redesign-keystatic` — branched off `redesign-merge` to replace Notion with
-  Keystatic (this branch). See `docs/CMS-KEYSTATIC-PLAN.md` for why and the
-  step-by-step status. Not merged anywhere yet.
+- `main` — deployed. The redesign on Keystatic, live at
+  `https://portfolio-cavera.vercel.app` (Vercel Production tracks `main`; there
+  is no custom domain). Keystatic's admin UI there commits to `main`, so every
+  admin save triggers a Production rebuild.
+- `redesign-merge` — the old Notion-backed redesign, kept as a rollback
+  reference. Not deployed from; safe to delete once the Keystatic site has
+  proven stable.
+- `redesign-keystatic` — the branch the Keystatic work was done on. Fully
+  merged into `main`; kept only until `main` has proven stable.
 
-Each branch has its own dependency-fix commits, so `package.json` and
-`pnpm-lock.yaml` will conflict whenever any of these merge. Resolve by taking
-the more recent branch's side, then run `pnpm install` and commit the
-lockfile — never hand-edit it.
+Merging branches that each carry their own dependency fixes will conflict on
+`package.json` and `pnpm-lock.yaml`. Resolve by taking the more recent branch's
+side, then run `pnpm install` and commit the lockfile — never hand-edit it.
+Check `git checkout --ours` didn't discard the other side's non-conflicting
+hunks (pnpm overrides live in `pnpm-workspace.yaml`, not `package.json`).
 
 ## Architecture
 
@@ -104,27 +105,30 @@ by language.**
 
 ## Where things stand
 
-Migrating off Notion onto Keystatic (GitHub mode). Steps 1–4 of the plan in
-`docs/CMS-KEYSTATIC-PLAN.md` are done: package scaffold, admin UI + API route,
-all 6 complete bilingual projects + the 3 singletons authored as real content
-files, and `source.ts`/types/`CaseView` rewired to read through Keystatic's
-reader instead of Notion. `src/data/notion/` and `src/data/portfolio.ts` are
-deleted — nothing in the app reads them anymore.
+The Keystatic migration is finished and live. All steps in
+`docs/CMS-KEYSTATIC-PLAN.md` are done: content authored as files, `source.ts`
+reading through Keystatic's reader, GitHub mode running in production.
+Notion is no longer read by anything.
 
-Step 5 (GitHub mode + Vercel) is done and verified on the Preview deployment
-(`portfolio-git-redesign-keystatic-caveras-projects.vercel.app/keystatic`): the
-GitHub App exists, the 4 env vars are set for Preview only, and the admin UI
-edits `redesign-keystatic` through commits. In the admin UI, select the
-`redesign-keystatic` branch — it defaults to `main`, which would commit to
-production. The storage switch in `keystatic.config.ts` keys on
-`NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` (the config is bundled client-side, so a
-server-only var silently gives local mode); see the plan doc for the rest.
+Production setup (Vercel, project `portfolio`): the 4 Keystatic env vars
+(`KEYSTATIC_GITHUB_CLIENT_ID`, `KEYSTATIC_GITHUB_CLIENT_SECRET`,
+`KEYSTATIC_SECRET`, `NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG`) are set for
+Production and Preview. The GitHub App lists redirect URIs for local dev
+(`127.0.0.1`), the preview alias and the production domain. The storage switch
+in `keystatic.config.ts` keys on `NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` (the
+config is bundled client-side, so a server-only var silently gives local mode);
+`pnpm dev` always stays on local storage.
 
-The redesign's earlier Notion rollout (schema, adapter, localized routes,
-hreflang, sitemap) is all still true of `redesign-merge`, which remains
-Notion-backed and live in production. This branch is a fork of that work, not
-a replacement of it — until this migration finishes and merges, the two CMS
-approaches exist in parallel on different branches.
+Gotchas learned going live:
+- **Next 16.4.2 breaks `next/font/google` on Vercel's builders** (Turbopack:
+  "queries have exactly one entry"), though it builds fine locally. Production
+  is pinned to Next 16.3.8. Don't bump Next without a preview deploy first.
+- The canonical/sitemap/robots URL is hardcoded in `src/data/consts.ts`,
+  `public/robots.txt` and one project's `live` link; keep it matching the real
+  production domain.
+- Vercel env vars only apply to new builds.
+
+Remaining Dependabot finding: `braces` (no patched release exists on npm).
 
 ## Known lint state
 

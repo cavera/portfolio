@@ -1,5 +1,14 @@
 # Dependency notes
 
+> **Update (Oct 2026):** the premise below ("neither line has a patched
+> release") is stale. Patched `brace-expansion` 1.x and 2.x releases now exist,
+> and `pnpm-workspace.yaml` overrides them (`brace-expansion@1: ^1.1.21`,
+> `brace-expansion@2: ^2.1.7`), which clears the advisory. The one thing that
+> still holds is the warning: never force `brace-expansion` to `>= 5` — it
+> breaks `minimatch` and eslint. The only open finding now is `braces`
+> (`<= 3.0.3`, no patched release on npm); dismiss it in Dependabot until one
+> ships.
+
 ## Known dismissed advisory: `brace-expansion` GHSA-mh99-v99m-4gvg
 
 **Status: dismissed in Dependabot as "risk is tolerable to this project". Do not
