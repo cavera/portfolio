@@ -26,7 +26,7 @@ export const Nav = ({ email }: { email: string }) => {
 				href={localePath(lang)}
 				className='logo'>
 				cave<b>ra</b>
-				<span style={{ color: 'var(--soft)' }}>.dev</span>
+				<span className='dev'>.dev</span>
 			</Link>
 			<div className='links'>
 				{NAV.map(({ path, key }) => (
@@ -45,18 +45,20 @@ export const Nav = ({ email }: { email: string }) => {
 					onClick={toggleTheme}>
 					{theme === 'dark' ? '☀' : '☾'}
 				</button>
-				{/* Links, not buttons: each language is a real URL, so switching is
-				    navigation. Crawlers follow these; a click handler they could not. */}
+				{/* Plain anchors, not <Link>: each language is a real URL (crawlers follow
+				    it), and a full load re-runs the pre-paint theme script. A client-side
+				    swap re-renders the root layout, which logs a script-tag error and
+				    drops data-theme. */}
 				<div className='langtog'>
 					{locales.map((l) => (
-						<Link
+						<a
 							key={l}
 							href={localePath(l, section)}
 							hrefLang={l}
 							aria-current={l === lang ? 'true' : undefined}
 							className={l === lang ? 'on' : ''}>
 							{l.toUpperCase()}
-						</Link>
+						</a>
 					))}
 				</div>
 				<a
