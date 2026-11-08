@@ -8,7 +8,7 @@
 	--surface3: #17261f;
 	--ink: #e5f0ed;
 	--soft: #8fa39d;
-	--faint: #5f7069;
+	--faint: #7d8f89;
 	--line: rgba(255, 255, 255, 0.085);
 	--line2: rgba(255, 255, 255, 0.17);
 	--acc: #2bd4a1;
@@ -19,6 +19,10 @@
 	--glass: rgba(15, 26, 23, 0.72);
 	--ov: rgba(4, 14, 11, 0.6);
 	--photo-bg: #061511;
+	/* fixed over-photo colours: theme-independent, the scrim is always dark */
+	--ov-ink: #e5f0ed;
+	--ov-acc: #2bd4a1;
+	--ov-scrim: 4, 14, 11;
 	--nav-h: 64px;
 	--maxw: 1320px;
 }
@@ -30,12 +34,12 @@ html[data-theme='light'] {
 	--surface3: #e2efeb;
 	--ink: #101916;
 	--soft: #4f5f5a;
-	--faint: #869691;
+	--faint: #5a6c66;
 	--line: rgba(16, 25, 22, 0.1);
 	--line2: rgba(16, 25, 22, 0.22);
-	--acc: #00ad7c;
-	--acc-ink: #d1fff2;
-	--acc-dim: rgba(0, 173, 124, 0.14);
+	--acc: #00775a;
+	--acc-ink: #f1fffb;
+	--acc-dim: rgba(0, 119, 90, 0.14);
 	--acc-hover: #1a614d;
 	--nav-bg: rgba(241, 249, 247, 0.85);
 	--glass: rgba(240, 250, 247, 0.78);
@@ -201,8 +205,8 @@ button:focus-visible,
 	border-bottom: 1px solid var(--line);
 }
 .thbtn {
-	width: 34px;
-	height: 34px;
+	width: 44px;
+	height: 44px;
 	border-radius: 8px;
 	border: 1px solid var(--line2);
 	background: transparent;
@@ -241,6 +245,9 @@ button:focus-visible,
 	background: none;
 	color: inherit;
 	padding: 0;
+}
+.pfnav .logo .dev {
+	color: var(--soft);
 }
 .pfnav .logo b {
 	color: var(--acc);
@@ -301,7 +308,7 @@ button:focus-visible,
 	background: transparent;
 	color: var(--soft);
 	cursor: pointer;
-	padding: 7px 11px;
+	padding: 13px 13px;
 	transition: 0.15s;
 	text-decoration: none;
 	display: block;
@@ -321,6 +328,48 @@ button:focus-visible,
 	.pfnav {
 		gap: 10px;
 		padding: 0 16px;
+	}
+}
+
+/* Phones: the wordmark drops ".dev" and spacing tightens so theme + language
+   controls stay on screen (they overflowed the bar at 390px). */
+@media (max-width: 520px) {
+	.pfnav {
+		gap: 6px;
+		padding: 0 10px;
+	}
+	.pfnav .logo {
+		font-size: 14px;
+	}
+	.pfnav .logo .dev {
+		display: none;
+	}
+	.pfnav .links {
+		margin-left: 0;
+		gap: 0;
+	}
+	.pfnav .links a {
+		padding: 8px 6px;
+		font-size: 12.5px;
+	}
+	.pfnav .right {
+		gap: 6px;
+	}
+	.langtog a {
+		padding: 13px 10px;
+	}
+}
+@media (max-width: 380px) {
+	.pfnav {
+		gap: 4px;
+		padding: 0 8px;
+	}
+	.pfnav .links a {
+		padding: 8px 4px;
+		font-size: 12px;
+	}
+	.langtog a {
+		padding: 13px 8px;
 	}
 }
 

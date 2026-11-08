@@ -181,6 +181,8 @@ export const HomeView = ({ projects, photos, skills, email, stats }: HomeViewPro
 								<img
 									src={p.src}
 									alt={p.title}
+									loading='lazy'
+									decoding='async'
 									// 500px signed URLs expire/rotate — degrade quietly
 									// instead of a broken-image icon if one dies.
 									onError={(e) => {

@@ -261,6 +261,8 @@ export const WorkView = ({ projects }: WorkViewProps) => {
 									<img
 										src={p.img}
 										alt={p.title}
+										loading='lazy'
+										decoding='async'
 									/>
 								</div>
 								<div className='ab'>

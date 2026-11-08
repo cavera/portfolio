@@ -68,7 +68,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	background: linear-gradient(transparent, rgba(8, 9, 7, 0.7));
+	background: linear-gradient(transparent, rgba(var(--ov-scrim), 0.7));
 	pointer-events: none;
 	z-index: 2;
 }
@@ -130,6 +130,9 @@
 	opacity: 1;
 }
 @media (prefers-reduced-motion: reduce) {
+	.navbtns button:hover:not(:disabled) {
+		transform: none;
+	}
 	.b-cta:hover {
 		transform: none;
 	}
@@ -273,21 +276,21 @@
 	right: 0;
 	bottom: 0;
 	padding: 26px;
-	background: linear-gradient(transparent, rgba(8, 9, 7, 0.85));
+	background: linear-gradient(transparent, rgba(var(--ov-scrim), 0.85));
 }
 .bfeat .ov .k {
 	font-family: var(--font-mono), monospace;
 	font-size: 11px;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	color: #cdf24f;
+	color: var(--ov-acc);
 }
 .bfeat .ov h3 {
 	font-size: 30px;
 	font-weight: 600;
 	letter-spacing: -0.02em;
 	margin: 8px 0 0;
-	color: #eceae0;
+	color: var(--ov-ink);
 }
 .bfeat .go {
 	position: absolute;
@@ -296,9 +299,9 @@
 	width: 34px;
 	height: 34px;
 	border-radius: 50%;
-	background: rgba(8, 9, 7, 0.55);
+	background: rgba(var(--ov-scrim), 0.55);
 	border: 1px solid rgba(255, 255, 255, 0.25);
-	color: #eceae0;
+	color: var(--ov-ink);
 	display: flex;
 	align-items: center;
 	justify-content: center;
