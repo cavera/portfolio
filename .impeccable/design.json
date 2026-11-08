@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-07T00:00:00Z",
+  "title": "Design System: Cavera Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "mint": { "role": "primary", "displayName": "Electric Mint", "canonical": "#2bd4a1", "tonalRamp": ["#042017", "#0a4a36", "#0f7355", "#14a07a", "#2bd4a1", "#4fe8ba", "#9af2d7", "#f1fffb"] },
+      "studio-night": { "role": "neutral", "displayName": "Studio Night", "canonical": "#071813", "tonalRamp": ["#040e0b", "#071813", "#0f1a17", "#13201c", "#17261f", "#5f7069", "#8fa39d", "#e5f0ed"] },
+      "paper-mint": { "role": "neutral", "displayName": "Paper Mint", "canonical": "#f1f9f7", "tonalRamp": ["#101916", "#4f5f5a", "#869691", "#c4d3ce", "#e2efeb", "#ebf5f2", "#f0faf7", "#f1f9f7"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Home name block." },
+      "label": { "displayName": "Label", "purpose": "Mono uppercase eyebrows, buttons, tags." }
+    },
+    "shadows": [
+      { "name": "tile-lift", "value": "0 20px 48px rgba(0,0,0,0.38)", "purpose": "Linked tile hover only." }
+    ],
+    "motion": [
+      { "name": "view-fade", "value": "0.45s ease", "purpose": "View entrance, 6px rise." },
+      { "name": "control", "value": "0.15s", "purpose": "Button, tag and toggle transitions." }
+    ],
+    "breakpoints": [
+      { "name": "nav", "value": "760px" },
+      { "name": "grid", "value": "820px" },
+      { "name": "wide", "value": "920px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Fill Button",
+      "kind": "button",
+      "refersTo": "button-fill",
+      "description": "Primary action.",
+      "html": "<button class=\"ds-btn-fill\">Get in touch</button>",
+      "css": ".ds-btn-fill{background:#2bd4a1;color:#042017;padding:12px 20px;border-radius:9px;border:1px solid transparent;font:500 14px 'JetBrains Mono',monospace;cursor:pointer;transition:transform .15s,background .15s}.ds-btn-fill:hover{background:#4fe8ba;transform:translateY(-1px)}.ds-btn-fill:focus-visible{outline:2px solid #2bd4a1;outline-offset:2px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action.",
+      "html": "<button class=\"ds-btn-ghost\">View CV</button>",
+      "css": ".ds-btn-ghost{background:transparent;color:#e5f0ed;padding:12px 20px;border-radius:9px;border:1px solid rgba(255,255,255,.17);font:500 14px 'JetBrains Mono',monospace;cursor:pointer;transition:border-color .15s,color .15s}.ds-btn-ghost:hover{border-color:#2bd4a1;color:#2bd4a1}.ds-btn-ghost:focus-visible{outline:2px solid #2bd4a1;outline-offset:2px}"
+    },
+    {
+      "name": "Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Mono metadata chip.",
+      "html": "<span class=\"ds-tag\">React</span>",
+      "css": ".ds-tag{font:11px 'JetBrains Mono',monospace;padding:4px 10px;border:1px solid rgba(255,255,255,.17);border-radius:6px;color:#8fa39d;transition:background .18s,color .18s}.ds-tag:hover{background:#2bd4a1;color:#042017}"
+    },
+    {
+      "name": "Tile",
+      "kind": "card",
+      "refersTo": "tile",
+      "description": "Linked project tile with go arrow.",
+      "html": "<a class=\"ds-tile\" href=\"#\"><span class=\"ds-go\">&#8594;</span><div style=\"font-size:20px;font-weight:600\">Project title</div><div style=\"color:#8fa39d;margin-top:6px\">Short description</div></a>",
+      "css": ".ds-tile{display:block;position:relative;background:#0f1a17;color:#e5f0ed;border:1px solid rgba(255,255,255,.085);border-radius:18px;padding:26px;text-decoration:none;transition:border-color .2s,transform .2s,box-shadow .2s}.ds-tile:hover{border-color:rgba(255,255,255,.17);transform:translateY(-3px);box-shadow:0 20px 48px rgba(0,0,0,.38)}.ds-go{position:absolute;top:22px;right:24px;width:30px;height:30px;border-radius:50%;border:1px solid rgba(255,255,255,.17);display:flex;align-items:center;justify-content:center;color:#8fa39d;transition:.2s}.ds-tile:hover .ds-go{background:#2bd4a1;color:#042017;border-color:#2bd4a1;transform:rotate(-45deg)}"
+    },
+    {
+      "name": "Language Toggle",
+      "kind": "nav",
+      "refersTo": "tile",
+      "description": "Segmented EN/ES anchors.",
+      "html": "<div class=\"ds-lang\"><a class=\"on\" href=\"#\">EN</a><a href=\"#\">ES</a></div>",
+      "css": ".ds-lang{display:inline-flex;border:1px solid rgba(255,255,255,.17);border-radius:8px;overflow:hidden;font:12px 'JetBrains Mono',monospace}.ds-lang a{padding:7px 11px;color:#8fa39d;text-decoration:none}.ds-lang a.on{background:#2bd4a1;color:#042017}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Studio",
+    "overview": "A dark, green-tinted workspace where the work is the lit object. Surfaces are near-black forest tones separated by hairlines, not shadows; a single mint accent marks what is live, active or clickable. The light theme is the same studio with the lights on.",
+    "keyCharacteristics": [
+      "One accent (mint), used for state and action, never as a surface wash.",
+      "Hairline borders and tonal steps instead of shadows at rest.",
+      "Mono uppercase labels; grotesk display with negative tracking.",
+      "Quietly tactile: 1–3px lifts, fades, an accent underline that grows.",
+      "Dark and light themes are co-equal; every token has a pair."
+    ],
+    "rules": [
+      { "name": "The One Voice Rule", "body": "Mint appears only on state and action: fills, hovers, active markers, the accent word in a headline. It never floods a surface.", "section": "colors" },
+      { "name": "The Twin Theme Rule", "body": "Every colour token has a dark and a light value. Never hard-code a hex in a view; use the variable.", "section": "colors" },
+      { "name": "The Mono Controls Rule", "body": "Buttons, tags, lang toggle and eyebrows are mono. Prose and headlines are never mono.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "No shadow at rest. If something needs to feel raised, step the surface tone first.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use the CSS variables from src/styles/globals.scss; build both themes.",
+      "Do keep mint for state and action only.",
+      "Do put labels, buttons and tags in JetBrains Mono.",
+      "Do respect prefers-reduced-motion on every new transition or animation.",
+      "Do keep hover lifts to 1–3px and 0.15–0.2s."
+    ],
+    "donts": [
+      "Don't add shadows at rest or coloured glows beyond the nav blur and tile hover.",
+      "Don't introduce a second accent colour.",
+      "Don't use gradient text or decorative side-stripe borders.",
+      "Don't hard-code hex values in views; use tokens.",
+      "Don't swap to next/image; the owner declined it."
+    ]
+  }
+}
