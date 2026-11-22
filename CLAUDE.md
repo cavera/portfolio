@@ -120,15 +120,16 @@ config is bundled client-side, so a server-only var silently gives local mode);
 `pnpm dev` always stays on local storage.
 
 Gotchas learned going live:
-- **Next 16.4.2 breaks `next/font/google` on Vercel's builders** (Turbopack:
-  "queries have exactly one entry"), though it builds fine locally. Production
-  is pinned to Next 16.3.8. Don't bump Next without a preview deploy first.
+- **Next 16.4.2 broke `next/font/google` on Vercel's builders** (Turbopack:
+  "queries have exactly one entry"), though it built fine locally. Fixed by
+  16.4.6, which production now runs (Nov 2026, clears the 9 `next` advisories).
+  Still bump Next via a preview deploy first — the failure never shows locally.
 - The canonical/sitemap/robots URL is hardcoded in `src/data/consts.ts`,
   `public/robots.txt` and one project's `live` link; keep it matching the real
   production domain.
 - Vercel env vars only apply to new builds.
 
-Remaining Dependabot finding: `braces` (no patched release exists on npm).
+Remaining Dependabot finding: 1 open alert (`braces`, no patched release on npm).
 
 ## Known lint state
 
