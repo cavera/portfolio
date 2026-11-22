@@ -61,7 +61,7 @@ export const PhotoView = ({ photos, photoProfile }: PhotoViewProps) => {
 			const y = scroller.scrollTop
 			rail.style.transform = `translate3d(${-y}px,0,0)`
 			const prog = y / travel
-			fillEl.style.width = prog * 100 + '%'
+			fillEl.style.transform = `scaleX(${prog})`
 
 			const viewCenter = y + stageW / 2
 			let nearest = 0

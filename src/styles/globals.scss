@@ -2,6 +2,8 @@
    Portfolio — design tokens + shared primitives (studio dark / paper light)
    ============================================================ */
 :root {
+	--ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+	--ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
 	--bg: #071813;
 	--surface: #0f1a17;
 	--surface2: #13201c;
@@ -103,15 +105,20 @@ button:focus-visible,
 	cursor: pointer;
 	border: 1px solid transparent;
 	transition:
-		transform 0.15s,
+		transform 0.15s var(--ease-out),
 		background 0.15s,
 		border-color 0.15s,
 		color 0.15s,
 		filter 0.15s;
 	white-space: nowrap;
 }
-.btn:hover {
-	transform: translateY(-1px);
+@media (hover: hover) and (pointer: fine) {
+	.btn:hover {
+		transform: translateY(-1px);
+	}
+}
+.btn:active {
+	transform: scale(0.97);
 }
 .btn.fill {
 	background: var(--acc);
@@ -427,11 +434,17 @@ button.tile {
 	font: inherit;
 	color: inherit;
 }
-a.tile:hover,
-button.tile:hover {
-	border-color: var(--line2);
-	transform: translateY(-3px);
-	box-shadow: 0 20px 48px rgba(0, 0, 0, 0.38);
+@media (hover: hover) and (pointer: fine) {
+	a.tile:hover,
+	button.tile:hover {
+		border-color: var(--line2);
+		transform: translateY(-3px);
+		box-shadow: 0 20px 48px rgba(0, 0, 0, 0.38);
+	}
+}
+a.tile:active,
+button.tile:active {
+	transform: scale(0.985);
 }
 .tile .go {
 	position: absolute;
@@ -445,15 +458,21 @@ button.tile:hover {
 	align-items: center;
 	justify-content: center;
 	color: var(--soft);
-	transition: 0.2s;
+	transition:
+		background 0.2s,
+		color 0.2s,
+		border-color 0.2s,
+		transform 0.2s var(--ease-out);
 	font-size: 15px;
 }
-a.tile:hover .go,
-button.tile:hover .go {
-	background: var(--acc);
-	color: var(--acc-ink);
-	border-color: var(--acc);
-	transform: rotate(-45deg);
+@media (hover: hover) and (pointer: fine) {
+	a.tile:hover .go,
+	button.tile:hover .go {
+		background: var(--acc);
+		color: var(--acc-ink);
+		border-color: var(--acc);
+		transform: rotate(-45deg);
+	}
 }
 @media (prefers-reduced-motion: reduce) {
 	a.tile,

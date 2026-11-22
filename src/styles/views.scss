@@ -20,15 +20,20 @@
 	justify-content: center;
 	backdrop-filter: blur(8px);
 	transition:
-		transform 0.15s ease,
+		transform 0.15s var(--ease-out),
 		background 0.15s ease,
 		color 0.15s ease;
 }
-.navbtns button:hover:not(:disabled) {
-	background: var(--acc);
-	color: var(--acc-ink);
-	border-color: var(--acc);
-	transform: scale(1.12);
+@media (hover: hover) and (pointer: fine) {
+	.navbtns button:hover:not(:disabled) {
+		background: var(--acc);
+		color: var(--acc-ink);
+		border-color: var(--acc);
+		transform: scale(1.12);
+	}
+}
+.navbtns button:active:not(:disabled) {
+	transform: scale(0.94);
 }
 .navbtns button:disabled {
 	opacity: 0.35;
@@ -265,10 +270,12 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	transition: transform 0.5s ease;
+	transition: transform 0.25s var(--ease-out);
 }
-.bfeat:hover img {
-	transform: scale(1.03);
+@media (hover: hover) and (pointer: fine) {
+	.bfeat:hover img {
+		transform: scale(1.03);
+	}
 }
 .bfeat .ov {
 	position: absolute;
@@ -306,7 +313,11 @@
 	align-items: center;
 	justify-content: center;
 	backdrop-filter: blur(6px);
-	transition: 0.2s;
+	transition:
+		background 0.2s,
+		color 0.2s,
+		border-color 0.2s,
+		transform 0.2s var(--ease-out);
 }
 .bfeat:hover .go {
 	background: var(--acc);
@@ -998,8 +1009,9 @@
 	top: 50%;
 	height: 1px;
 	background: var(--acc);
+	width: 100%;
+	transform: scaleX(0);
 	transform-origin: left;
-	will-change: width;
 }
 .pruler .tick {
 	position: absolute;
